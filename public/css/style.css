@@ -1,0 +1,395 @@
+button {
+  font-family: "Helvetica Neue W31", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #00C9A7;
+  background-color: rgba(0, 0, 0, 0.672);
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 7px;
+  padding: 10px 30px;
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.ProductPage {
+  margin: 50px;
+  margin-top: 120px;
+}
+.ProductPage .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.ProductPage .container .description {
+  margin: 40px;
+}
+.ProductPage .container .description .name {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.ProductPage .container .description .changeQuantity {
+  text-align: center;
+  margin: 20px;
+}
+.ProductPage .container .description .changeQuantity .changeInCart button {
+  margin: 15px;
+  padding: 0;
+  width: 50px; /* Width of the button */
+  height: 50px; /* Height of the button, should be the same as width */
+  border-radius: 50%;
+}
+
+body {
+  background-color: rgb(251, 231, 204);
+  padding: 0;
+  margin: 0;
+}
+
+.Navbar {
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+}
+.Navbar .Navigation {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  padding: 25px;
+  padding-left: 60px;
+  background-color: rgb(251, 231, 204);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+.Navbar .Navigation .btn {
+  text-decoration: none;
+  padding-right: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(56, 60, 89);
+}
+.Navbar .Navigation .shoppingCartIcon {
+  padding: 0;
+  position: absolute;
+  right: 80px;
+  top: 15px;
+}
+.Navbar .Navigation .shoppingCartIcon .cartCount {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  color: white;
+  background-color: red;
+  height: 21px;
+  width: 21px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+.Navbar .Navigation button {
+  background: none;
+  border: none;
+}
+.Navbar .Navigation button:hover {
+  cursor: pointer;
+}
+.Navbar .Navigation button img {
+  width: 35px;
+  object-fit: cover;
+}
+.Navbar .sideTab {
+  width: 400px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  overflow-y: auto;
+  transition: all 0.3s ease-in-out;
+  z-index: 4;
+}
+.Navbar .sideTabHidden {
+  width: 0;
+}
+
+.Home img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.ImageRow {
+  margin: 100px;
+}
+.ImageRow .title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 6px;
+}
+.ImageRow .description {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.ImageRow .image {
+  margin: 15px;
+}
+
+.ImageSlider {
+  position: relative;
+  overflow: hidden;
+}
+.ImageSlider button {
+  background-color: rgba(70, 70, 70, 0.2);
+  color: rgba(50, 20, 20, 0.15);
+  padding: 0px;
+  width: 50px;
+  /* Width of the button */
+  height: 50px;
+  /* Height of the button, should be the same as width */
+  border-radius: 50%;
+  /* This makes it round */
+  color: white;
+  /* Optional: Text color */
+  text-align: center;
+  /* Aligns the text to the center */
+  line-height: 46px;
+  display: inline-block;
+  font-size: 40px;
+}
+.ImageSlider img {
+  width: 100%;
+}
+.ImageSlider .slide {
+  display: none;
+}
+.ImageSlider .slide.active {
+  display: block;
+}
+.ImageSlider .left-arrow,
+.ImageSlider .right-arrow {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+.ImageSlider .left-arrow {
+  left: 10px;
+}
+.ImageSlider .right-arrow {
+  right: 10px;
+}
+.ImageSlider .dot-container {
+  text-align: center;
+  margin-top: 10px;
+}
+.ImageSlider .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: lightgray;
+  cursor: pointer;
+}
+.ImageSlider .dot.active {
+  background-color: darkgray;
+}
+.ImageSlider .thumbnail-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.ImageSlider .thumbnail {
+  width: 60px;
+  margin: 5px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.ImageSlider .thumbnail.active {
+  border: 2px solid blue;
+  opacity: 1;
+}
+
+.ShoppingCartTab {
+  padding: 20px;
+}
+.ShoppingCartTab .close {
+  all: unset;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 17px;
+  right: 70px;
+}
+.ShoppingCartTab .close:hover {
+  cursor: pointer;
+}
+.ShoppingCartTab .close img {
+  width: 50px;
+  object-fit: cover;
+}
+.ShoppingCartTab .totalContainer {
+  border-top: 2px solid rgb(229, 229, 229);
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  padding: 20px 40px;
+  background-color: rgb(249, 249, 249);
+}
+.ShoppingCartTab .totalContainer .total {
+  text-align: right;
+  font-weight: 400;
+}
+.ShoppingCartTab .totalContainer .checkoutContainer {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.ShoppingCartTab .totalContainer .checkoutContainer .checkoutBtn {
+  all: unset;
+  background-color: cornflowerblue;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 15px;
+  padding-left: 100px;
+  padding-right: 100px;
+  letter-spacing: 2px;
+}
+.ShoppingCartTab .totalContainer .checkoutContainer .checkoutBtn:hover {
+  cursor: pointer;
+}
+
+.CartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.CartItem .left {
+  display: flex;
+  align-items: center;
+}
+.CartItem .left img {
+  width: 70px;
+  height: 70PX;
+  object-fit: cover;
+}
+.CartItem .left .name {
+  margin-left: 20px;
+}
+.CartItem .left .name a {
+  text-decoration: none;
+  color: black;
+}
+.CartItem .left .name a:hover {
+  text-decoration: underline;
+}
+.CartItem .left .name span,
+.CartItem .left .name .itemPrice {
+  margin-left: 7px;
+  font-size: 14px;
+  color: rgb(100, 100, 100);
+  margin: 0;
+  padding: 0;
+}
+.CartItem .right {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.CartItem .right span {
+  text-decoration: none;
+}
+.CartItem .right button {
+  clear: all;
+  padding: 0;
+  margin: 0;
+  padding: 0px 4px;
+  border: black solid 1.2px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  margin-left: 12px;
+  font-size: 15px;
+}
+.CartItem .right button:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.Store {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-gap: 20px 70px;
+  justify-content: space-around;
+  padding: 70px;
+  padding-top: 170px;
+}
+.Store .StoreItem .imgConatainer {
+  overflow: hidden;
+}
+.Store .StoreItem .imgConatainer img {
+  display: block;
+  width: 100%;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+.Store .StoreItem .imgConatainer img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.Store .StoreItem .product_name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 12px;
+  font-size: 22px;
+}
+.Store .StoreItem .product_name .price {
+  font-size: 20px;
+  color: rgb(110, 110, 110);
+}
+
+.Checkout {
+  font-weight: 50px;
+}
+.Checkout .header {
+  width: 100%;
+  background-color: darkkhaki;
+  text-align: center;
+}
+.Checkout .header img {
+  margin: 20px;
+  padding: 5px;
+  border: red solid 1px;
+}
+
+.FooterComponent {
+  z-index: -1;
+  margin-top: 150px;
+  position: relative;
+}
+.FooterComponent .footer {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(56, 60, 89);
+}
+.FooterComponent .footer .image {
+  position: absolute;
+  bottom: 20px;
+  right: 150px;
+  width: 25%;
+}
+
+@media only screen and (max-width: 985px) {
+  .ProductsCarusel {
+    border-top: none;
+    margin-top: 70px;
+  }
+}
