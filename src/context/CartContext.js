@@ -12,9 +12,8 @@ export default function CartContext({ children }) {
     const [cartOpen, setCartOpen] = useState(false)
     const [newProduct, setNewProduct] = useState(false)
 
-    const CartQuantity = cartItems.reduce((total, currentValue) => currentValue.quantity + total, 0)
 
-    console.log(cartItems)
+    const CartQuantity = cartItems.reduce((total, currentValue) => currentValue.quantity + total, 0)
 
 
 

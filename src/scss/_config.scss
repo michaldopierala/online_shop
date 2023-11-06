@@ -1,19 +1,23 @@
 $primary-color: #845EC2;
 $secondary-color: #B39CD0;
 $third-color: #FBEAFF;
-$fourth-color: #00C9A7; 
+$fourth-color: #00C9A7;
 $text-color: rgb(56, 60, 89);
+$backGroundColr: rgb(251, 231, 204);
 
+$font: "Helvetica Neue W31", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$menuFont: "Helvetica Neue W31", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 
 button {
-    font-family: "Helvetica Neue W31","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color:#00C9A7;
+    font-family: "Helvetica Neue W31", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #00C9A7;
     background-color: rgba(0, 0, 0, 0.672);
     color: aliceblue;
-font-size: 20px;
-font-weight: bold;
-border-radius: 7px;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    border-radius: 7px;
     padding: 10px 30px;
     border: none;
 
@@ -21,3 +25,6 @@ border-radius: 7px;
         cursor: pointer;
     }
 }
+
+
+// ////////////// --  STYLE 2 --    //////////////

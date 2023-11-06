@@ -3,7 +3,8 @@ button {
   background-color: #00C9A7;
   background-color: rgba(0, 0, 0, 0.672);
   color: aliceblue;
-  font-size: 20px;
+  font-size: 16px;
+  letter-spacing: 1.2px;
   font-weight: bold;
   border-radius: 7px;
   padding: 10px 30px;
@@ -65,8 +66,9 @@ body {
 .Navbar .Navigation .btn {
   text-decoration: none;
   padding-right: 20px;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 18px;
+  letter-spacing: 1px;
   color: rgb(56, 60, 89);
 }
 .Navbar .Navigation .shoppingCartIcon {
@@ -368,6 +370,94 @@ body {
   margin: 20px;
   padding: 5px;
   border: red solid 1px;
+}
+.Checkout .columnContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: rgb(250, 250, 250);
+}
+.Checkout .columnContainer .column1 {
+  border-radius: 10px;
+  margin: 6vw;
+  margin-bottom: 150px;
+}
+.Checkout .columnContainer .column1 .head {
+  margin: 20px 0px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.Checkout .columnContainer .column1 .address {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.1px;
+}
+.Checkout .columnContainer .column1 .address form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 0px;
+  grid-column-gap: 15px;
+}
+.Checkout .columnContainer .column1 .address form .item3 {
+  grid-column: 1/3;
+}
+.Checkout .columnContainer .column1 .address form label {
+  color: rgb(20, 20, 20);
+}
+.Checkout .columnContainer .column1 .address form label input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  border: 1px solid rgb(210, 220, 220);
+  border-radius: 5px;
+  font-size: 16px;
+}
+.Checkout .columnContainer .column2 {
+  padding: 20px 50px;
+  border-left: solid 1px rgb(230, 230, 230);
+  background-color: white;
+}
+.Checkout .columnContainer .column2 .head {
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 70px;
+}
+.Checkout .columnContainer .column2 .ProductComponent {
+  display: flex;
+  margin-top: 15px;
+}
+.Checkout .columnContainer .column2 .ProductComponent .product {
+  margin-right: 40px;
+  font-size: 20px;
+}
+.Checkout .columnContainer .column2 .ProductComponent .product .quantity {
+  color: #888888;
+  font-size: 15px;
+}
+.Checkout .columnContainer .column2 .ProductComponent .product .productPrice {
+  color: #888888;
+  font-size: 15px;
+}
+.Checkout .columnContainer .column2 .ProductComponent .productTotal {
+  font-size: 20px;
+}
+.Checkout .columnContainer .column2 .cartEmpty {
+  text-align: center;
+  margin-top: 30vh;
+}
+.Checkout .columnContainer .column2 .total {
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: left;
+  border-top: #888888 solid 0.5px;
+  padding-top: 20px;
+  margin-top: 70px;
 }
 
 .FooterComponent {
