@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Watch",
-        "price": 100000,
+        "price": 100,
         "imgUrl": [
             "/img/img1.jpg",
             "/img/img2.jpg",
@@ -15,7 +15,7 @@
     {
         "id": 2,
         "name": "Phone",
-        "price": 1200,
+        "price": 120,
         "imgUrl": [
             "/img/img2.jpg",
             "/img/img2.jpg",
@@ -40,7 +40,7 @@
     },
     {
         "id": 4,
-        "name": "Icecrm",
+        "name": "Sunflower",
         "price": 40,
         "imgUrl": [
             "/img/img4.jpg",
@@ -68,7 +68,7 @@
     {
         "id": 6,
         "name": "Camera",
-        "price": 1000.99,
+        "price": 100.99,
         "imgUrl": [
             "/img/img1.jpg",
             "/img/img2.jpg",
@@ -82,7 +82,7 @@
     {
         "id": 7,
         "name": "Camera",
-        "price": 1000.99,
+        "price": 10.99,
         "imgUrl": [
             "/img/img1.jpg",
             "/img/img2.jpg",

@@ -32,24 +32,30 @@ const ImageSlider = (props) => {
 
     return (
         <section className="ImageSlider">
-            <button className="left-arrow" onClick={prevSlide}>
-                &#8249;
-            </button>
-            {images.map((image, index) => {
-                return (
-                    <div
-                        className={index === current ? 'slide active' : 'slide'}
-                        key={index}
-                    >
-                        {index === current && (
-                            <img src={image} alt="carousel" className="image" />
-                        )}
-                    </div>
-                );
-            })}
-            <button className="right-arrow" onClick={nextSlide}>
-                &#8250;
-            </button>
+            <div className='mainImage'>
+                <button className="left-arrow" onClick={prevSlide}>
+                <i class="fas fa-chevron-left"></i>
+
+
+                                </button>
+                {images.map((image, index) => {
+                    return (
+                        <div
+                            className={index === current ? 'slide active' : 'slide'}
+                            key={index}
+                        >
+                            {index === current && (
+                                <img src={image} alt="carousel" className="image" />
+                            )}
+                        </div>
+                    );
+                })}
+                <button className="right-arrow" onClick={nextSlide}>
+                <i class="fas fa-chevron-right"></i>
+                </button>
+
+            </div>
+
             <div className="thumbnail-container">
                 {images.map((image, index) => {
                     return (

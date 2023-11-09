@@ -5,14 +5,6 @@ import products from '../data/products.json'
 
 const ImageRow = () => {
 
-  // const images = [
-  //   'img/img1.jpg',
-  //   'img/img2.jpg',
-  //   'img/img3.jpg',
-  //   'img/img4.jpg'
-  //   // Add more image URLs as needed
-  // ];
-
   const productsToShow = [
     1,
     4,
@@ -38,24 +30,21 @@ const ImageRow = () => {
       <div className='description'>Reimagine your seaside style with our premium collection of sarong beach towels.</div>
       <div style={{ display: 'flex', flexDirection: 'row' }}>
         {productsToShow.map((id, index) => (
-          // {let product = products.find(item => id == item.id)}
-          <div className='image'
+          <div className='product'
             key={index}
             style={imageStyle}
           >
-            <Link
-              to={`/product/${id}`}>
-              <img src={products.find(item => id == item.id).imgUrl[0]} alt={index} />
-            </Link>
-            <div>{products.find(item => id == item.id).name}</div>
-            <div>{products.find(item => id == item.id).price}</div>
+            <div className='image'>
+              <Link to={`/product/${id}`}>
+                <img src={products.find(item => id == item.id).imgUrl[0]} alt={index} />
+              </Link>
+            </div>
+            <div className='name'>{products.find(item => id == item.id).name}</div>
+            <div className='price'>$ {products.find(item => id == item.id).price}</div>
           </div>
         ))}
       </div>
     </div>
-
-
-
   );
 };
 

@@ -10,6 +10,7 @@ import CartContext from './context/CartContext';
 import Checkout from './page/Checkout';
 import Main from './page/Main';
 import ScrollToTop from './components/ScrollToTop';
+import Test from './page/Test';
 
 function App() {
   return (
@@ -26,8 +27,10 @@ function App() {
               <Route path="/product/:id" element={<ProductPage />} />
             </Route>
             <Route path="/checkout" element={<Checkout />} />
+            <Route path="/test" element={<Test/>} />
           </Routes>
           <Footer />
+
         </BrowserRouter>
       </CartContext>
     </div>

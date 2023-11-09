@@ -3,7 +3,11 @@ $secondary-color: #B39CD0;
 $third-color: #FBEAFF;
 $fourth-color: #00C9A7;
 $text-color: rgb(56, 60, 89);
+
 $backGroundColr: rgb(251, 231, 204);
+$backGroundColr: white;
+
+$menuColor: white;
 
 $font: "Helvetica Neue W31", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $menuFont: "Helvetica Neue W31", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -12,19 +16,125 @@ $menuFont: "Helvetica Neue W31", "Helvetica Neue", Helvetica, Arial, sans-serif;
 button {
     font-family: "Helvetica Neue W31", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #00C9A7;
-    background-color: rgba(0, 0, 0, 0.672);
+    background-color: rgba(0, 0, 0, 0.8);
     color: aliceblue;
     font-size: 16px;
     letter-spacing: 1.2px;
-    font-weight: bold;
-    border-radius: 7px;
+    // font-weight: bold;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 5px;
     padding: 10px 30px;
     border: none;
 
     &:hover {
         cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.7);
+
     }
 }
 
 
 // ////////////// --  STYLE 2 --    //////////////
+
+
+
+
+
+
+
+
+
+ ////////////// ////////////// ////////////// //////////////
+// ////////////// --  FONTS  --    ////////////// //////////////
+ ////////////// ////////////// ////////////// //////////////
+
+
+  //////////////  FONT TYPE  1 
+// <link rel="preconnect" href="https://fonts.googleapis.com">
+// <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+// <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+// $font: 'Roboto', sans-serif;
+
+
+
+
+  //////////////    FONT TYPE 2 
+//   <link rel="preconnect" href="https://fonts.googleapis.com">
+//   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+//   <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;300&family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+
+  $font: 'Playpen Sans', cursive;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   When designing an online shopping website with a three-color palette, you'll want to carefully select each hue to serve a specific purpose in your user interface. Here's how you might apply primary, secondary, and tertiary colors to various elements of your website:
+
+// Primary Color
+// The primary color is the most visible color on your website. It should reflect your brand and be appealing to your target audience. It will be used for:
+
+// Logo and Header: The primary color can be the background for the website's header or the color of the logo if it sits on a neutral background.
+// Navigation Highlights: Use it to highlight active menu items or hover states in the navigation bar.
+// Calls to Action (CTAs): Buttons like "Add to Cart", "Checkout", and "Buy Now" should stand out. The primary color, being the most attention-grabbing, is ideal for these.
+// Footer: The footer can also feature the primary color, either as a background or for elements within it, to create bookends of color on your page.
+// Secondary Color
+// The secondary color should complement the primary color and be used to differentiate elements without overpowering the primary color. It's often used for:
+
+// Secondary Buttons and CTAs: For actions like "Learn More" or "Continue Shopping".
+// Hover States: For less important links or categories, secondary hover states can be in the secondary color.
+// Banners and Backgrounds: Use it in marketing banners or as a background for sections to break up content without stealing the spotlight.
+// Product Categories: If you have category tags or pills, the secondary color can distinguish them.
+// Tertiary Color
+// The tertiary color should be used sparingly, mainly for accenting or calling out specific information. Here’s where it can be applied:
+
+// Text Highlights: Use for highlighting prices, discounts, or special features of products.
+// Iconography: Small icons like wishlists, cart icons, or social media buttons can be in the tertiary color.
+// Borders and Dividers: If you need to delineate sections subtly, tertiary colors can be useful.
+// Breadcrumb Navigation: This helps to keep tertiary elements functional but not dominant.
+// Application Tips:
+// Consistency: Whatever role each color plays, keep it consistent throughout the website. If the primary color is for CTAs, make sure all CTAs are this color to avoid confusion.
+// Hierarchy: The most important actions (like buying or adding items to a cart) should be the most visible, hence the use of the primary color. Secondary actions should be less prominent, and informational elements even less so.
+// Accessibility: Ensure there is sufficient contrast between your text (or actionable elements) and their backgrounds. Tools like the WebAIM Contrast Checker can help verify that your design is accessible.
+// Balance: While the primary color is the most used, be cautious of overusing it, which can lead to a visually overwhelming experience. Balance its usage with neutral spaces or the secondary color.
+// Always preview your chosen color scheme in various contexts and devices to ensure it works well across different viewing scenarios. Gathering user feedback through A/B testing or user testing sessions can also provide valuable insights into how your color choices affect user behavior and conversion rates.

@@ -23,12 +23,12 @@ export default function ProductPage() {
         <div>
           <ImageSlider img={product.imgUrl} />
         </div>
-        <div className='description'>
+        <div className='column2'>
           <div className='name'>
             {product.name}
           </div>
-          <div>
-            {product.description}
+          <div className='price'>
+          $  {product.price}
           </div>
           <div className='changeQuantity'>
             {productInCart == null
@@ -43,6 +43,11 @@ export default function ProductPage() {
               </div>
             }
           </div>
+          <div className='description'>
+            <div className='title'>Description</div>
+            {product.description}
+          </div>
+
         </div>
       </div>
     </div>
