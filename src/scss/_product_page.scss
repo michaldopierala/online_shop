@@ -6,8 +6,12 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
 
+        .column1 {
+            margin: 0px 120px;
+        }
+
         .column2 {
-            margin: 0px 40px;
+            margin: 0px 120px;
 
             .name {
                 margin-bottom: 10px;

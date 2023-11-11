@@ -428,8 +428,8 @@ body {
 
                 &:hover {
                     cursor: pointer;
-                    -webkit-transform: scale(1.05);
-                    transform: scale(1.05);
+                    -webkit-transform: scale(1.025);
+                    transform: scale(1.025);
                 }
             }
         }
@@ -445,6 +445,77 @@ body {
                 font-size: 20px;
                 color: rgb(110, 110, 110);
             }
+        }
+
+        .changeQuantity {
+            text-align: center;
+    
+    
+            .addProduct {
+                height: 40px;
+    
+                button {
+                    width: 100%;
+                    background-color: rgb(25, 22, 22);
+                    display: none;
+                    font-size: 14px;
+                    letter-spacing: 1.3px;
+                    border-radius: 5px;
+                    padding: 12px;
+                }
+            }
+    
+    
+            .showQuantity {
+                font-size: 16px;
+                border: solid rgb(130, 130, 130) 0.5px;
+                // border: solid black 0.5px;
+                display: inline-flex;
+                margin-bottom: 10px;
+    
+    
+    
+                button {
+                    all: unset;
+                    width: 32px;
+                    height: 32px;
+                    text-align: center;
+                    // background-color: rgb(24,22,22);
+                    // color: white;
+    
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+    
+                span {
+                    all: unset;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50px;
+                    border-left: solid rgb(130, 130, 130) 0.5px;
+                    border-right: solid rgb(130, 130, 130) 0.5px;
+                }
+            }
+    
+            .remove {
+                all: unset;
+                display: block;
+                margin: 0 auto;
+                text-transform: uppercase;
+                font-size: 12px;
+                letter-spacing: 1.5px;
+                text-decoration: underline;
+    
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &:hover .addProduct button {
+            display: block;
         }
 
     }

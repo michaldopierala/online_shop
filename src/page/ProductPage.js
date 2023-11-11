@@ -20,7 +20,7 @@ export default function ProductPage() {
   return (
     <div className='ProductPage'>
       <div className='container'>
-        <div>
+        <div className='column1'>
           <ImageSlider img={product.imgUrl} />
         </div>
         <div className='column2'>
