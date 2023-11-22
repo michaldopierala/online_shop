@@ -20,15 +20,18 @@ button:hover {
   margin: 50px;
   margin-top: 120px;
 }
+.ProductPage .sliderForPhon {
+  display: none;
+}
 .ProductPage .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .ProductPage .container .column1 {
-  margin: 0px 120px;
+  margin: 0px 5%;
 }
 .ProductPage .container .column2 {
-  margin: 0px 120px;
+  margin: 0px 10%;
 }
 .ProductPage .container .column2 .name {
   margin-bottom: 10px;
@@ -115,6 +118,9 @@ body {
   background-color: white;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
+.Navbar .Navigation .mobileMenu {
+  display: none;
+}
 .Navbar .Navigation .btn {
   text-decoration: none;
   padding-right: 20px;
@@ -189,7 +195,8 @@ body {
 }
 
 .ImageRow {
-  margin: 100px;
+  margin: 5%;
+  margin-top: 120px;
   font-family: "Playpen Sans", cursive;
   letter-spacing: 0.1 px;
 }
@@ -203,34 +210,39 @@ body {
 .ImageRow .description {
   font-weight: 500;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 2%;
   font-size: 16px;
 }
-.ImageRow .product {
-  margin: 15px;
+.ImageRow .images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  grid-gap: 3%;
 }
-.ImageRow .product .image {
+.ImageRow .images .product {
+  margin: 1%;
+}
+.ImageRow .images .product .image {
   overflow: hidden;
 }
-.ImageRow .product .image img {
-  display: block;
+.ImageRow .images .product .image img {
   width: 100%;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
-.ImageRow .product .image img:hover {
+.ImageRow .images .product .image img:hover {
   cursor: pointer;
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
-.ImageRow .product .name {
+.ImageRow .images .product .name {
   padding: 0;
   margin: 0;
   margin-top: 5px;
   text-align: center;
   font-size: 18px;
 }
-.ImageRow .product .price {
+.ImageRow .images .product .price {
   padding: 0;
   margin: 0;
   text-align: center;
@@ -646,6 +658,32 @@ body {
   padding: 20px;
 }
 
+.Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Modal .modalContainer {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.Modal .modalContainer .text {
+  text-align: center;
+  margin: 7px;
+}
+.Modal .modalContainer button {
+  margin: 7px;
+  font-size: 14px;
+}
+
 .Test {
   background-color: RGB(64, 224, 208);
   height: 100vw;
@@ -676,5 +714,95 @@ body {
   .ProductsCarusel {
     border-top: none;
     margin-top: 70px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .Home .imgBaner {
+    margin-top: 60px;
+  }
+  .ImageRow {
+    margin-top: 20%;
+  }
+  .ImageRow .images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px 10px;
+    margin-top: 8%;
+  }
+  .ImageRow .images .image {
+    margin: 0px;
+    padding: 0px;
+  }
+  .Navbar .Navigation {
+    padding: 0px;
+  }
+  .Navbar .Navigation .mobileMenu {
+    display: block;
+  }
+  .Navbar .Navigation .btn {
+    display: none;
+  }
+  .Navbar .Navigation .MobileMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: mobile 0.5s 1;
+  }
+  @keyframes mobile {
+    from {
+      left: -400px;
+    }
+    to {
+      left: 0;
+    }
+  }
+  .Navbar .Navigation .MobileMenu .close_menu {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    clear: all;
+    background-color: black;
+  }
+  .Navbar .Navigation .MobileMenu .close_menu:hover {
+    cursor: pointer;
+  }
+  .Navbar .Navigation .MobileMenu .close_menu img {
+    width: 45px;
+  }
+  .Navbar .Navigation .MobileMenu .tab {
+    padding-top: 100px;
+    background-color: black;
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .Navbar .Navigation .MobileMenu .tab .link {
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    padding: 15px 65px;
+  }
+  .Navbar .Navigation .shoppingCartIcon {
+    right: 35px;
+    top: 15px;
+  }
+  .ProductPage .sliderForPhon {
+    display: block;
+  }
+  .ProductPage .container {
+    display: block;
+  }
+  .ProductPage .container .column1 {
+    display: none;
+  }
+  .ProductPage .container .column2 {
+    margin: 0px;
+    margin-top: 20px;
   }
 }

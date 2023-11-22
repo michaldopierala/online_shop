@@ -15,7 +15,9 @@ export default function CartContext({ children }) {
 
     const CartQuantity = cartItems.reduce((total, currentValue) => currentValue.quantity + total, 0)
 
-
+    function closeModal() {
+        setNewProduct(false)
+    }
 
     function closeCart() {
         setNewProduct(false)
@@ -76,8 +78,9 @@ export default function CartContext({ children }) {
                 CartQuantity,
                 cartOpen,
                 setCartOpen,
-                // newProduct,
+                newProduct,
                 // setNewProduct,
+                closeModal,
                 cartItems
             }}>
             {children}

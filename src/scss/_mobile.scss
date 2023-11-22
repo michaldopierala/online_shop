@@ -5,3 +5,128 @@
     }
 
 }
+
+
+
+//   Extra Small Devices (Mobile Phones)
+@media only screen and (max-width: 600px) {
+
+    .Home {
+        .imgBaner {
+            margin-top: 60px;
+        }
+    }
+
+    .ImageRow {
+        margin-top: 20%;
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); // Creates a 2-column grid
+            grid-gap: 25px 10px; // Adjust spacing as needed
+            margin-top: 8%;
+
+            .image {
+                // border: solid 1px red;
+                margin: 0px;
+                padding: 0px;
+            }
+        }
+    }
+
+    .Navbar {
+        .Navigation {
+            padding: 0px;
+
+            .mobileMenu {
+                display: block;
+            }
+
+            .btn {
+                display: none;
+            }
+
+            .MobileMenu {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 2;
+                background-color: rgba(black, 0.5);
+                animation: mobile 0.5s 1;
+
+                @keyframes mobile {
+                    from {
+                        left: -400px;
+                    }
+
+                    to {
+                        left: 0;
+                    }
+                }
+
+                .close_menu {
+                    display: block;
+                    position: absolute;
+                    top: 10px;
+                    left: 4px;
+                    clear: all;
+                    background-color: black;
+
+                    &:hover {
+                        cursor: pointer;
+                        // background-color: white;
+                    }
+
+                    img {
+                        width: 45px;
+                    }
+                }
+
+                .tab {
+                    padding-top: 100px;
+                    background-color: black;
+                    width: 70vw;
+                    height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+
+                    .link {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 23px;
+                        padding: 15px 65px;
+                    }
+                }
+            }
+
+            .shoppingCartIcon {
+                right: 35px;
+                top: 15px;
+            }
+
+        }
+
+    }
+
+    .ProductPage {
+        .sliderForPhon {
+            display: block;
+        }
+
+        .container {
+            display: block;
+
+            .column1 {
+                display: none;
+            }
+
+            .column2 {
+                margin: 0px;
+                margin-top: 20px;
+            }
+        }
+
+    }
+}

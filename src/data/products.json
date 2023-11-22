@@ -4,10 +4,10 @@
         "name": "Watch",
         "price": 100,
         "imgUrl": [
-            "/img/img1.jpg",
-            "/img/img2.jpg",
-            "/img/img3.jpg",
-            "/img/img4.jpg"
+            "/img/4x5img1.jpg",
+            "/img/4x5img2.jpg",
+            "/img/4x5img3.jpg",
+            "/img/4x5img4.jpg"
         ],
         "description": "What is a product description? A product description is the marketing copy that explains what a product is and why it's worth purchasing. The purpose of a product description is to supply customers with important information about the features and key benefits of the product so they're compelled to buy.",
         "quantity":3
@@ -17,10 +17,10 @@
         "name": "Phone",
         "price": 120,
         "imgUrl": [
-            "/img/img2.jpg",
-            "/img/img2.jpg",
-            "/img/img3.jpg",
-            "/img/img4.jpg"
+            "/img/4x5img2.jpg",
+            "/img/4x5img2.jpg",
+            "/img/4x5img3.jpg",
+            "/img/4x5img4.jpg"
         ],
         "description": "What is a product description? A product description is the marketing copy that explains what a product is and why it's worth purchasing. The purpose of a product description is to supply customers with important information about the features and key benefits of the product so they're compelled to buy.",
         "quantity":3
@@ -30,10 +30,10 @@
         "name": "Fregrent",
         "price": 50,
         "imgUrl": [
-            "/img/img3.jpg",
-            "/img/img2.jpg",
-            "/img/img3.jpg",
-            "/img/img4.jpg"
+            "/img/4x5img3.jpg",
+            "/img/4x5img2.jpg",
+            "/img/4x5img3.jpg",
+            "/img/4x5img4.jpg"
         ],
         "description": "What is a product description? A product description is the marketing copy that explains what a product is and why it's worth purchasing. The purpose of a product description is to supply customers with important information about the features and key benefits of the product so they're compelled to buy.",
         "quantity":3
@@ -43,10 +43,10 @@
         "name": "Sunflower",
         "price": 40,
         "imgUrl": [
-            "/img/img4.jpg",
-            "/img/img2.jpg",
-            "/img/img3.jpg",
-            "/img/img4.jpg"
+            "/img/4x5img4.jpg",
+            "/img/4x5img2.jpg",
+            "/img/4x5img3.jpg",
+            "/img/4x5img4.jpg"
         ],
         "description": "What is a product description? A product description is the marketing copy that explains what a product is and why it's worth purchasing. The purpose of a product description is to supply customers with important information about the features and key benefits of the product so they're compelled to buy.",
         "quantity":3
@@ -56,10 +56,10 @@
         "name": "Lemons",
         "price": 100.99,
         "imgUrl": [
-            "/img/img1.jpg",
-            "/img/img2.jpg",
-            "/img/img3.jpg",
-            "/img/img4.jpg"
+            "/img/4x5img1.jpg",
+            "/img/4x5img2.jpg",
+            "/img/4x5img3.jpg",
+            "/img/4x5img4.jpg"
         ],
         "description": "What is a product description? A product description is the marketing copy that explains what a product is and why it's worth purchasing. The purpose of a product description is to supply customers with important information about the features and key benefits of the product so they're compelled to buy.",
         "quantity":3
@@ -70,10 +70,10 @@
         "name": "Camera",
         "price": 100.99,
         "imgUrl": [
-            "/img/img1.jpg",
-            "/img/img2.jpg",
-            "/img/img3.jpg",
-            "/img/img4.jpg"
+            "/img/4x5img1.jpg",
+            "/img/4x5img2.jpg",
+            "/img/4x5img3.jpg",
+            "/img/4x5img4.jpg"
         ],
         "description": "What is a product description? A product description is the marketing copy that explains what a product is and why it's worth purchasing. The purpose of a product description is to supply customers with important information about the features and key benefits of the product so they're compelled to buy.",
         "quantity":3
@@ -84,10 +84,10 @@
         "name": "Camera",
         "price": 10.99,
         "imgUrl": [
-            "/img/img1.jpg",
-            "/img/img2.jpg",
-            "/img/img3.jpg",
-            "/img/img4.jpg"
+            "/img/4x5img1.jpg",
+            "/img/4x5img2.jpg",
+            "/img/4x5img3.jpg",
+            "/img/4x5img4.jpg"
         ],
         "description": "What is a product description? A product description is the marketing copy that explains what a product is and why it's worth purchasing. The purpose of a product description is to supply customers with important information about the features and key benefits of the product so they're compelled to buy.",
         "quantity":3
@@ -97,10 +97,10 @@
         "name": "Camera",
         "price": 0.99,
         "imgUrl": [
-            "/img/img1.jpg",
-            "/img/img2.jpg",
-            "/img/img3.jpg",
-            "/img/img4.jpg"
+            "/img/4x5img1.jpg",
+            "/img/4x5img2.jpg",
+            "/img/4x5img3.jpg",
+            "/img/4x5img4.jpg"
         ],
         "description": "What is a product description? A product description is the marketing copy that explains what a product is and why it's worth purchasing. The purpose of a product description is to supply customers with important information about the features and key benefits of the product so they're compelled to buy.",
         "quantity":3
