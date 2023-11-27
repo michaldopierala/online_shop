@@ -15,22 +15,23 @@ $menuFont: "Helvetica Neue W31", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 button {
     font-family: "Helvetica Neue W31", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #00C9A7;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: aliceblue;
-    font-size: 16px;
-    letter-spacing: 1.2px;
-    // font-weight: bold;
-    font-weight: 500;
+
     text-transform: uppercase;
-    border-radius: 5px;
     padding: 10px 30px;
-    border: none;
+
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 12px;
+    font-weight: 500;
+    border: solid rgb(25, 22, 22) 1px;
+    color: rgb(25, 22, 22);
+    background-color: transparent;
 
     &:hover {
         cursor: pointer;
-        background-color: rgba(0, 0, 0, 0.7);
-
+        border: solid rgb(25, 22, 22) 1px;
+        background-color: rgb(25, 22, 22);
+        color:white;
     }
 }
 

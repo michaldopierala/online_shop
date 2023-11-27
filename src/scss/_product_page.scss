@@ -95,3 +95,40 @@
         }
     }
 }
+
+
+
+//   Extra Small Devices (Mobile Phones)
+@media only screen and (max-width: 600px) {
+
+    .ProductPage {
+        .sliderForPhon {
+            display: block;
+        }
+
+        .container {
+            display: block;
+
+            .column1 {
+                display: none;
+            }
+
+            .column2 {
+                margin: 0px;
+                margin-top: 20px;
+
+                .changeQuantity{
+                    .addToCartBtn{
+                        margin-top: 20px;
+                        width: 100%;
+                        border: solid rgb(25, 22, 22) 1px;
+                        background-color: rgb(25, 22, 22);
+                        color:white;
+                        padding: 15px;
+                    }
+                }
+            }
+        }
+
+    }
+}

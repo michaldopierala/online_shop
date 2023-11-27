@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom'
 import ImageSlider from '../components/ImageSlider'
 import products from '../data/products.json'
 import { ShoppingCartContext } from '../context/CartContext';
+import TouchSlider from '../components/TouchSlider';
+
 
 
 
@@ -19,6 +21,7 @@ export default function ProductPage() {
 
   return (
     <div className='ProductPage'>
+      <div className='sliderForPhon'> <TouchSlider images={product.imgUrl} /> </div>
       <div className='container'>
         <div className='column1'>
           <ImageSlider img={product.imgUrl} />
@@ -28,7 +31,7 @@ export default function ProductPage() {
             {product.name}
           </div>
           <div className='price'>
-          $  {product.price}
+            $  {product.price}
           </div>
           <div className='changeQuantity'>
             {productInCart == null

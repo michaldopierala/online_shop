@@ -1,19 +1,20 @@
 button {
   font-family: "Helvetica Neue W31", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #00C9A7;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: aliceblue;
-  font-size: 16px;
-  letter-spacing: 1.2px;
-  font-weight: 500;
   text-transform: uppercase;
-  border-radius: 5px;
   padding: 10px 30px;
-  border: none;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 12px;
+  font-weight: 500;
+  border: solid rgb(25, 22, 22) 1px;
+  color: rgb(25, 22, 22);
+  background-color: transparent;
 }
 button:hover {
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.7);
+  border: solid rgb(25, 22, 22) 1px;
+  background-color: rgb(25, 22, 22);
+  color: white;
 }
 
 .ProductPage {
@@ -96,6 +97,29 @@ button:hover {
   text-decoration: underline;
 }
 
+@media only screen and (max-width: 600px) {
+  .ProductPage .sliderForPhon {
+    display: block;
+  }
+  .ProductPage .container {
+    display: block;
+  }
+  .ProductPage .container .column1 {
+    display: none;
+  }
+  .ProductPage .container .column2 {
+    margin: 0px;
+    margin-top: 20px;
+  }
+  .ProductPage .container .column2 .changeQuantity .addToCartBtn {
+    margin-top: 20px;
+    width: 100%;
+    border: solid rgb(25, 22, 22) 1px;
+    background-color: rgb(25, 22, 22);
+    color: white;
+    padding: 15px;
+  }
+}
 body {
   background-color: white;
   padding: 0;
@@ -125,9 +149,10 @@ body {
   text-decoration: none;
   padding-right: 20px;
   font-weight: 600;
-  font-size: 18px;
-  letter-spacing: 1px;
+  font-size: 15px;
+  letter-spacing: 0.7px;
   color: rgb(56, 60, 89);
+  text-transform: uppercase;
 }
 .Navbar .Navigation .btn:hover {
   text-decoration: underline;
@@ -224,6 +249,7 @@ body {
 }
 .ImageRow .images .product .image {
   overflow: hidden;
+  display: block;
 }
 .ImageRow .images .product .image img {
   width: 100%;
@@ -232,22 +258,22 @@ body {
 }
 .ImageRow .images .product .image img:hover {
   cursor: pointer;
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
 }
 .ImageRow .images .product .name {
   padding: 0;
   margin: 0;
   margin-top: 5px;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
 }
 .ImageRow .images .product .price {
   padding: 0;
   margin: 0;
   text-align: center;
-  font-size: 16px;
-  color: rgb(90, 90, 90);
+  font-size: 15px;
+  color: rgb(120, 120, 120);
 }
 
 .ImageSlider {
@@ -479,12 +505,7 @@ body {
 }
 .Store .StoreItem .changeQuantity .addProduct button {
   width: 100%;
-  background-color: rgb(25, 22, 22);
   display: none;
-  font-size: 14px;
-  letter-spacing: 1.3px;
-  border-radius: 5px;
-  padding: 12px;
 }
 .Store .StoreItem .changeQuantity .showQuantity {
   font-size: 16px;
@@ -629,20 +650,39 @@ body {
 }
 
 .FooterComponent {
+  width: 100%;
+  height: 300px;
   z-index: -1;
   margin-top: 150px;
   position: relative;
-}
-.FooterComponent .footer {
-  width: 100%;
-  height: 300px;
   background-color: rgb(56, 60, 89);
 }
-.FooterComponent .footer .image {
-  position: absolute;
-  bottom: 20px;
-  right: 150px;
-  width: 25%;
+.FooterComponent .grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 5%;
+  justify-content: space-around;
+}
+.FooterComponent .grid .logo {
+  margin-top: 5%;
+  text-align: center;
+}
+.FooterComponent .grid .logo .image {
+  top: 10%;
+  left: 5%;
+  width: 40%;
+}
+.FooterComponent .grid .logo .name {
+  color: #ca6f49;
+  font-size: 45px;
+  font-family: "Caveat", cursive;
+  margin-top: 2%;
+}
+.FooterComponent .grid .info {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  margin-top: 5%;
 }
 
 .Test {
@@ -726,12 +766,7 @@ body {
   .ImageRow .images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 25px 10px;
-    margin-top: 8%;
-  }
-  .ImageRow .images .image {
-    margin: 0px;
-    padding: 0px;
+    margin-top: 6%;
   }
   .Navbar .Navigation {
     padding: 0px;
@@ -792,6 +827,14 @@ body {
     right: 35px;
     top: 15px;
   }
+  .Store {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
+    justify-content: space-around;
+    padding: 5px;
+    padding-top: 170px;
+  }
   .ProductPage .sliderForPhon {
     display: block;
   }
@@ -805,4 +848,7 @@ body {
     margin: 0px;
     margin-top: 20px;
   }
+}
+.Testing img {
+  width: 100%;
 }
