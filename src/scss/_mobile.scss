@@ -9,7 +9,7 @@
 
 
 //   Extra Small Devices (Mobile Phones)
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
 
     .Home {
         .imgBaner {
@@ -129,5 +129,35 @@
             }
         }
 
+    }
+
+    .FooterComponent {
+        .block {
+            .logo {
+                .image {
+                    width: 80px;
+                    margin-right: 5px;
+                }
+                .name {
+                    width: 140px;
+                }
+            }
+            .info{
+                flex-direction: column;
+                margin-top: 10%;
+                padding-top: 7%;
+                div{
+                    margin: 5px;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+            }
+        }
+        .copyrights {
+            color: #bab3b3;
+            padding: 20px;
+            font-weight: bold;
+            font-size:12px ;
+        }
     }
 }

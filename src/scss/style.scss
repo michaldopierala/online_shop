@@ -678,81 +678,105 @@ body {
     }
 }
 
-.FooterComponent {
-    width: 100%;
-    height: 300px;
-    z-index: -1;
+
+
+.About{
     margin-top: 150px;
-    position: relative;
-    background-color: rgb(56, 60, 89);
-
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-gap: 5%;
-        justify-content: space-around;
-
-        .logo {
-            margin-top: 5%;
-            text-align: center;
-
-            .image {
-                // position: absolute;
-                top: 10%;
-                left: 5%;
-                width: 40%;
-            }
-            .name{
-                color: #ca6f49;
-                font-size: 45px;
-                font-family: 'Caveat', cursive;
-                margin-top: 2%;
-            }
-        }
-
-        .info{
-            text-align: center;
-            color: white;
-            font-size: 25px;
-            margin-top: 5%;
-        }
-    }
-
-    // .footer {
-    //     width: 100%;
-    //     height: 300px;
-    //     background-color: rgb(56, 60, 89);
-
-    //     .image {
-    //         position: absolute;
-    //         top: 10%;
-    //         left: 5%;
-    //         width: 10%;
-    //     }
-
-    //     .logo{
-    //         position: absolute;
-    //         top: 60%;
-    //         left: 5%;
-    //         font-size: 200%;
-    //     }
-    // }
 }
 
-// PALET 1
-.Test {
-    background-color: RGB(160, 228, 209);
-    height: 100vw;
+.FooterComponent {
+    background-color: rgb(34, 34, 34);
+    width: 100%;
+    padding-top: 50px;
 
     .block {
-        width: 100%;
-        background-color: RGB(222, 207, 164);
-        color: RGB(240, 128, 128);
-        font-size: 40px;
+        
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            .image {
+                width: 120px;
+                margin-right: 10px;
+            }
+            .name {
+                width: 220px;
+            }
+
+        }
+        .info{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            flex-direction: row;
+            color: rgb(201, 200, 200);
+            border-top: rgb(229, 229, 229) 1px solid;
+            margin: 5% 10%;
+            padding: 3%;
+            div{
+                text-transform: capitalize;
+                margin: 15px;
+                font-size: 18px;
+            }
+        }
+    }
+    .copyrights {
         text-align: center;
+        color: #837e7e;
         padding: 20px;
     }
 }
+
+
+.ProductPersentation {
+    background-color: rgb(245, 245, 245);
+.title{
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+}
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .image {
+            padding: 60px;
+
+            img {
+                border-radius: 20px;
+            }
+        }
+
+        .description {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 10%;
+            font-size: 25px;
+        }
+    }
+
+
+
+
+}
+
+// PALET 1
+// .Test {
+//     background-color: RGB(160, 228, 209);
+//     height: 100vw;
+
+//     .block {
+//         width: 100%;
+//         background-color: RGB(222, 207, 164);
+//         color: RGB(240, 128, 128);
+//         font-size: 40px;
+//         text-align: center;
+//         padding: 20px;
+//     }
+// }
 
 
 .Modal {
@@ -804,30 +828,20 @@ body {
 
 
 // PALET 3
-.Test {
-    background-color: RGB(255, 105, 180);
-    height: 100vw;
+// .Test {
+//     background-color: RGB(255, 105, 180);
+//     height: 100vw;
 
-    .block {
-        width: 100%;
-        background-color: RGB(150, 120, 182);
-        color: RGB(8, 24, 57);
-        font-size: 40px;
-        text-align: center;
-        padding: 20px;
-    }
-}
+//     .block {
+//         width: 100%;
+//         background-color: RGB(150, 120, 182);
+//         color: RGB(8, 24, 57);
+//         font-size: 40px;
+//         text-align: center;
+//         padding: 20px;
+//     }
+// }
 
 @import 'mobile';
 
 
-.Testing {
-
-    // border: solid 1px red;
-    // margin-top: 100px;
-    // padding: 200px;
-    img {
-        width: 100%;
-    }
-
-}

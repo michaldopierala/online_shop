@@ -649,53 +649,74 @@ body {
   margin-top: 70px;
 }
 
-.FooterComponent {
-  width: 100%;
-  height: 300px;
-  z-index: -1;
+.About {
   margin-top: 150px;
-  position: relative;
-  background-color: rgb(56, 60, 89);
-}
-.FooterComponent .grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 5%;
-  justify-content: space-around;
-}
-.FooterComponent .grid .logo {
-  margin-top: 5%;
-  text-align: center;
-}
-.FooterComponent .grid .logo .image {
-  top: 10%;
-  left: 5%;
-  width: 40%;
-}
-.FooterComponent .grid .logo .name {
-  color: #ca6f49;
-  font-size: 45px;
-  font-family: "Caveat", cursive;
-  margin-top: 2%;
-}
-.FooterComponent .grid .info {
-  text-align: center;
-  color: white;
-  font-size: 25px;
-  margin-top: 5%;
 }
 
-.Test {
-  background-color: RGB(160, 228, 209);
-  height: 100vw;
-}
-.Test .block {
+.FooterComponent {
+  background-color: rgb(34, 34, 34);
   width: 100%;
-  background-color: RGB(222, 207, 164);
-  color: RGB(240, 128, 128);
-  font-size: 40px;
+  padding-top: 50px;
+}
+.FooterComponent .block .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.FooterComponent .block .logo .image {
+  width: 120px;
+  margin-right: 10px;
+}
+.FooterComponent .block .logo .name {
+  width: 220px;
+}
+.FooterComponent .block .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: rgb(201, 200, 200);
+  border-top: rgb(229, 229, 229) 1px solid;
+  margin: 5% 10%;
+  padding: 3%;
+}
+.FooterComponent .block .info div {
+  text-transform: capitalize;
+  margin: 15px;
+  font-size: 18px;
+}
+.FooterComponent .copyrights {
   text-align: center;
+  color: #837e7e;
   padding: 20px;
+}
+
+.ProductPersentation {
+  background-color: rgb(245, 245, 245);
+}
+.ProductPersentation .title {
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+}
+.ProductPersentation .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.ProductPersentation .container .image {
+  padding: 60px;
+}
+.ProductPersentation .container .image img {
+  border-radius: 20px;
+}
+.ProductPersentation .container .description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10%;
+  font-size: 25px;
 }
 
 .Modal {
@@ -737,26 +758,13 @@ body {
   padding: 20px;
 }
 
-.Test {
-  background-color: RGB(255, 105, 180);
-  height: 100vw;
-}
-.Test .block {
-  width: 100%;
-  background-color: RGB(150, 120, 182);
-  color: RGB(8, 24, 57);
-  font-size: 40px;
-  text-align: center;
-  padding: 20px;
-}
-
 @media only screen and (max-width: 985px) {
   .ProductsCarusel {
     border-top: none;
     margin-top: 70px;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   .Home .imgBaner {
     margin-top: 60px;
   }
@@ -848,7 +856,27 @@ body {
     margin: 0px;
     margin-top: 20px;
   }
-}
-.Testing img {
-  width: 100%;
+  .FooterComponent .block .logo .image {
+    width: 80px;
+    margin-right: 5px;
+  }
+  .FooterComponent .block .logo .name {
+    width: 140px;
+  }
+  .FooterComponent .block .info {
+    flex-direction: column;
+    margin-top: 10%;
+    padding-top: 7%;
+  }
+  .FooterComponent .block .info div {
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .FooterComponent .copyrights {
+    color: #bab3b3;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 12px;
+  }
 }

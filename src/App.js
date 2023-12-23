@@ -3,7 +3,7 @@ import { BrowserRouter, Link, Router, Routes, Route } from "react-router-dom";
 import Home from './components/Home';
 import Store from './page/Store';
 import Navbar from './components/Navbar';
-import About from './components/About';
+import About from './page/About';
 import Footer from './components/Footer';
 import ProductPage from './page/ProductPage';
 import CartContext from './context/CartContext';
@@ -15,7 +15,6 @@ import Test from './page/Test';
 function App() {
   return (
     <div className="App">
-      {/* <Navbar /> */}
       <CartContext>
         <BrowserRouter>
           <ScrollToTop/>
