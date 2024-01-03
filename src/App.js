@@ -11,6 +11,7 @@ import Checkout from './page/Checkout';
 import Main from './page/Main';
 import ScrollToTop from './components/ScrollToTop';
 import Test from './page/Test';
+import Contact from './page/Contact';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/store" element={<Store />} />
               <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="/product/:id" element={<ProductPage />} />
             </Route>
             <Route path="/checkout" element={<Checkout />} />

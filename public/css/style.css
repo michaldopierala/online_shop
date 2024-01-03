@@ -223,7 +223,7 @@ body {
   margin: 5%;
   margin-top: 120px;
   font-family: "Playpen Sans", cursive;
-  letter-spacing: 0.1 px;
+  letter-spacing: 0.1px;
 }
 .ImageRow .title {
   text-align: center;
@@ -656,67 +656,77 @@ body {
 .FooterComponent {
   background-color: rgb(34, 34, 34);
   width: 100%;
-  padding-top: 50px;
+  padding: 1px;
+  border: transparent solid 0px;
+  margin-top: 3%;
 }
-.FooterComponent .block .logo {
+.FooterComponent .logo {
+  margin: 6%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
-.FooterComponent .block .logo .image {
+.FooterComponent .logo .image {
   width: 120px;
   margin-right: 10px;
 }
-.FooterComponent .block .logo .name {
+.FooterComponent .logo .name {
   width: 220px;
 }
-.FooterComponent .block .info {
+.FooterComponent .info {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   color: rgb(201, 200, 200);
-  border-top: rgb(229, 229, 229) 1px solid;
-  margin: 5% 10%;
+  border-top: rgb(179, 178, 178) 1px solid;
+  margin: 0% 8%;
   padding: 3%;
 }
-.FooterComponent .block .info div {
+.FooterComponent .info div {
   text-transform: capitalize;
   margin: 15px;
   font-size: 18px;
 }
 .FooterComponent .copyrights {
+  margin-top: 2%;
   text-align: center;
   color: #837e7e;
-  padding: 20px;
+  margin-bottom: 1%;
 }
 
 .ProductPersentation {
   background-color: rgb(245, 245, 245);
-}
-.ProductPersentation .title {
-  text-align: center;
-  font-size: 30px;
-  padding: 10px;
+  padding: 7%;
+  font-family: "Playpen Sans", cursive;
+  letter-spacing: 0.1 px;
+  margin-bottom: 100px;
 }
 .ProductPersentation .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-.ProductPersentation .container .image {
-  padding: 60px;
-}
-.ProductPersentation .container .image img {
-  border-radius: 20px;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: #ffffff;
 }
 .ProductPersentation .container .description {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-weight: 500;
+  font-size: 20px;
   padding: 10%;
-  font-size: 25px;
+}
+.ProductPersentation .container .description .title {
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .Modal {
@@ -756,6 +766,117 @@ body {
   font-size: 40px;
   text-align: center;
   padding: 20px;
+}
+
+.Contact {
+  font-family: "Playpen Sans", cursive;
+  font-size: 20px;
+}
+.Contact .baner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  margin-top: 60px;
+}
+.Contact .baner .column {
+  width: 100%;
+  height: 400px;
+}
+.Contact .baner .column .text {
+  position: relative;
+  font-weight: bold;
+  padding: 5% 15%;
+  text-transform: uppercase;
+}
+.Contact .baner .column .text .head {
+  margin-bottom: 3%;
+  font-size: 35px;
+}
+.Contact .baner .column .text .star1 {
+  position: absolute;
+  width: 50px;
+  top: 20px;
+  left: 20px;
+  object-fit: cover;
+  object-position: center;
+}
+.Contact .baner .column .text .star2 {
+  position: absolute;
+  width: 50px;
+  right: 70px;
+  bottom: 50px;
+  object-fit: cover;
+  object-position: center;
+}
+.Contact .baner .column img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.Contact .container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 100px;
+}
+.Contact .container .contact-form-container {
+  padding: 3%;
+  width: 40%;
+}
+.Contact .container .contact-form-container .contact-form .form-group {
+  margin-bottom: 15px;
+}
+.Contact .container .contact-form-container .contact-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+.Contact .container .contact-form-container .contact-form .form-control {
+  width: 100%;
+  padding: 8px;
+}
+.Contact .container .contact-form-container .contact-form #message {
+  height: 200px;
+}
+.Contact .container .contact-form-container .contact-form .button {
+  text-align: center;
+}
+.Contact .container .contact-form-container .contact-form .button .submit-button {
+  background-color: #378078;
+  color: white;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.Contact .container .contact-form-container .contact-form .submit-button:hover {
+  background-color: #0056b3;
+}
+.Contact .container .contact-form-container input,
+.Contact .container .contact-form-container textarea {
+  border: black 1px solid;
+  border-radius: 10px;
+}
+.Contact .container .dane-kontaktowe {
+  padding: 3%;
+  width: 30%;
+}
+.Contact .container .dane-kontaktowe .block {
+  margin-bottom: 20%;
+}
+.Contact .container .dane-kontaktowe .block .email {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.Contact .container .dane-kontaktowe .block .email img {
+  width: 40px;
+  margin-right: 5%;
+}
+.Contact .container .title {
+  font-size: 25px;
+  margin-bottom: 30px;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 985px) {
@@ -856,19 +977,19 @@ body {
     margin: 0px;
     margin-top: 20px;
   }
-  .FooterComponent .block .logo .image {
+  .FooterComponent .logo .image {
     width: 80px;
     margin-right: 5px;
   }
-  .FooterComponent .block .logo .name {
+  .FooterComponent .logo .name {
     width: 140px;
   }
-  .FooterComponent .block .info {
+  .FooterComponent .info {
     flex-direction: column;
     margin-top: 10%;
     padding-top: 7%;
   }
-  .FooterComponent .block .info div {
+  .FooterComponent .info div {
     margin: 5px;
     font-size: 16px;
     font-weight: bold;
@@ -878,5 +999,28 @@ body {
     padding: 20px;
     font-weight: bold;
     font-size: 12px;
+  }
+  .Contact .baner {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .Contact .baner .column:first-child {
+    order: 2;
+  }
+  .Contact .baner .column:last-child {
+    order: 1;
+  }
+  .Contact .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Contact .container .contact-form-container {
+    width: 80%;
+    margin-bottom: 15%;
+  }
+  .Contact .container .dane-kontaktowe {
+    width: 80%;
   }
 }

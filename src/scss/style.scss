@@ -1,7 +1,6 @@
 @import 'config';
 @import '_product_page';
 
-
 body {
     background-color: $backGroundColr;
     padding: 0;
@@ -126,7 +125,7 @@ body {
     margin: 5%;
     margin-top: 120px;
     font-family: $font;
-    letter-spacing: 0.1 px;
+    letter-spacing: 0.1px;
 
     .title {
         text-align: center;
@@ -189,13 +188,9 @@ body {
                 text-align: center;
                 font-size: 15px;
                 color: rgb(120, 120, 120);
-
             }
         }
-
     }
-
-
 }
 
 .ImageSlider {
@@ -678,89 +673,101 @@ body {
     }
 }
 
-
-
-.About{
+.About {
     margin-top: 150px;
 }
 
 .FooterComponent {
     background-color: rgb(34, 34, 34);
     width: 100%;
-    padding-top: 50px;
+    padding: 1px;
+    // padding-top: 50px;
+    // .block {
+    border: transparent solid 0px;
+    // padding: 1px;
+    margin-top: 3%;
 
-    .block {
-        
-        .logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            .image {
-                width: 120px;
-                margin-right: 10px;
-            }
-            .name {
-                width: 220px;
-            }
+    .logo {
+        margin: 6%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
 
+        .image {
+            width: 120px;
+            margin-right: 10px;
         }
-        .info{
-            display: flex;
-            justify-content: center;
-            align-items: center; 
-            flex-direction: row;
-            color: rgb(201, 200, 200);
-            border-top: rgb(229, 229, 229) 1px solid;
-            margin: 5% 10%;
-            padding: 3%;
-            div{
-                text-transform: capitalize;
-                margin: 15px;
-                font-size: 18px;
-            }
+
+        .name {
+            width: 220px;
         }
     }
+
+    .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        color: rgb(201, 200, 200);
+        border-top: rgb(179, 178, 178) 1px solid;
+        margin: 0% 8%;
+        padding: 3%;
+
+        div {
+            text-transform: capitalize;
+            margin: 15px;
+            font-size: 18px;
+        }
+    }
+
+    // }
+
     .copyrights {
+        margin-top: 2%;
         text-align: center;
         color: #837e7e;
-        padding: 20px;
+        margin-bottom: 1%;
+        // padding: 20px;
     }
 }
-
 
 .ProductPersentation {
     background-color: rgb(245, 245, 245);
-.title{
-    text-align: center;
-    font-size: 30px;
-    padding: 10px;
-}
+    padding: 7%;
+    font-family: $font;
+    letter-spacing: 0.1 px;
+    margin-bottom: 100px;
+
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-
-        .image {
-            padding: 60px;
-
-            img {
-                border-radius: 20px;
-            }
-        }
+        // margin: 100px 7%;
+        border-radius: 50px;
+        overflow: hidden;
+        background-color: #ffffff;
 
         .description {
+            .title {
+                text-align: center;
+                font-size: 30px;
+                padding: 10px;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                font-weight: bold;
+
+            }
+
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
+            font-weight: 500;
+            font-size: 20px;
             padding: 10%;
-            font-size: 25px;
         }
     }
-
-
-
-
 }
 
 // PALET 1
@@ -841,7 +848,153 @@ body {
 //         padding: 20px;
 //     }
 // }
+.Contact {
+    font-family: $font;
+    font-size: 20px;
+
+    .baner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        overflow: hidden;
+        margin-top: 60px;
+
+        .column {
+            width: 100%;
+            height: 400px;
+
+            .text {
+                position: relative;
+                font-weight: bold;
+                padding: 5% 15%;
+                text-transform: uppercase;
+
+
+                .head {
+                    margin-bottom: 3%;
+                    font-size: 35px;
+                }
+
+                .star1 {
+                    position: absolute;
+                    width: 50px;
+                    top: 20px;
+                    left: 20px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+
+                .star2 {
+                    position: absolute;
+                    width: 50px;
+                    right: 70px;
+                    bottom: 50px;
+                    object-fit: cover;
+                    object-position: center;
+
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+
+            }
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        margin-top: 100px;
+
+
+
+
+
+        .contact-form-container {
+            padding: 3%;
+            width: 40%;
+
+            .contact-form {
+                .form-group {
+                    margin-bottom: 15px;
+                }
+
+                .form-group label {
+                    display: block;
+                    margin-bottom: 5px;
+                }
+
+                .form-control {
+                    width: 100%;
+                    padding: 8px;
+                }
+
+                #message {
+                    height: 200px;
+                }
+
+                .button {
+                    text-align: center;
+
+                    .submit-button {
+                        background-color: #378078;
+                        color: white;
+                        padding: 15px 40px;
+                        border: none;
+                        border-radius: 10px;
+                        cursor: pointer;
+                    }
+                }
+
+
+                .submit-button:hover {
+                    background-color: #0056b3;
+                }
+            }
+
+            input,
+            textarea {
+                border: black 1px solid;
+                border-radius: 10px;
+            }
+        }
+
+        .dane-kontaktowe {
+            padding: 3%;
+            width: 30%;
+
+            .block {
+                margin-bottom: 20%;
+
+                .email {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+
+                    img {
+                        width: 40px;
+                        margin-right: 5%;
+                    }
+                }
+            }
+
+
+        }
+
+        .title {
+            font-size: 25px;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+    }
+}
+
+
+
+
 
 @import 'mobile';
-
-

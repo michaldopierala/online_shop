@@ -19,6 +19,8 @@ export default function Navbar() {
         <Link className="btn" to="/">Home </Link>
         <Link className="btn" to="store">Store</Link>
         <Link className="btn" to="about">About</Link>
+        <Link className="btn" to="contact">Contact</Link>
+
         <div className='logo'>SunsetBay</div>
         <button className='shoppingCartIcon' onClick={closeCart}>
           <div className='cartCount'> <span>{CartQuantity}</span>  </div>
