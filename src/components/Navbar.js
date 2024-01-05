@@ -32,7 +32,7 @@ export default function Navbar() {
 
       </nav>
       <div className={`sideTab ${cartOpen ? '' : 'sideTabHidden'}`}>
-        <ShoppingCartTab />
+          <ShoppingCartTab />
       </div>
       <div>
         {newProduct && <Modal />}

@@ -17,7 +17,8 @@ export default function MobileMenu() {
             <div className='tab'>
                 <Link className="link" onClick={openMenu} to="/">Home </Link>
                 <Link className="link" onClick={openMenu} to="store">Store</Link>
-                <Link className="link" onClick={openMenu} to="about">About</Link>
+                <Link className="link" onClick={openMenu} to="about">Aboute</Link>
+                <Link className="link" onClick={openMenu} to="contact">Contact</Link>
             </div>
         </div>
     )

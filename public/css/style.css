@@ -199,16 +199,14 @@ body {
   object-fit: cover;
 }
 .Navbar .sideTab {
-  border-left: 1px solid rgb(229, 229, 229);
-  width: 400px;
   position: fixed;
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: #ffffff;
   overflow-y: auto;
-  transition: all 0.3s ease-in-out;
-  z-index: 4;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
 }
 .Navbar .sideTabHidden {
   width: 0;
@@ -355,7 +353,15 @@ body {
 }
 
 .ShoppingCartTab {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 400px;
+  border-left: 1px solid rgb(229, 229, 229);
   padding: 20px;
+  background-color: white;
+  z-index: 2;
 }
 .ShoppingCartTab .close {
   all: unset;
