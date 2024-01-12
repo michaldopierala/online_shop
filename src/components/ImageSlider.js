@@ -32,30 +32,6 @@ const ImageSlider = (props) => {
 
     return (
         <section className="ImageSlider">
-            <div className='mainImage'>
-                <button className="left-arrow" onClick={prevSlide}>
-                <i class="fas fa-chevron-left"></i>
-
-
-                                </button>
-                {images.map((image, index) => {
-                    return (
-                        <div
-                            className={index === current ? 'slide active' : 'slide'}
-                            key={index}
-                        >
-                            {index === current && (
-                                <img src={image} alt="carousel" className="image" />
-                            )}
-                        </div>
-                    );
-                })}
-                <button className="right-arrow" onClick={nextSlide}>
-                <i class="fas fa-chevron-right"></i>
-                </button>
-
-            </div>
-
             <div className="thumbnail-container">
                 {images.map((image, index) => {
                     return (
@@ -69,6 +45,29 @@ const ImageSlider = (props) => {
                     );
                 })}
             </div>
+            <div className='mainImage'>
+                <button className="left-arrow" onClick={prevSlide}>
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                {images.map((image, index) => {
+                    return (
+                        <div
+                            className={index === current ? 'slide active' : 'slide'}
+                            key={index}
+                        >
+                            {index === current && (
+                                <img src={image} alt="carousel" className="image" />
+                            )}
+                        </div>
+                    );
+                })}
+                <button className="right-arrow" onClick={nextSlide}>
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+            </div>
+
+
         </section>
     );
 };

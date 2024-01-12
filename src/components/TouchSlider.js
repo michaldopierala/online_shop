@@ -17,10 +17,9 @@ export default function TouchSlider({ images }) {
         arrows: false // Set to true if you want arrows
     };
 
-
     return (
-        // <div className='TouchSlider'>
-        <div className='Testing'>
+        <div className='TouchSlider'>
+        {/* // <div className='Testing'> */}
             <Slider className='Slider' {...settings}>
                 {images.map((image, index) => {
                     return (

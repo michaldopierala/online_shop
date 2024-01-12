@@ -13,11 +13,8 @@ export default function ProductPage() {
   const { cartItems, increaseCartQuantity, decreaseCartQuantity, remove } = useContext(ShoppingCartContext)
   const { id } = useParams()
   const productInCart = cartItems.find(item => id == item.id)
-  console.log('productInCart')
-  console.log(productInCart)
-
-
   const product = products.find(item => id == item.id)
+
 
   return (
     <div className='ProductPage'>
@@ -47,8 +44,10 @@ export default function ProductPage() {
             }
           </div>
           <div className='description'>
-            <div className='title'>Description</div>
-            {product.description}
+            {/* <div className='title'>Description:</div> */}
+            {/* {product.description} */}
+            <div dangerouslySetInnerHTML={{ __html: product.description }} />
+            {/* {description} */}
           </div>
 
         </div>

@@ -1,20 +1,130 @@
 .ProductPage {
-    margin: 50px;
     margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font;
 
-    .sliderForPhon{
+
+    .sliderForPhon {
         display: none;
     }
+
     .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        max-width: 1300px;
+        // margin: 0px 50px;
+
 
         .column1 {
-            margin: 0px 5%;
+            .ImageSlider {
+                display: flex;
+                // position: relative;
+                overflow: hidden;
+
+                .mainImage {
+                    position: relative;
+                    margin: 0px 50px;
+
+                    button {
+                        background-color: rgba(70, 70, 70, 0.2);
+                        padding: 0px;
+                        width: 40px;
+                        /* Width of the button */
+                        height: 40px;
+                        /* Height of the button, should be the same as width */
+                        border-radius: 50%;
+                        /* This makes it round */
+                        color: rgba(250, 250, 250, 0.9);
+                        /* Optional: Text color */
+                        text-align: center;
+                        /* Aligns the text to the center */
+                        line-height: 40px;
+                        display: inline-block;
+                        font-size: 20px;
+                    }
+
+                    .left-arrow,
+                    .right-arrow {
+                        position: absolute;
+                        top: 50%;
+                        // font-size: 2rem;
+                        cursor: pointer;
+                        border: none;
+                    }
+
+                    .left-arrow {
+                        left: 10px;
+                    }
+
+                    .right-arrow {
+                        right: 10px;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                }
+
+                .slide {
+                    display: none;
+                }
+
+                .slide.active {
+                    display: block;
+                }
+
+                .dot-container {
+                    text-align: center;
+                    margin-top: 10px;
+                }
+
+                .dot {
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    margin: 5px;
+                    background-color: lightgray;
+                    cursor: pointer;
+                }
+
+                .dot.active {
+                    background-color: darkgray;
+                }
+
+                .thumbnail-container {
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content: center;
+                    // margin-top: 20px;
+
+                    .thumbnail {
+                        width: 90px;
+                        // height: 40px;
+                        margin: 5px;
+                        margin-bottom: 30px;
+                        cursor: pointer;
+                        opacity: 0.6;
+                    }
+
+                    .thumbnail.active {
+                        box-shadow: 0px 0px 6px 2px rgba(80, 80, 80, 0.5);
+                        opacity: 1;
+                    }
+                }
+            }
         }
 
         .column2 {
-            margin: 0px 10%;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            flex-basis: 400px;
+            /* constant width for first and third columns */
+            flex-shrink: 0;
+            // margin: 0px 5%;
+            margin-right: 50px;
 
             .name {
                 margin-bottom: 10px;
@@ -24,7 +134,7 @@
 
             .price {
                 font-size: 20px;
-                border-bottom: black 1px solid;
+                border-bottom: rgb(190, 190, 190) 1px solid;
                 color: rgb(60, 60, 60);
                 font-weight: 700;
                 padding-bottom: 10px;
@@ -33,9 +143,15 @@
             .changeQuantity {
                 text-align: center;
                 margin: 20px;
-
+                margin-top: 45px;
+                    .addToCartBtn {
+                        width: 100%;
+                        background-color: $primary-color;
+                        border: none;
+                        color: white;
+                        // font-weight: bold;
+                    }
                 .inCart {
-
                     .changeInCart {
                         font-size: 16px;
                         border: solid rgb(130, 130, 130) 0.5px;
@@ -89,7 +205,7 @@
                     font-size: 20px;
                     text-transform: capitalize;
                     font-weight: bold;
-                    text-decoration: underline;
+                    // text-decoration: underline;
                 }
             }
         }
@@ -97,17 +213,62 @@
 }
 
 
+@media only screen and (max-width: 1150px) {
+    .ProductPage {
+        .container {
+            margin: 0px 0px; //ok
+
+            .column1 {
+                .ImageSlider {
+                    flex-direction: column-reverse; //ok
+
+                    .mainImage {
+                        margin: 0px 50px; //ok
+                    }
+
+
+                    .thumbnail-container {
+                        flex-direction: row; //ok 
+                        justify-content: center; //ok
+
+                        .thumbnail {
+                            width: 60px; //ok  
+                            margin: 10px;
+                            // margin-bottom: 30px;  //ok 
+                        }
+                    }
+                }
+            }
+
+            .column2 {
+                flex-basis: 350px; //ok
+            }
+        }
+    }
+
+}
 
 //   Extra Small Devices (Mobile Phones)
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 
     .ProductPage {
+        display: block;
+        margin: 20px;
+        margin-top: 80px;
+
         .sliderForPhon {
             display: block;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
         }
 
         .container {
             display: block;
+            margin: 0px;
+
 
             .column1 {
                 display: none;
@@ -116,19 +277,19 @@
             .column2 {
                 margin: 0px;
                 margin-top: 20px;
+                padding: 20px;
 
-                .changeQuantity{
-                    .addToCartBtn{
+                .changeQuantity {
+                    .addToCartBtn {
                         margin-top: 20px;
                         width: 100%;
                         border: solid rgb(25, 22, 22) 1px;
                         background-color: rgb(25, 22, 22);
-                        color:white;
+                        color: white;
                         padding: 15px;
                     }
                 }
             }
         }
-
     }
 }
