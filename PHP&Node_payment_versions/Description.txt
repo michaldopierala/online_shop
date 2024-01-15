@@ -1,0 +1,13 @@
+In this folder we have two versions of files for payment system.
+
+Node is for running on the macbook
+PHP is for funnnint on the hosting server.
+
+If you want to run node server for payment system on your macbook. You need to:
+1. Open new termianal (Split Terminal) and put below path name in this terminal for node js server:
+cd /Users/michal/Documents/ReactAPP/EXAMPLES/payment_stripe_node/server
+2. Put belowe comand in the terminal:
+node server.js
+
+
+Before creating build file for transfering from macbook to hosting server repalce two files from stripe folder with files for PHP. 

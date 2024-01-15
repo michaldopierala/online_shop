@@ -23,6 +23,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   font-family: "Playpen Sans", cursive;
+  margin-bottom: 200px;
 }
 .ProductPage .sliderForPhon {
   display: none;
@@ -396,7 +397,7 @@ body {
   color: rgb(120, 120, 120);
 }
 
-.ShoppingCartTab {
+.ShoppingCart .ShoppingCartTab {
   position: absolute;
   right: 0;
   top: 0;
@@ -407,7 +408,7 @@ body {
   background-color: white;
   z-index: 2;
 }
-.ShoppingCartTab .close {
+.ShoppingCart .ShoppingCartTab .close {
   all: unset;
   padding: 0;
   margin: 0;
@@ -415,14 +416,14 @@ body {
   top: 17px;
   right: 70px;
 }
-.ShoppingCartTab .close:hover {
+.ShoppingCart .ShoppingCartTab .close:hover {
   cursor: pointer;
 }
-.ShoppingCartTab .close img {
+.ShoppingCart .ShoppingCartTab .close img {
   width: 50px;
   object-fit: cover;
 }
-.ShoppingCartTab .totalContainer {
+.ShoppingCart .ShoppingCartTab .totalContainer {
   border-top: 2px solid rgb(229, 229, 229);
   position: absolute;
   bottom: 0px;
@@ -431,26 +432,27 @@ body {
   padding: 20px 40px;
   background-color: rgb(249, 249, 249);
 }
-.ShoppingCartTab .totalContainer .total {
+.ShoppingCart .ShoppingCartTab .totalContainer .total {
   text-align: right;
   font-weight: 400;
 }
-.ShoppingCartTab .totalContainer .checkoutContainer {
+.ShoppingCart .ShoppingCartTab .totalContainer .checkoutContainer {
   margin-top: 50px;
   margin-bottom: 60px;
   text-align: center;
 }
-.ShoppingCartTab .totalContainer .checkoutContainer .checkoutBtn {
+.ShoppingCart .ShoppingCartTab .totalContainer .checkoutContainer .checkoutBtn {
   all: unset;
+  display: block;
   background-color: cornflowerblue;
   color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
   font-size: 16px;
   padding: 15px;
-  padding-left: 100px;
-  padding-right: 100px;
   letter-spacing: 2px;
 }
-.ShoppingCartTab .totalContainer .checkoutContainer .checkoutBtn:hover {
+.ShoppingCart .ShoppingCartTab .totalContainer .checkoutContainer .checkoutBtn:hover {
   cursor: pointer;
 }
 
@@ -597,108 +599,6 @@ body {
   display: block;
 }
 
-.Checkout {
-  font-weight: 50px;
-}
-.Checkout .header {
-  width: 100%;
-  background-color: darkkhaki;
-  text-align: center;
-}
-.Checkout .header img {
-  margin: 20px;
-  padding: 5px;
-  border: red solid 1px;
-}
-.Checkout .columnContainer {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  background-color: rgb(250, 250, 250);
-}
-.Checkout .columnContainer .column1 {
-  border-radius: 10px;
-  margin: 6vw;
-  margin-bottom: 150px;
-}
-.Checkout .columnContainer .column1 .head {
-  margin: 20px 0px;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-.Checkout .columnContainer .column1 .address {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 15px;
-  -webkit-font-smoothing: antialiased;
-  letter-spacing: 0.1px;
-}
-.Checkout .columnContainer .column1 .address form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-row-gap: 0px;
-  grid-column-gap: 15px;
-}
-.Checkout .columnContainer .column1 .address form .item3 {
-  grid-column: 1/3;
-}
-.Checkout .columnContainer .column1 .address form label {
-  color: rgb(20, 20, 20);
-}
-.Checkout .columnContainer .column1 .address form label input {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 12px;
-  margin-top: 2px;
-  margin-bottom: 5px;
-  border: 1px solid rgb(210, 220, 220);
-  border-radius: 5px;
-  font-size: 16px;
-}
-.Checkout .columnContainer .column2 {
-  padding: 20px 50px;
-  border-left: solid 1px rgb(230, 230, 230);
-  background-color: white;
-}
-.Checkout .columnContainer .column2 .head {
-  text-align: center;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin-bottom: 70px;
-}
-.Checkout .columnContainer .column2 .ProductComponent {
-  display: flex;
-  margin-top: 15px;
-}
-.Checkout .columnContainer .column2 .ProductComponent .product {
-  margin-right: 40px;
-  font-size: 20px;
-}
-.Checkout .columnContainer .column2 .ProductComponent .product .quantity {
-  color: #888888;
-  font-size: 15px;
-}
-.Checkout .columnContainer .column2 .ProductComponent .product .productPrice {
-  color: #888888;
-  font-size: 15px;
-}
-.Checkout .columnContainer .column2 .ProductComponent .productTotal {
-  font-size: 20px;
-}
-.Checkout .columnContainer .column2 .cartEmpty {
-  text-align: center;
-  margin-top: 30vh;
-}
-.Checkout .columnContainer .column2 .total {
-  margin-top: 40px;
-  font-weight: 500;
-  font-size: 20px;
-  text-align: left;
-  border-top: #888888 solid 0.5px;
-  padding-top: 20px;
-  margin-top: 70px;
-}
-
 .About {
   margin-top: 150px;
 }
@@ -708,7 +608,6 @@ body {
   width: 100%;
   padding: 1px;
   border: transparent solid 0px;
-  margin-top: 3%;
 }
 .FooterComponent .logo {
   margin: 6%;
@@ -929,6 +828,215 @@ body {
   font-weight: bold;
 }
 
+.Checkout {
+  font-weight: 50px;
+}
+.Checkout .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+.Checkout .header .logo {
+  text-decoration: none;
+  color: rgb(50, 50, 50);
+  font-size: 35px;
+  font-family: "Caveat", cursive;
+}
+.Checkout .header .logo:hover {
+  cursor: pointer;
+}
+.Checkout .columnContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: rgb(250, 250, 250);
+}
+.Checkout .columnContainer .column1 {
+  border-radius: 10px;
+  margin: 6vw;
+  margin-bottom: 150px;
+  /* Buttons and links */
+  /* spinner/processing state, errors */
+}
+.Checkout .columnContainer .column1 #payment-message {
+  color: rgb(105, 115, 134);
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 12px;
+  text-align: center;
+}
+.Checkout .columnContainer .column1 #payment-element {
+  margin-bottom: 24px;
+}
+.Checkout .columnContainer .column1 button {
+  background: #5469d4;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  border-radius: 4px;
+  border: 0;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  transition: all 0.2s ease;
+  box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+  width: 100%;
+}
+.Checkout .columnContainer .column1 button:hover {
+  filter: contrast(115%);
+}
+.Checkout .columnContainer .column1 button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.Checkout .columnContainer .column1 .spinner,
+.Checkout .columnContainer .column1 .spinner:before,
+.Checkout .columnContainer .column1 .spinner:after {
+  border-radius: 50%;
+}
+.Checkout .columnContainer .column1 .spinner {
+  color: #ffffff;
+  font-size: 22px;
+  text-indent: -99999px;
+  margin: 0px auto;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  box-shadow: inset 0 0 0 2px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.Checkout .columnContainer .column1 .spinner:before,
+.Checkout .columnContainer .column1 .spinner:after {
+  position: absolute;
+  content: "";
+}
+.Checkout .columnContainer .column1 .spinner:before {
+  width: 10.4px;
+  height: 20.4px;
+  background: #5469d4;
+  border-radius: 20.4px 0 0 20.4px;
+  top: -0.2px;
+  left: -0.2px;
+  -webkit-transform-origin: 10.4px 10.2px;
+  transform-origin: 10.4px 10.2px;
+  -webkit-animation: loading 2s infinite ease 1.5s;
+  animation: loading 2s infinite ease 1.5s;
+}
+.Checkout .columnContainer .column1 .spinner:after {
+  width: 10.4px;
+  height: 10.2px;
+  background: #5469d4;
+  border-radius: 0 10.2px 10.2px 0;
+  top: -0.1px;
+  left: 10.2px;
+  -webkit-transform-origin: 0px 10.2px;
+  transform-origin: 0px 10.2px;
+  -webkit-animation: loading 2s infinite ease;
+  animation: loading 2s infinite ease;
+}
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .Checkout .columnContainer .column1 form {
+    width: 80vw;
+    min-width: initial;
+  }
+}
+.Checkout .columnContainer .column1 .head {
+  margin: 20px 0px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.Checkout .columnContainer .column1 .address {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.1px;
+}
+.Checkout .columnContainer .column1 .address form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 0px;
+  grid-column-gap: 15px;
+}
+.Checkout .columnContainer .column1 .address form .item3 {
+  grid-column: 1/3;
+}
+.Checkout .columnContainer .column1 .address form label {
+  color: rgb(20, 20, 20);
+}
+.Checkout .columnContainer .column1 .address form label input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  border: 1px solid rgb(210, 220, 220);
+  border-radius: 5px;
+  font-size: 16px;
+}
+.Checkout .columnContainer .column2 {
+  padding: 20px 50px;
+  padding-top: 100px;
+  border-left: solid 1px rgb(230, 230, 230);
+  background-color: white;
+}
+.Checkout .columnContainer .column2 .head {
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 70px;
+}
+.Checkout .columnContainer .column2 .ProductComponent {
+  display: flex;
+  margin-top: 15px;
+}
+.Checkout .columnContainer .column2 .ProductComponent .product {
+  margin-right: 40px;
+  font-size: 20px;
+}
+.Checkout .columnContainer .column2 .ProductComponent .product .quantity {
+  color: #888888;
+  font-size: 15px;
+}
+.Checkout .columnContainer .column2 .ProductComponent .product .productPrice {
+  color: #888888;
+  font-size: 15px;
+}
+.Checkout .columnContainer .column2 .ProductComponent .productTotal {
+  font-size: 20px;
+}
+.Checkout .columnContainer .column2 .cartEmpty {
+  text-align: center;
+  margin-top: 30vh;
+}
+.Checkout .columnContainer .column2 .total {
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: left;
+  border-top: #888888 solid 0.5px;
+  padding-top: 20px;
+  margin-top: 70px;
+}
+
 @media only screen and (max-width: 900px) {
   .ProductsCarusel {
     border-top: none;
@@ -992,6 +1100,9 @@ body {
   .Navbar .Navigation .shoppingCartIcon {
     right: 35px;
     top: 15px;
+  }
+  .ShoppingCart .ShoppingCartTab {
+    width: 70vw;
   }
 }
 @media only screen and (max-width: 650px) {

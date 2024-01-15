@@ -1,6 +1,7 @@
 import React from 'react'
 import TouchSlider from '../components/TouchSlider';
 import products from '../data/products.json'
+import Payment from '../stripe/Payment';
 
 export default function About() {
   const id = 1;
@@ -15,7 +16,8 @@ export default function About() {
     <div className='About'>
       {/* <TouchSlider images={product.imgUrl} /> */}
       {/* <TouchSlider images={product.imgUrl} /> */}
-      <div dangerouslySetInnerHTML={{ __html: product.description }} />
+      {/* <div dangerouslySetInnerHTML={{ __html: product.description }} /> */}
+    <Payment/>
     </div>
   )
 }

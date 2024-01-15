@@ -6,6 +6,7 @@ import Address from '../components/checkout/Address'
 import { ShoppingCartContext } from '../context/CartContext';
 import ProductCheckout from '../components/checkout/ProductCheckout'
 import products from '../data/products.json'
+import Payment from '../stripe/Payment';
 
 
 
@@ -38,19 +39,17 @@ export default function Checkout() {
     return (
         <div className='Checkout'>
             <div className='header'>
-                <Link to={`/`}>   <img className='logo' src='../img/logo.png' alt='logo' /> </Link>
-
+                {/* <Link to={`/`}>   <img className='logo' src='../img/logo.png' alt='logo' /> </Link> */}
+                <Link to={`/`} className='logo'>   <div >SunsetBay </div> </Link>
             </div>
             {/* <ShowSummary total={total} /> */}
             <div className='columnContainer'>
                 <div className='column1'>
                     <div className='head'> Address </div>
                     <Address updateAddress={updateAddress} address={address} />
+                    {/* {/* <div className='head'> Payment </div> */}
                     <div className='head'> Payment </div>
-
-
-
-                    here we will have stripe element 
+                    <Payment />
                 </div>
                 <div className='column2'>
                     <div className='head'>Your order</div>
@@ -63,7 +62,6 @@ export default function Checkout() {
                     <div className='total'> Tota: ${total}  </div>
                 </div>
             </div>
-
         </div>
     )
 }

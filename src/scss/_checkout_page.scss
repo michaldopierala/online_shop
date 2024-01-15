@@ -1,0 +1,151 @@
+.Checkout {
+    font-weight: 50px;
+
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+
+        text-align: center;
+        padding: 10px;
+        background-color: $menuColor;
+        // box-shadow: 5px 5px 5px rgba(251, 26, 26, 0.55);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+
+
+        .logo {
+            text-decoration: none;
+            //     position: absolute;
+            //     top: 50%;
+            //     left: 50%;
+            //     transform: translate(-50%, -50%);
+            //     color: $primary-color;
+            color: rgb(50, 50, 50);
+            font-size: 35px;
+            font-family: 'Caveat', cursive;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .columnContainer {
+        // margin-top: 50px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        background-color: rgb(250, 250, 250);
+
+        .column1 {
+            border-radius: 10px;
+            margin: 6vw;
+            margin-bottom: 150px;
+            // outline: auto;
+            @import '_stripe';
+
+
+            .head {
+                margin: 20px 0px;
+                font-size: 18px;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+
+            .address {
+
+                font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+                font-size: 15px;
+                -webkit-font-smoothing: antialiased;
+                letter-spacing: 0.1px;
+
+                form {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-row-gap: 0px;
+                    grid-column-gap: 15px;
+
+                    .item3 {
+                        grid-column: 1 / 3;
+                    }
+
+                    label {
+                        color: rgb(20, 20, 20);
+
+                        input {
+                            box-sizing: border-box;
+                            width: 100%;
+                            padding: 12px;
+                            margin-top: 2px;
+                            margin-bottom: 5px;
+                            border: 1px solid rgb(210, 220, 220);
+                            border-radius: 5px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .column2 {
+            padding: 20px 50px;
+            padding-top: 100px;
+            // box-shadow: -10px 0px 5px rgb(220, 220, 220);
+            border-left: solid 1px rgb(230, 230, 230);
+            background-color: white;
+
+            .head {
+                text-align: center;
+                font-size: 18px;
+                text-transform: uppercase;
+                font-weight: 400;
+                margin-bottom: 70px;
+
+            }
+
+            .ProductComponent {
+                display: flex;
+                // justify-content: space-between;
+                margin-top: 15px;
+
+                .product {
+                    margin-right: 40px;
+                    font-size: 20px;
+
+                    // font-weight: 400;
+                    .quantity {
+                        color: #888888;
+                        font-size: 15px;
+                    }
+
+                    .productPrice {
+                        color: #888888;
+                        font-size: 15px;
+
+                    }
+                }
+
+                .productTotal {
+                    font-size: 20px;
+                }
+
+            }
+
+
+            .cartEmpty {
+                text-align: center;
+                margin-top: 30vh;
+            }
+
+            .total {
+                margin-top: 40px;
+                font-weight: 500;
+                font-size: 20px;
+                text-align: left;
+                border-top: #888888 solid 0.5px;
+                padding-top: 20px;
+                margin-top: 70px;
+            }
+        }
+    }
+}
