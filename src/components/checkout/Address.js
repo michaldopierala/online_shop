@@ -19,6 +19,16 @@ export default function Address({ updateAddress, address }) {
                         value={address.surname || ""}
                         onChange={updateAddress} />
                 </label>
+                <label className='item3'>Email
+                    <br></br>
+                    <input
+                        type="email"
+                        name="email"
+                        value={address.email || ""}
+                        onChange={updateAddress} 
+                        required
+                        />
+                </label>
                 <label className='item3'>
                     <div>Address</div>
                     <input

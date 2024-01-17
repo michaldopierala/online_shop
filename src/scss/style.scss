@@ -243,15 +243,17 @@ body {
                 text-align: center;
     
                 .checkoutBtn {
-                    all: unset;
+                    // all: unset;
+                    text-decoration: none;
                     display: block;
-                    background-color: cornflowerblue;
+                    // background-color: $primary-color;
                     color: #ffffff;
                     text-transform: uppercase;
                     font-weight: 500;
                     font-size: 16px;
-                    padding: 15px;
+                    // padding: 15px;
                     letter-spacing: 2px;
+                    @extend %theme-style;
     
                     &:hover {
                         cursor: pointer;
@@ -261,7 +263,6 @@ body {
         }
     }
 }
-
 
 .CartItem {
     display: flex;
@@ -305,6 +306,8 @@ body {
     }
 
     .right {
+        // outline: rgb(0, 255, 123) solid 1px;
+
         padding: 0;
         margin: 0;
         display: flex;
@@ -759,8 +762,27 @@ body {
 
 
 
-@import '_checkout_page';
 @import 'mobile';
+@import '_checkout_page';
 
 
-
+.About{
+    .order-summary-container {
+        width: 100%;
+        border: 1px solid #ccc;
+        margin: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    .summary-header {
+        cursor: pointer;
+    }
+    
+    .order-details {
+        margin-top: 10px;
+    }
+    
+    /* Additional styling as needed */
+    
+}

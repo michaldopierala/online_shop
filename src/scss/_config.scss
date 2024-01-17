@@ -11,12 +11,17 @@ $font: "Helvetica Neue W31", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font: 'Playpen Sans', cursive;
 $menuFont: "Helvetica Neue W31", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+%theme-style {
+  color: white;
+  background-color: $fourth-color;
+  padding: 10px;
+}
+
 
 button {
     font-family: "Helvetica Neue W31", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     padding: 10px 30px;
-
     font-size: 15px;
     letter-spacing: 1px;
     padding: 12px;
@@ -31,6 +36,10 @@ button {
         background-color: rgb(25, 22, 22);
         color:white;
     }
+}
+
+.configBtn{
+  background-color: $primary-color;
 }
 
 

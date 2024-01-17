@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from "react-router-dom";
+
 
 export default function Footer() {
     return (
@@ -9,7 +11,8 @@ export default function Footer() {
                     <img className='name' src='/img/logo1.png' alt='image of palm' />
                 </div>
                 <div className='info'>
-                    <div>terms & conditions</div>
+                    <div><Link className="btn" to="terms">terms & conditions</Link></div>
+                    <Link className="link" to="terms">terms & conditions</Link>
                     <div>Privacy Policy</div>
                     <div>Shipping Policy</div>
                     <div>About Us</div>

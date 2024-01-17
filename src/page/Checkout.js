@@ -7,6 +7,7 @@ import { ShoppingCartContext } from '../context/CartContext';
 import ProductCheckout from '../components/checkout/ProductCheckout'
 import products from '../data/products.json'
 import Payment from '../stripe/Payment';
+import ShowSummary from '../components/checkout/ShowSummary';
 
 
 
@@ -42,24 +43,26 @@ export default function Checkout() {
                 {/* <Link to={`/`}>   <img className='logo' src='../img/logo.png' alt='logo' /> </Link> */}
                 <Link to={`/`} className='logo'>   <div >SunsetBay </div> </Link>
             </div>
-            {/* <ShowSummary total={total} /> */}
+            <ShowSummary cartItems={cartItems} total={total} CartQuantity={CartQuantity} />
             <div className='columnContainer'>
                 <div className='column1'>
-                    <div className='head'> Address </div>
-                    <Address updateAddress={updateAddress} address={address} />
-                    {/* {/* <div className='head'> Payment </div> */}
-                    <div className='head'> Payment </div>
-                    <Payment />
+                    <div className='form'>
+                        <div className='head'> Address </div>
+                        <Address updateAddress={updateAddress} address={address} />
+                        {/* {/* <div className='head'> Payment </div> */}
+                        <div className='head'> Payment </div>
+                        <Payment />
+                    </div>
                 </div>
                 <div className='column2'>
-                    <div className='head'>Your order</div>
-                    {CartQuantity > 0
-                        ? cartItems.map((item, index) => <ProductCheckout key={index} {...item} />)
-
-                        // ? cartItems.map((item, index) =><div>{index}</div>  )
-                        : <div className='cartEmpty'> Cart is empty </div>
-                    }
-                    <div className='total'> Tota: ${total}  </div>
+                    <div className='innerContainer'>
+                        <div className='head'>Your order</div>
+                        {CartQuantity > 0
+                            ? cartItems.map((item, index) => <ProductCheckout key={index} {...item} />)
+                            : <div className='cartEmpty'> Cart is empty </div>
+                        }
+                        <div className='total'> Tota: ${total}  </div>
+                    </div>
                 </div>
             </div>
         </div>

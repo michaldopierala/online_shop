@@ -12,6 +12,7 @@ import Main from './page/Main';
 import ScrollToTop from './components/ScrollToTop';
 import Test from './page/Test';
 import Contact from './page/Contact';
+import TermsConditions from './page/TermsConditions';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             </Route>
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/test" element={<Test/>} />
+            <Route path="/terms" element={<TermsConditions/> } />
           </Routes>
           <Footer />
 

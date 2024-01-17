@@ -55,3 +55,13 @@ export default function ProductPage() {
     </div>
   )
 }
+
+
+
+
+<ul class="slick-dots" style="display: block;">
+  <li class="slick-active"><button>1</button></li>
+  <li class=""><button>2</button></li>
+  <li class=""><button>3</button></li>
+  <li class=""><button>4</button></li>
+</ul>

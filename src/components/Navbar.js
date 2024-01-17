@@ -24,7 +24,7 @@ export default function Navbar() {
         <div className='logo'>SunsetBay</div>
         <button className='shoppingCartIcon' onClick={closeCart}>
           <div className='cartCount'> <span>{CartQuantity}</span>  </div>
-          <img src='/img/cart.png' alt='shopping cart' />
+          <img src='/img/icons/cart.png' alt='shopping cart' />
         </button>
 
 

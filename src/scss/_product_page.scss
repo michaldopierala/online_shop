@@ -145,13 +145,15 @@
                 text-align: center;
                 margin: 20px;
                 margin-top: 45px;
-                    .addToCartBtn {
-                        width: 100%;
-                        background-color: $primary-color;
-                        border: none;
-                        color: white;
-                        // font-weight: bold;
-                    }
+
+                .addToCartBtn {
+                    width: 100%;
+                    background-color: $primary-color;
+                    border: none;
+                    color: white;
+                    // font-weight: bold;
+                }
+
                 .inCart {
                     .changeInCart {
                         font-size: 16px;
@@ -227,7 +229,6 @@
                         margin: 0px 50px; //ok
                     }
 
-
                     .thumbnail-container {
                         flex-direction: row; //ok 
                         justify-content: center; //ok
@@ -263,6 +264,27 @@
 
             img {
                 width: 100%;
+            }
+
+            .slick-dots {
+                bottom: 25px;
+
+                /* Default style for all dots */
+                li button::before {
+                    display: none;
+                }
+                li button {
+                    background: transparent;
+                    border: 2px solid rgba(250, 250, 250, 0.7);
+                    border-radius: 50%;
+                    width: 10px;
+                    height: 10px;
+                }
+                /* Style for the active dot */
+                li.slick-active button {
+                    background: rgba(154, 154, 154, 0.4);
+                    border: 2px solid rgba(209, 207, 207, 0.8);
+                }
             }
         }
 

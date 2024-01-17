@@ -12,7 +12,10 @@
   #payment-element {
     margin-bottom: 24px;
   }
-  
+  .payButton{
+    max-width: 400px;
+    margin: 0px auto;
+  }
   /* Buttons and links */
   button {
     background: #5469d4;
@@ -103,9 +106,9 @@
     }
   }
   
-  @media only screen and (max-width: 600px) {
-    form {
-      width: 80vw;
-      min-width: initial;
-    }
-  }
+  // @media only screen and (max-width: 600px) {
+  //   form {
+  //     width: 80vw;
+  //     min-width: initial;
+  //   }
+  // }
