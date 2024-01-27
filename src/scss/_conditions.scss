@@ -1,0 +1,41 @@
+.TermsConditions {
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    header {
+        background: #f4f4f4;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    .toc h2 {
+        color: #333;
+    }
+
+    .toc ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .toc ul li {
+        margin-bottom: 5px;
+    }
+
+    .introduction,
+    section {
+        margin-bottom: 20px;
+        padding: 20px;
+        background: #f9f9f9;
+        border: 1px solid #ddd;
+    }
+
+    /* Add more styles as needed */
+
+}

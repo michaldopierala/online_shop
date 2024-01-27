@@ -1,7 +1,5 @@
 import React, { useEffect, useContext, useState } from 'react'
 import { Link } from "react-router-dom";
-
-// import ShowSummary from '../../../shopping-website/src/component/ShowSummary'
 import Address from '../components/checkout/Address'
 import { ShoppingCartContext } from '../context/CartContext';
 import ProductCheckout from '../components/checkout/ProductCheckout'
@@ -16,12 +14,14 @@ export default function Checkout() {
 
     const { setCartOpen, CartQuantity, cartItems } = useContext(ShoppingCartContext)
     const [address, setAddress] = useState([]);
+    const [clientSecret, setClientSecret] = useState(null);
 
 
     const total = cartItems.reduce((total, cartItem) => {
         const item = products.find(i => i.id === cartItem.id)
         return total + (item?.price || 0) * cartItem.quantity
     }, 0)
+
 
 
     const updateAddress = (event) => {
@@ -31,6 +31,10 @@ export default function Checkout() {
         localStorage.setItem("adress", JSON.stringify(address));
         // console.log(address)
     }
+    useEffect(() => {
+        console.log('client secret---')
+        console.log(clientSecret)
+    }, [clientSecret]);
 
     useEffect(() => {
         setCartOpen(false)
@@ -51,7 +55,7 @@ export default function Checkout() {
                         <Address updateAddress={updateAddress} address={address} />
                         {/* {/* <div className='head'> Payment </div> */}
                         <div className='head'> Payment </div>
-                        <Payment />
+                        <Payment getSecret={(secret)=>{setClientSecret(secret)}} />
                     </div>
                 </div>
                 <div className='column2'>

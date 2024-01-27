@@ -494,15 +494,19 @@ body {
         border-top: rgb(179, 178, 178) 1px solid;
         margin: 0% 8%;
         padding: 3%;
-
+        
         div {
+            color: rgb(201, 200, 200);
             text-transform: capitalize;
             margin: 15px;
             font-size: 18px;
+            .link{
+                text-decoration: none;
+
+                color: rgb(201, 200, 200);
+            }
         }
     }
-
-    // }
 
     .copyrights {
         margin-top: 2%;
@@ -653,10 +657,9 @@ body {
                     position: absolute;
                     width: 50px;
                     right: 70px;
-                    bottom: 50px;
+                    bottom: 00px;
                     object-fit: cover;
                     object-position: center;
-
                 }
             }
 
@@ -677,12 +680,9 @@ body {
         margin-top: 100px;
 
 
-
-
-
         .contact-form-container {
             padding: 3%;
-            width: 40%;
+            width: 40%;       
 
             .contact-form {
                 .form-group {
@@ -707,12 +707,15 @@ body {
                     text-align: center;
 
                     .submit-button {
-                        background-color: #378078;
-                        color: white;
                         padding: 15px 40px;
                         border: none;
                         border-radius: 10px;
                         cursor: pointer;
+                        width: 40%;
+                        min-width:150px;
+                        background-color: $primary-color;
+                        border: none;
+                        color: white;
                     }
                 }
 
@@ -764,25 +767,10 @@ body {
 
 @import 'mobile';
 @import '_checkout_page';
+@import '_conditions';
 
 
 .About{
-    .order-summary-container {
-        width: 100%;
-        border: 1px solid #ccc;
-        margin: 10px;
-        padding: 10px;
-        box-sizing: border-box;
-    }
-    
-    .summary-header {
-        cursor: pointer;
-    }
-    
-    .order-details {
-        margin-top: 10px;
-    }
-    
-    /* Additional styling as needed */
+padding: 100px;
     
 }

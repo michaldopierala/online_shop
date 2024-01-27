@@ -1,14 +1,22 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import ImageSlider from '../components/ImageSlider'
 import products from '../data/products.json'
 import { ShoppingCartContext } from '../context/CartContext';
 import TouchSlider from '../components/TouchSlider';
+import { useLocation } from 'react-router-dom';
+import ReactGA4 from 'react-ga4';
+ReactGA4.initialize("G-S1TP745FSQ");
 
 
 
 
 export default function ProductPage() {
+  const location = useLocation();
+    
+  useEffect(() => {
+      ReactGA4.send({ hitType: "pageview", page: location.pathname });
+    }, [location]);
 
   const { cartItems, increaseCartQuantity, decreaseCartQuantity, remove } = useContext(ShoppingCartContext)
   const { id } = useParams()

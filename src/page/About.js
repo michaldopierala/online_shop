@@ -1,47 +1,71 @@
-import React, { useState } from 'react'
-import TouchSlider from '../components/TouchSlider';
-import products from '../data/products.json'
-import Payment from '../stripe/Payment';
+import React, { useState, useEffect,  } from 'react';
+import { useLocation } from 'react-router-dom';
+import ReactGA4 from 'react-ga4';
+ReactGA4.initialize("G-S1TP745FSQ");
 
-export default function About() {
-  const orderDetails = {
-    id: '123456',
-    totalPrice: 100
-    // ... other order details
-};
+const About = () => {
+    const location = useLocation();
+    
+    useEffect(() => {
+        ReactGA4.send({ hitType: "pageview", page: location.pathname });
+      }, [location]);
 
-const [isExpanded, setIsExpanded] = useState(false);
+    const apiUrl = process.env.REACT_APP_API_URL;
+    const ContactDataBase = process.env.REACT_APP_API_URL2;
 
-const toggleExpanded = () => {
-    setIsExpanded(!isExpanded);
-};
-  
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    // const [message, setMessage] = useState('');
 
-  return (
-    <div className='About'>
-        <div className="order-summary-container">
-            <div className="summary-header" onClick={toggleExpanded}>
-                <h3>Order Summary {isExpanded ? "↓" : "↑"}</h3>
-            </div>
-            {isExpanded && (
-                <div className="order-details">
-                    {/* Render your order details here */}
-                    <p>Order ID: {orderDetails.id}</p>
-                    <p>Total Price: ${orderDetails.totalPrice}</p>
-                    {/* Add more details as needed */}
-                </div>
-            )}
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        try {
+            // const response = await fetch( `${ContactDataBase}`, {
+                const response = await fetch( `${ContactDataBase}`, {
+
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, email })
+            });
+            if (response.ok) {
+                const data = await response.json();
+                console.log('Data saved:', data);
+            } else {
+                console.error('Error saving data');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    };
+
+    return (
+        <div className='About'>
+            <form onSubmit={handleSubmit}>
+                <input
+                    type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    placeholder="Name"
+                />
+                <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Email"
+                />
+                {/* <input
+                    type="text"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    placeholder="Message"
+                /> */}
+                <button type="submit">Submit</button>
+            </form>
+            <h1>Environment Variable Example</h1>
+            <p>The API URL is: {ContactDataBase}</p>
         </div>
-    </div>
-  )
-}
 
+    );
+};
 
-
-
-
-
-
-// };
-
-
+export default About;

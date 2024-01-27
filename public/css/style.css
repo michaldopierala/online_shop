@@ -661,9 +661,14 @@ body {
   padding: 3%;
 }
 .FooterComponent .info div {
+  color: rgb(201, 200, 200);
   text-transform: capitalize;
   margin: 15px;
   font-size: 18px;
+}
+.FooterComponent .info div .link {
+  text-decoration: none;
+  color: rgb(201, 200, 200);
 }
 .FooterComponent .copyrights {
   margin-top: 2%;
@@ -780,7 +785,7 @@ body {
   position: absolute;
   width: 50px;
   right: 70px;
-  bottom: 50px;
+  bottom: 0px;
   object-fit: cover;
   object-position: center;
 }
@@ -818,12 +823,15 @@ body {
   text-align: center;
 }
 .Contact .container .contact-form-container .contact-form .button .submit-button {
-  background-color: #378078;
-  color: white;
   padding: 15px 40px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  width: 40%;
+  min-width: 150px;
+  background-color: #845EC2;
+  border: none;
+  color: white;
 }
 .Contact .container .contact-form-container .contact-form .submit-button:hover {
   background-color: #0056b3;
@@ -988,6 +996,14 @@ body {
   }
   .Contact .baner .column:last-child {
     order: 1;
+  }
+  .Contact .baner .column .text .star1 {
+    top: 0px;
+    left: 0px;
+  }
+  .Contact .baner .column .text .star2 {
+    right: 0px;
+    bottom: 0px;
   }
   .Contact .container {
     display: flex;
@@ -1315,19 +1331,40 @@ body {
     display: none;
   }
 }
+.TermsConditions {
+  /* Add more styles as needed */
+}
+.TermsConditions .container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.TermsConditions header {
+  background: #f4f4f4;
+  padding: 20px 0;
+  text-align: center;
+}
+.TermsConditions header h1 {
+  margin: 0;
+}
+.TermsConditions .toc h2 {
+  color: #333;
+}
+.TermsConditions .toc ul {
+  list-style-type: none;
+  padding: 0;
+}
+.TermsConditions .toc ul li {
+  margin-bottom: 5px;
+}
+.TermsConditions .introduction,
+.TermsConditions section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
 .About {
-  /* Additional styling as needed */
-}
-.About .order-summary-container {
-  width: 100%;
-  border: 1px solid #ccc;
-  margin: 10px;
-  padding: 10px;
-  box-sizing: border-box;
-}
-.About .summary-header {
-  cursor: pointer;
-}
-.About .order-details {
-  margin-top: 10px;
+  padding: 100px;
 }

@@ -7,10 +7,10 @@ import products from '../data/products.json'
   export default function ImageRow() {
 
     const productsToShow = [
-      3,
-      2,
       4,
-      5
+      5,
+      6,
+      7
       // Add more products
     ];
   

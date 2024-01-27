@@ -11,8 +11,12 @@ import Checkout from './page/Checkout';
 import Main from './page/Main';
 import ScrollToTop from './components/ScrollToTop';
 import Test from './page/Test';
-import Contact from './page/Contact';
+import Contact from './page/Contact.tsx';
 import TermsConditions from './page/TermsConditions';
+
+import ReactGA4 from 'react-ga4';
+ReactGA4.initialize("G-S1TP745FSQ");
+
 
 function App() {
   return (
@@ -27,10 +31,10 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/product/:id" element={<ProductPage />} />
+              <Route path="/terms" element={<TermsConditions/> } />
             </Route>
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/test" element={<Test/>} />
-            <Route path="/terms" element={<TermsConditions/> } />
           </Routes>
           <Footer />
 

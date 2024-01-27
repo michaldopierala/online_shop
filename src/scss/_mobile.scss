@@ -80,7 +80,7 @@
 
     }
 
-    .ShoppingCart{
+    .ShoppingCart {
         .ShoppingCartTab {
             width: 70vw;
         }
@@ -176,13 +176,26 @@
         .baner {
             display: grid;
             grid-template-columns: 1fr;
-
+            
             .column:first-child {
                 order: 2;
             }
 
             .column:last-child {
-                order: 1; 
+                order: 1;
+            }
+
+            .column {
+                .text {
+                    .star1 {
+                        top: 0px;
+                        left: 0px;
+                    }
+                    .star2 {
+                        right: 0px;
+                        bottom: 0px;
+                    }
+                }
             }
         }
 

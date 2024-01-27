@@ -1,10 +1,7 @@
 import React, { useState, createContext } from 'react'
 import useLocalStorage from '../hooks/useLocalStorage'
 
-
-
 export const ShoppingCartContext = createContext()
-
 
 export default function CartContext({ children }) {
 
