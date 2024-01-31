@@ -17,11 +17,14 @@ export default function Navbar() {
       <nav className="Navigation" >
         <MobileMenu />
         <Link className="btn" to="/">Home </Link>
-        <Link className="btn" to="store">Store</Link>
-        <Link className="btn" to="about">About</Link>
+        <Link className="btn" to="products">Products</Link>
+        {/* <Link className="btn" to="about">About</Link>
+         */}
         <Link className="btn" to="contact">Contact</Link>
 
-        <div className='logo'>SunsetBay</div>
+        {/* <div className='logo'>SunsetBay</div> */}
+        <Link to={`/`} className='logo'>  <img src='/img/sunsetbay.png'/> </Link>
+
         <button className='shoppingCartIcon' onClick={closeCart}>
           <div className='cartCount'> <span>{CartQuantity}</span>  </div>
           <img src='/img/icons/cart.png' alt='shopping cart' />

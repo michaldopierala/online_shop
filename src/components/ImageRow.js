@@ -27,8 +27,8 @@ import products from '../data/products.json'
 
     return (
       <div className='ImageRow'>
-      <div className='title'>Beach Collection </div>
-      <div className='description'>Reimagine your seaside style with our premium collection of sarong beach towels.</div>
+      <div className='title'>Harem Pants Collection </div>
+      <div className='description'>Reimagine your seaside style with our premium collection of harem pants.</div>
       {/* <div className='images' style={{ display: 'flex', flexDirection: 'row' }}> */}
       <div className='images'>
   

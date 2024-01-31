@@ -6,17 +6,16 @@ import { ShoppingCartContext } from '../context/CartContext';
 import TouchSlider from '../components/TouchSlider';
 import { useLocation } from 'react-router-dom';
 import ReactGA4 from 'react-ga4';
-ReactGA4.initialize("G-S1TP745FSQ");
-
-
 
 
 export default function ProductPage() {
   const location = useLocation();
-    
   useEffect(() => {
+    if (window.location.hostname !== "localhost") {
       ReactGA4.send({ hitType: "pageview", page: location.pathname });
-    }, [location]);
+    }
+  }, [location.pathname]); // Dependency on pathname only
+  
 
   const { cartItems, increaseCartQuantity, decreaseCartQuantity, remove } = useContext(ShoppingCartContext)
   const { id } = useParams()

@@ -16,8 +16,8 @@ export default function MobileMenu() {
             <button className='close_menu' onClick={openMenu}><img src='/img/close_white.png' alt='close btn' /></button>
             <div className='tab'>
                 <Link className="link" onClick={openMenu} to="/">Home </Link>
-                <Link className="link" onClick={openMenu} to="store">Store</Link>
-                <Link className="link" onClick={openMenu} to="about">Aboute</Link>
+                <Link className="link" onClick={openMenu} to="products">Products</Link>
+                {/* <Link className="link" onClick={openMenu} to="about">Aboute</Link> */}
                 <Link className="link" onClick={openMenu} to="contact">Contact</Link>
             </div>
         </div>

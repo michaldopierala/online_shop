@@ -9,8 +9,6 @@ function getSavedValue(key, initialValue) {
 }
 
 
-
-
 export default function useLocalStorage(key, initialValue) {
 
     const [cartItems, setCartItems] = useState(() => {

@@ -6,7 +6,6 @@ export default function Modal() {
     const modalRef = useRef();
     const { closeModal, closeCart } = useContext(ShoppingCartContext);
 
-
     // Detects clicks outside of the modal
     const handleClickOutside = event => {
         if (modalRef.current && !modalRef.current.contains(event.target)) {

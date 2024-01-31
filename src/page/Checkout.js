@@ -6,11 +6,19 @@ import ProductCheckout from '../components/checkout/ProductCheckout'
 import products from '../data/products.json'
 import Payment from '../stripe/Payment';
 import ShowSummary from '../components/checkout/ShowSummary';
+import { useLocation } from 'react-router-dom';
+import ReactGA4 from 'react-ga4';
 
 
 
 
 export default function Checkout() {
+    const location = useLocation();
+    useEffect(() => {
+        if (window.location.hostname !== "localhost") {
+            ReactGA4.send({ hitType: "pageview", page: location.pathname });
+        }
+    }, [location.pathname]); // Dependency on pathname only
 
     const { setCartOpen, CartQuantity, cartItems } = useContext(ShoppingCartContext)
     const [address, setAddress] = useState([]);
@@ -55,7 +63,7 @@ export default function Checkout() {
                         <Address updateAddress={updateAddress} address={address} />
                         {/* {/* <div className='head'> Payment </div> */}
                         <div className='head'> Payment </div>
-                        <Payment getSecret={(secret)=>{setClientSecret(secret)}} />
+                        {/* <Payment getSecret={(secret)=>{setClientSecret(secret)}} /> */}
                     </div>
                 </div>
                 <div className='column2'>

@@ -7,40 +7,59 @@ $backGroundColr: rgb(251, 231, 204);
 $backGroundColr: white;
 $menuColor: white;
 
-$font: "Helvetica Neue W31", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font: 'Playpen Sans', cursive;
+// $font: "Helvetica Neue W31", "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $font: 'Playpen Sans', cursive;
+$font: 'Nunito', sans-serif;
+// $font: 'Roboto', sans-serif;
 $menuFont: "Helvetica Neue W31", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-%theme-style {
+$H1TextSize: 32px;
+$H2TextSize: 22px;
+$BodyTextSize: 18px;
+
+
+%btn-style {
+  text-decoration: none;
   color: white;
-  background-color: $fourth-color;
-  padding: 10px;
+  background-color: $primary-color;
+  padding: 13px 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: normal;
+
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-family: "Helvetica Neue W31", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 
 
 button {
-    font-family: "Helvetica Neue W31", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    padding: 10px 30px;
-    font-size: 15px;
-    letter-spacing: 1px;
-    padding: 12px;
-    font-weight: 500;
+  @extend %btn-style;
+
+  // font-family: "Helvetica Neue W31", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  // text-transform: uppercase;
+  // padding: 10px 30px;
+  // font-size: 15px;
+  // letter-spacing: 1px;
+  // padding: 12px;
+  // font-weight: 500;
+  border: solid rgb(25, 22, 22) 1px;
+  color: rgb(25, 22, 22);
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
     border: solid rgb(25, 22, 22) 1px;
-    color: rgb(25, 22, 22);
-    background-color: transparent;
-
-    &:hover {
-        cursor: pointer;
-        border: solid rgb(25, 22, 22) 1px;
-        background-color: rgb(25, 22, 22);
-        color:white;
-    }
+    background-color: rgb(25, 22, 22);
+    color: white;
+  }
 }
 
-.configBtn{
-  background-color: $primary-color;
-}
+
+
 
 
 // ////////////// --  STYLE 2 --    //////////////
@@ -53,12 +72,12 @@ button {
 
 
 
- ////////////// ////////////// ////////////// //////////////
+////////////// ////////////// ////////////// //////////////
 // ////////////// --  FONTS  --    ////////////// //////////////
- ////////////// ////////////// ////////////// //////////////
+////////////// ////////////// ////////////// //////////////
 
 
-  //////////////  FONT TYPE  1 
+//////////////  FONT TYPE  1 
 // <link rel="preconnect" href="https://fonts.googleapis.com">
 // <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 // <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;500&family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -68,7 +87,7 @@ button {
 
 
 
-  //////////////    FONT TYPE 2 
+//////////////    FONT TYPE 2 
 //   <link rel="preconnect" href="https://fonts.googleapis.com">
 //   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 //   <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;300&family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">

@@ -1,14 +1,23 @@
-import React, { useState, FormEvent } from 'react';
+import React, { useState, FormEvent, useEffect } from 'react';
+import ReactGA4 from 'react-ga4';
+import { useLocation } from 'react-router-dom';
+
 
 export default function Contact() {
+    const location = useLocation();
+    useEffect(() => {
+        if (window.location.hostname !== "localhost") {
+          ReactGA4.send({ hitType: "pageview", page: location.pathname });
+        }
+      }, [location]);
+
     const ContactDataBase: string | undefined = process.env.REACT_APP_API_URL2;
     const [messageSent, setMessageSent] = useState<boolean>(false);
     const [name, setName] = useState<string>('');
     const [email, setEmail] = useState<string>('');
     const [message, setMessage] = useState<string>('');
-
     const handleSubmit = async (event: FormEvent) => {
-        
+
         event.preventDefault();
         try {
             const response = await fetch(`${ContactDataBase}`, {

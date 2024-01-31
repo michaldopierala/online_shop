@@ -15,7 +15,7 @@ export default function StoreItem({ id, name, price, imgUrl }) {
                 <Link to={`../product/${id} `}   > <img src={imgUrl[0]} /> </Link>
             </div>
             <div className='product_name'>
-                <span>{name}</span>
+                <span  className='name'>{name}</span>
                 <span className='price'>$ {price}</span>
             </div>
             <div className='changeQuantity'>

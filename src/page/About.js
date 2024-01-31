@@ -1,14 +1,16 @@
-import React, { useState, useEffect,  } from 'react';
+import React, { useState, useEffect, } from 'react';
 import { useLocation } from 'react-router-dom';
 import ReactGA4 from 'react-ga4';
-ReactGA4.initialize("G-S1TP745FSQ");
+if (window.location.hostname !== "localhost") {
+    ReactGA4.initialize("G-S1TP745FSQ");
+}
 
 const About = () => {
     const location = useLocation();
-    
+
     useEffect(() => {
         ReactGA4.send({ hitType: "pageview", page: location.pathname });
-      }, [location]);
+    }, [location]);
 
     const apiUrl = process.env.REACT_APP_API_URL;
     const ContactDataBase = process.env.REACT_APP_API_URL2;
@@ -21,7 +23,7 @@ const About = () => {
         event.preventDefault();
         try {
             // const response = await fetch( `${ContactDataBase}`, {
-                const response = await fetch( `${ContactDataBase}`, {
+            const response = await fetch(`${ContactDataBase}`, {
 
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },

@@ -121,25 +121,64 @@
     {
         "id": 13,
         "name": "Watch",
-        "price": 22,
+        "price": 100,
         "imgUrl": [
             "/img/products/13/4x5img1.jpg",
             "/img/products/13/4x5img2.jpg",
             "/img/products/13/4x5img3.jpg",
             "/img/products/13/4x5img4.jpg"
         ],
-        "description": "<p>Embrace comfort and style with our Essential Harem Pants. Featuring a soft, breathable fabric, elastic waistband for comfort, and a chic loose fit, these pants are perfect for yoga or casual wear. Available in various colors, they're a must-have for relaxed, everyday fashion.</p><h3> Key Features:</h3> <p><b> Material: </b>High-quality, lightweight fabric that offers breathability and flexibility.</p> <p><b>Fit:</b> Comfortable, loose fit with a tapered ankle to suit all body types.</p><p><b> Design:</b> Available in a range of vibrant colors and patterns, inspired by bohemian style.<p><p><b> Waistband:</b> Elastic waistband with drawstring for an adjustable, secure fit.<p><p><b> Versatility:</b> Perfect for yoga, dance, travel, or just lounging at home.</p><p><b>Care Instructions:</b> Easy to care for, machine washable.</p> <p><b>Sizes:</b> One size fits all types of body</p> <p>Our Bohemian Bliss Harem Pants are not just a fashion statement but a testament to comfort and versatility. Whether you're practicing yoga, heading to a festival, or just relaxing at home, these pants will be your go-to choice for a casual yet chic look. </p>" ,
+        "description": "<p>170CM X 90CM</p><p>2 Layer woven Jacquard beach towel</p><p>Sand resistant</p><p>3 x quick drying</p><p>Made in Bali, Indonesia</p><p>420g Weight</p><p>These towels not only dry extra quick, but they are also lightweight, travel friendly, and don't take up too much room in your beach bag. Leaving plenty of room for other essentials!</p><p>Jacquard blue Turkish Towel Woven by local artisans in Turkey, these super stylish towels are an art piece for your bathroom, poolside, or at the beach! Featuring fringe detail trim, these gorgeous towels bring quality and style together. </p>" ,
         "quantity":3
     },
     {
         "id": 14,
         "name": "Watch",
-        "price": 22,
+        "price": 100,
         "imgUrl": [
             "/img/products/14/4x5img1.jpg",
             "/img/products/14/4x5img2.jpg",
             "/img/products/14/4x5img3.jpg",
             "/img/products/14/4x5img4.jpg"
+        ],
+        "description": "<p>170CM X 90CM</p><p>2 Layer woven Jacquard beach towel</p><p>Sand resistant</p><p>3 x quick drying</p><p>Made in Bali, Indonesia</p><p>420g Weight</p><p>These towels not only dry extra quick, but they are also lightweight, travel friendly, and don't take up too much room in your beach bag. Leaving plenty of room for other essentials!</p><p>Jacquard blue Turkish Towel Woven by local artisans in Turkey, these super stylish towels are an art piece for your bathroom, poolside, or at the beach! Featuring fringe detail trim, these gorgeous towels bring quality and style together. </p>" ,
+        "quantity":3
+    },
+    {
+        "id": 1,
+        "name": "Watch",
+        "price": 100,
+        "imgUrl": [
+            "/img/products/1/4x5img1.jpg",
+            "/img/products/1/4x5img2.jpg",
+            "/img/products/1/4x5img3.jpg",
+            "/img/products/1/4x5img4.jpg"
+        ],
+        "description": "<p>170CM X 90CM</p><p>2 Layer woven Jacquard beach towel</p><p>Sand resistant</p><p>3 x quick drying</p><p>Made in Bali, Indonesia</p><p>420g Weight</p><p>These towels not only dry extra quick, but they are also lightweight, travel friendly, and don't take up too much room in your beach bag. Leaving plenty of room for other essentials!</p><p>Jacquard blue Turkish Towel Woven by local artisans in Turkey, these super stylish towels are an art piece for your bathroom, poolside, or at the beach! Featuring fringe detail trim, these gorgeous towels bring quality and style together. </p>" ,
+        "quantity":3
+    },
+    {
+        "id": 1,
+        "name": "Watch",
+        "price": 100,
+        "imgUrl": [
+            "/img/products/1/4x5img1.jpg",
+            "/img/products/1/4x5img2.jpg",
+            "/img/products/1/4x5img3.jpg",
+            "/img/products/1/4x5img4.jpg"
+        ],
+        "description": "<p>170CM X 90CM</p><p>2 Layer woven Jacquard beach towel</p><p>Sand resistant</p><p>3 x quick drying</p><p>Made in Bali, Indonesia</p><p>420g Weight</p><p>These towels not only dry extra quick, but they are also lightweight, travel friendly, and don't take up too much room in your beach bag. Leaving plenty of room for other essentials!</p><p>Jacquard blue Turkish Towel Woven by local artisans in Turkey, these super stylish towels are an art piece for your bathroom, poolside, or at the beach! Featuring fringe detail trim, these gorgeous towels bring quality and style together. </p>" ,
+        "quantity":3
+    },
+    {
+        "id": 2,
+        "name": "Phone",
+        "price": 120,
+        "imgUrl": [
+            "/img/products/2/4x5img2.jpg",
+            "/img/products/2/4x5img2.jpg",
+            "/img/products/2/4x5img3.jpg",
+            "/img/products/2/4x5img4.jpg"
         ],
         "description": "<p>Embrace comfort and style with our Essential Harem Pants. Featuring a soft, breathable fabric, elastic waistband for comfort, and a chic loose fit, these pants are perfect for yoga or casual wear. Available in various colors, they're a must-have for relaxed, everyday fashion.</p><h3> Key Features:</h3> <p><b> Material: </b>High-quality, lightweight fabric that offers breathability and flexibility.</p> <p><b>Fit:</b> Comfortable, loose fit with a tapered ankle to suit all body types.</p><p><b> Design:</b> Available in a range of vibrant colors and patterns, inspired by bohemian style.<p><p><b> Waistband:</b> Elastic waistband with drawstring for an adjustable, secure fit.<p><p><b> Versatility:</b> Perfect for yoga, dance, travel, or just lounging at home.</p><p><b>Care Instructions:</b> Easy to care for, machine washable.</p> <p><b>Sizes:</b> One size fits all types of body</p> <p>Our Bohemian Bliss Harem Pants are not just a fashion statement but a testament to comfort and versatility. Whether you're practicing yoga, heading to a festival, or just relaxing at home, these pants will be your go-to choice for a casual yet chic look. </p>" ,
         "quantity":3
@@ -147,14 +186,14 @@
     {
         "id": 3,
         "name": "Fregrent",
-        "price": 22,
+        "price": 50,
         "imgUrl": [
-            "/img/products/4/4x5img1.jpg",
-            "/img/products/4/4x5img2.jpg",
-            "/img/products/4/4x5img3.jpg",
-            "/img/products/4/4x5img4.jpg"
+            "/img/products/3/4x5img3.jpg",
+            "/img/products/3/4x5img2.jpg",
+            "/img/products/3/4x5img3.jpg",
+            "/img/products/3/4x5img4.jpg"
         ],
-        "description": "<p>Embrace comfort and style with our Essential Harem Pants. Featuring a soft, breathable fabric, elastic waistband for comfort, and a chic loose fit, these pants are perfect for yoga or casual wear. Available in various colors, they're a must-have for relaxed, everyday fashion.</p><h3> Key Features:</h3> <p><b> Material: </b>High-quality, lightweight fabric that offers breathability and flexibility.</p> <p><b>Fit:</b> Comfortable, loose fit with a tapered ankle to suit all body types.</p><p><b> Design:</b> Available in a range of vibrant colors and patterns, inspired by bohemian style.<p><p><b> Waistband:</b> Elastic waistband with drawstring for an adjustable, secure fit.<p><p><b> Versatility:</b> Perfect for yoga, dance, travel, or just lounging at home.</p><p><b>Care Instructions:</b> Easy to care for, machine washable.</p> <p><b>Sizes:</b> One size fits all types of body</p> <p>Our Bohemian Bliss Harem Pants are not just a fashion statement but a testament to comfort and versatility. Whether you're practicing yoga, heading to a festival, or just relaxing at home, these pants will be your go-to choice for a casual yet chic look. </p>" ,
+        "description": "What is a product description? A product description is the marketing copy that explains what a product is and why it's worth purchasing. The purpose of a product description is to supply customers with important information about the features and key benefits of the product so they're compelled to buy.",
         "quantity":3
     }
 ]

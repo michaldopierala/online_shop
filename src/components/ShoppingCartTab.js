@@ -4,9 +4,7 @@ import products from '../data/products.json'
 import { ShoppingCartContext } from '../context/CartContext';
 import CartItem from './CartItem';
 
-
 export default function ShoppingCartTab() {
-
     const { closeCart, cartOpen, cartItems, CartQuantity } = useContext(ShoppingCartContext)
 
     return (
@@ -27,13 +25,14 @@ export default function ShoppingCartTab() {
                             return total + (item?.price || 0) * cartItem.quantity
                         }, 0)}
                             <div className='checkoutContainer'>
-                                <Link to={`/checkout`} className='checkoutBtn'>Checkout</Link>
+                                <Link to={`/checkout`} className='checkoutBtn'>checkout</Link>
+                                {/* <Link to={`/checkout`} className=' configBtn'>Checkout</Link> */}
                             </div>
                         </div>
-                        : null}
+                        : null
+                    }
                 </div>
             </div>
-        </div> 
-
+        </div>
     )
 }

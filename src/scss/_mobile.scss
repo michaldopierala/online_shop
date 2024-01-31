@@ -1,4 +1,67 @@
+@media only screen and (max-width: 1100px) {
+    .ProductPersentation {
+        height: 45vw;
+        margin-top: 150px;
+        margin-bottom: 150px;
+
+        .description {
+            font-size: 1.8vw;
+
+            .title {
+                font-size: 2.2vw;
+            }
+        }
+    }
+
+    .CartItem {
+        font-size: 18px;
+    }
+
+    .ShoppingCart {
+        .ShoppingCartTab {
+            .close {
+                top: 15px;
+                right: 30px;
+            }
+        }
+    }
+
+    .Modal {
+        .modalContainer {
+            width: 40vw;
+            min-width: 300px;
+            padding: 20px 30px;
+            font-weight: 18px;
+
+            .text {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 900px) {
+    .ProductPersentation {
+        grid-template-columns: 1fr;
+        height: auto;
+
+        .image {
+            height: 60vw;
+            height: 300px;
+
+        }
+
+        .description {
+            font-size: 20px;
+            line-height: normal;
+            height: 300px;
+
+            .title {
+                font-size: 30px;
+            }
+        }
+    }
+
     .ProductsCarusel {
         border-top: none;
         margin-top: 70px;
@@ -82,12 +145,31 @@
 
     .ShoppingCart {
         .ShoppingCartTab {
-            width: 70vw;
+            width: 80vw;
         }
     }
 
-}
+    .Store {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px 20px;
+        padding: 0px;
+        padding-top: 0px;
 
+        .StoreItem {
+
+            .product_name {
+                font-size: 17px;
+
+                .price {
+                    font-size: 16px;
+                }
+            }
+        }
+
+    }
+
+
+}
 
 
 //   Extra Small Devices (Mobile Phones)
@@ -109,15 +191,11 @@
         }
     }
 
-
-
     .Store {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 5%;
-        justify-content: space-around;
         padding: 5px;
-        padding-top: 170px;
+        padding-top: 150px;
     }
 
     .ProductPage {
@@ -176,7 +254,7 @@
         .baner {
             display: grid;
             grid-template-columns: 1fr;
-            
+
             .column:first-child {
                 order: 2;
             }
@@ -191,6 +269,7 @@
                         top: 0px;
                         left: 0px;
                     }
+
                     .star2 {
                         right: 0px;
                         bottom: 0px;
