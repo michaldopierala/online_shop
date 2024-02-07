@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import { useEffect } from 'react';
 import { BrowserRouter, Link, Router, Routes, Route } from "react-router-dom";
 import Home from './components/Home';
 import Products from './page/Products';
@@ -13,21 +14,27 @@ import ScrollToTop from './components/ScrollToTop';
 import Test from './page/Test';
 import Contact from './page/Contact.tsx';
 import TermsConditions from './page/TermsConditions';
-
-import ReactGA4 from 'react-ga4';
 import Privacy from './page/Privacy';
 import Shipping from './page/Shipping';
+
+import ReactGA4 from 'react-ga4';
 if (window.location.hostname !== "localhost") {
   ReactGA4.initialize("G-S1TP745FSQ");
 }
 
 
 function App() {
+
+  //facebook event tracking
+  useEffect(() => {
+    window.fbq('track', 'ViewContent')
+  }, []);
+
   return (
     <div className="App">
       <CartContext>
         <BrowserRouter>
-          <ScrollToTop/>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Main />}  >
               <Route path="/" element={<Home />} />
@@ -35,12 +42,12 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/product/:id" element={<ProductPage />} />
-              <Route path="/terms" element={<TermsConditions/> } />
-              <Route path="/privacy" element={<Privacy/> } />
-              <Route path="/shipping" element={<Shipping/>} />
+              <Route path="/terms" element={<TermsConditions />} />
+              <Route path="/privacy" element={<Privacy />} />
+              <Route path="/shipping" element={<Shipping />} />
             </Route>
             <Route path="/checkout" element={<Checkout />} />
-            <Route path="/test" element={<Test/>} />
+            <Route path="/test" element={<Test />} />
           </Routes>
           <Footer />
 
