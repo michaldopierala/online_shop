@@ -124,6 +124,7 @@
                     height: 100vh;
                     display: flex;
                     flex-direction: column;
+                    text-transform: capitalize;
 
                     .link {
                         text-decoration: none;
@@ -166,6 +167,19 @@
             }
         }
 
+    }
+
+    .CookieBanner {
+        font-size: 13px;
+        padding: 20px 6px;
+        /* Consolidated padding */
+        flex-direction: column;
+
+        .buttons {
+            button {
+                font-size: 13px;
+            }
+        }
     }
 
 

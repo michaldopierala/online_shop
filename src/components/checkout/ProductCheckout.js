@@ -1,6 +1,7 @@
 import React from 'react'
 import products from '../../data/products.json'
 
+
 export default function ProductCheckout({ id, quantity }) {
   const product = products.find((item) => item.id === id)
 

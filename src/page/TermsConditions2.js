@@ -23,32 +23,32 @@ export default function TermsConditions() {
       <div className='head'>1. DEFINITIONS</div>
       <div className='content'>
         Working days - days from Monday to Friday, excluding public holidays in Poland.
-        <br></br>
+        <br></br></br>
         Consumer - a consumer within the meaning of the Civil Code.
-        <br></br>
+        <br></br></br>
         Account - a free function of the Store (service provided electronically) regulated by a separate set of rules, through which any entity using the Store can set up their individual account in the Store.
-        <br></br>
+        <br></br></br>
         Buyer - any entity purchasing in the Store.
-        <br></br>
+        <br></br></br>
         Privileged Buyer - a Buyer who is a Consumer or a Privileged Entrepreneur.
-        <br></br>
+        <br></br></br>
         Privileged Entrepreneur - a natural person entering into a contract with the Seller directly related to their business activity, but not having a professional nature for it.
-        <br></br>
+        <br></br></br>
         Regulations - these regulations.
-        <br></br>
+        <br></br></br>
         Store - the online store SunsetBay operated by the Seller at https://sunsetbay.ink.
-        <br></br>
+        <br></br></br>
         Seller - Entrepreneurs registered in the Central Registration and Information on Business conducted by the minister responsible for economy and managing the Central Registration and Information on Business:
-        <br></br>
+        <br></br></br>
         The provisions of the Regulations regarding products apply both to movable goods (products) and Digital Content.
       </div>
 
       <div className='head'>2. Contact with the Seller</div>
       <div className='content'>
         Postal address: ul. Petuniowa 20 53-238 Wroclaw
-        <br></br>
+        <br></br></br>
         Email address: michal6452@gmail.com
-        <br></br>
+        <br></br></br>
         Phone: 795 090 614
       </div>
       <div className='head'>3. Technical Requirements</div>
@@ -57,70 +57,70 @@ export default function TermsConditions() {
 
         A device with Internet access
         A web browser that supports JavaScript and cookies.
-        <br></br>
+        <br></br></br>
         2. To place an order in the Store, in addition to the requirements specified in section 1, an active email account is necessary.
       </div>
       <div className='head'>4. Shopping in the Store</div>
       <div className='content'>
         1. The prices of products visible in the Store are the total prices for the product.
-        <br></br>
+        <br></br></br>
         2. The Seller points out that the total price of the order consists of the price for the product and, if applicable in a given case, the cost of delivery of the goods, as indicated in the Store.
-        <br></br>
+        <br></br></br>
         3. The product selected for purchase should be added to the shopping cart in the Store.
-        <br></br>
+        <br></br></br>
         4. Then, the Buyer selects the method of delivery of the goods and the method of payment for the order from the options available in the Store, and also provides the data necessary to fulfill the placed order.
-        <br></br>
+        <br></br></br>
         5. An order is placed at the moment of confirming its contents and accepting the Regulations by the Buyer.
-        <br></br>
+        <br></br></br>
         6. Placing an order is equivalent to concluding a contract between the Buyer and the Seller.
-        <br></br>
+        <br></br></br>
         7. The Buyer may register in the Store, i.e., create an Account, or make purchases without registration by providing their details with each possible order.
       </div>
       <div className='head'>5. Payments</div>
       <div className='content'>
         1. General: All payments for products or services purchased through our website must be made in accordance with these Terms of Payment. By placing an order, you agree to be bound by these terms.
-        <br></br>
+        <br></br></br>
         2. ayment Methods: We accept the following methods of payment: credit card, debit card, PayPal, and other digital payment methods as listed on our website. We reserve the right to add or remove payment methods at our sole discretion.
-        <br></br>
+        <br></br></br>
         3. Currency: All transactions are processed in [insert currency, e.g., USD]. If your credit card is denominated in another currency, the final price charged in your currency will be calculated by your card issuer according to the applicable exchange rate on the day of the transaction.
-        <br></br>
+        <br></br></br>
         4. Pricing: All prices are displayed on our website and are subject to change without notice. Prices are inclusive of VAT (where applicable) but exclusive of shipping charges which will be added to your total order price.
-        <br></br>
+        <br></br></br>
         5. Order Confirmation: Upon successful completion of your payment, you will receive an order confirmation via email. This confirmation will serve as your receipt and include details of your purchase.
-        <br></br>
+        <br></br></br>
         6. Payment Security: We take the security of your payment information seriously. Our website uses industry-standard encryption technology to protect your payment details during transmission.
-        <br></br>
+        <br></br></br>
         7. Failed or Declined Payments: In case of a failed or declined payment, we will notify you and provide an opportunity to re-submit your payment. We are not responsible for any fees or charges you may incur due to failed or declined payments.
-        <br></br>
+        <br></br></br>
         8. Late Payments: For any services offered on a subscription basis, late payments may result in suspension or termination of the service. A late fee may also be applied to overdue amounts.
-        <br></br>
+        <br></br></br>
         9. Refunds and Cancellations: Please refer to our [Refund and Cancellation Policy] for details on how to cancel orders and request refunds.
-        <br></br>
+        <br></br></br>
         10. Billing Discrepancies: If you believe you have been billed in error, please notify us within [insert time frame, e.g., 30 days] of the billing date by contacting [insert contact information or process].
-        <br></br>
-        <br></br>
+        <br></br></br>
+        <br></br></br>
         By completing a purchase on our website, you acknowledge that you have read, understood, and agreed to these Terms of Payment. We reserve the right to modify these terms at any time, so please review them frequently.
       </div>
       <div className='head'>6. Order Fulfillment</div>
       <div className='content'>
         1. The order fulfillment time is indicated in the Store.
-        <br></br>
+        <br></br></br>
         2. If the Buyer has chosen to pay in advance for the order, the Seller will begin processing the order after its payment.
-        <br></br>
+        <br></br></br>
         3. In the event that the Buyer has purchased products with different fulfillment times within one order, the order will be completed within the time appropriate for the product with the longest fulfillment time.
         4. Countries in which delivery is carried out:
-        <br></br>
-        - Poland<br></br>
-        - Germany<br></br>
-        - United Kingdom<br></br>
-        - Netherlands<br></br>
-        - Norway<br></br>
-        - Lithuania<br></br>
-        5. Products purchased in the Store are delivered – depending on the delivery method chosen by the Buyer:<br></br>
-        - via a courier company;<br></br>
-        - to InPost parcel lockers;<br></br>
-        - electronically, to the email address provided by the Buyer when placing the order – in the case of Digital Content.<br></br>
-        6. The Buyer may pick up the goods personally at the company's headquarters during its opening hours.<br></br>
+        <br></br></br>
+        - Poland<br></br></br>
+        - Germany<br></br></br>
+        - United Kingdom<br></br></br>
+        - Netherlands<br></br></br>
+        - Norway<br></br></br>
+        - Lithuania<br></br></br>
+        5. Products purchased in the Store are delivered – depending on the delivery method chosen by the Buyer:<br></br></br>
+        - via a courier company;<br></br></br>
+        - to InPost parcel lockers;<br></br></br>
+        - electronically, to the email address provided by the Buyer when placing the order – in the case of Digital Content.<br></br></br>
+        6. The Buyer may pick up the goods personally at the company's headquarters during its opening hours.<br></br></br>
         7. In the case of personal pickup chosen by the Buyer, the goods will be ready for collection at the indicated order fulfillment time.
       </div>
       <div className='head'>7. Right to Withdraw from the Contract</div>

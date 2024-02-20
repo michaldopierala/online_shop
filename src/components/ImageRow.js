@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import products from '../data/products.json'
+import products from '../data/products.json';
+import { useTranslation } from 'react-i18next';
+
+
 
 
 // const ImageRow = () => {
   export default function ImageRow() {
+    const { t } = useTranslation();
+
 
     const productsToShow = [
       4,
@@ -27,8 +32,8 @@ import products from '../data/products.json'
 
     return (
       <div className='ImageRow'>
-      <div className='title'>Harem Pants Collection </div>
-      <div className='description'>Reimagine your seaside style with our premium collection of harem pants.</div>
+      <div className='title'>{t('frontpageheader1')}</div>
+      <div className='description'>{t('frontpagetext1')}</div>
       {/* <div className='images' style={{ display: 'flex', flexDirection: 'row' }}> */}
       <div className='images'>
   

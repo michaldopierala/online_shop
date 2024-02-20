@@ -606,6 +606,149 @@ body {
 
 }
 
+.CookieBanner {
+    text-align: center;
+    position: fixed;
+    display: flex;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: rgb(248, 248, 248);
+    padding: 40px;
+    /* Consolidated padding */
+    z-index: 1000;
+    align-items: center;
+    /* Add this to align flex items vertically */
+    font-family: "Helvetica Neue W31", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Arial;
+    font-size: 16px;
+    border-top: #c7c6c6 0.5px solid;
+
+
+    .text {
+        text-align: left;
+        padding: 0px 30px;
+        color: #595959;
+
+        .title {
+            font-weight: bold;
+            margin-bottom: 3px;
+            color: black;
+        }
+
+        .cookiesLink {
+            color: #595959;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        /* Ensures buttons are centered vertically */
+
+        button {
+            all: unset;
+            margin: 20px;
+            padding: 0px 40px;
+            color: black;
+            background-color: rgb(220, 220, 220);
+            border: none;
+            border-radius: 5px;
+            height: 40px;
+            /* Example explicit height */
+            font-size: 16px;
+            letter-spacing: 0.7px;
+            text-transform: capitalize;
+        }
+
+        button:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.CookiesPolicy {
+    padding: 100px 50px;
+    font-family: Arial;
+
+    .title {
+        font-weight: bold;
+        text-transform: capitalize;
+        font-size: 26px;
+        margin: 10px 0px;
+    }
+
+    .lastUpdate {
+        color: #595959;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .heading {
+        font-weight: bold;
+        color: #000000;
+        font-size: 19px;
+        margin: 30px 0px;
+    }
+
+    .text {
+        font-size: 14px;
+        color: #595959;
+    }
+
+    .box {
+        border: 1px solid rgb(230, 230, 230);
+        color: #595959;
+        border-radius: 3px;
+        margin: 20px 0px;
+        text-align: left;
+        font-size: 14px;
+        line-height: 1.67;
+        padding: 20px;
+    }
+}
+
+.Privacy {
+    padding: 100px 10%;
+    font-family: Arial;
+
+    .title {
+        font-weight: bold;
+        text-transform: capitalize;
+        font-size: 26px;
+        margin: 10px 0px;
+    }
+
+    .lastUpdate {
+        color: #595959;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .heading {
+        font-weight: bold;
+        color: #000000;
+        font-size: 19px;
+        margin: 30px 0px;
+    }
+
+    .text {
+        font-size: 14px;
+        color: #595959;
+    }
+
+    .box {
+        border: 1px solid rgb(230, 230, 230);
+        color: #595959;
+        border-radius: 3px;
+        margin: 20px 0px;
+        text-align: left;
+        font-size: 14px;
+        line-height: 1.67;
+        padding: 20px;
+    }
+}
+
 // PALET 2
 .Test {
     background-color: RGB(64, 224, 208);
@@ -780,18 +923,10 @@ body {
     }
 }
 
-.Privacy{
-    padding: 7%;
-    padding-top: 150px;
-}
-
-
 @import 'mobile';
 @import '_checkout_page';
 // @import '_conditions';
 
-
 .About {
     padding: 100px;
-
 }

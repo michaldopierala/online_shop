@@ -1,0 +1,55 @@
+{
+  "menu_products": "produkty",
+  "menu_contact": "kontakt",
+  "frontpageheader1": "KOLEKCJA SPODNI HAREM",
+  "frontpagetext1": "Odmień swój plażowy styl dzięki naszej kolekcji premium spodni haremowych.",
+  "frontpageheader2": "RĘCZNIKI SARONG",
+  "frontpagetext2": "Poczuj plażową elegancję dzięki naszemu miękkiemu, szybkoschnącemu ręcznikowi Sarong. Idealny do opalania, pływania lub jako stylowe nakrycie, jego żywy design i lekki materiał są idealne na każdą morską przygodę. Kompaktowy i kolorowy, to must-have na letnie wycieczki!",
+  "footer1": "Zasady & Warunki",
+  "footer2": "Polityka prywatności",
+  "footer3": "Shipping Policy",
+  "footer4": "Contact",
+  "add_to_cart": "Dodaj do koszyka",
+  "remove": "usuń",
+  "cookies":{
+    "title":"Pomóż nam ulepszyć naszą stronę internetową za pomocą plików cookie",
+    "text":"Używamy plików cookie, aby poprawić komfort przeglądania, analizować ruch w witrynie, personalizować treści i wyświetlać ukierunkowane reklamy. Klikając „Akceptuję”, wyrażasz zgodę na używanie przez nas plików cookie i podobnych technologii zgodnie z naszymi ",
+    "accept":"zaakceptuj",
+    "reject":"odrzucić"
+  },
+  "shopping_cart": {
+    "cart": "Koszyk",
+    "empty": "Koszyk jest pusty",
+    "total": "Suma",
+    "checkout": "Płatność",
+    "modal": {
+      "text": "Nowy produkt został dodany do koszyka.",
+      "go": "przejdź do koszyka",
+      "close": "zamknij"}
+  },
+  "contact": {
+    "title": "Kontakt",
+    "text": "W SPRAWACH DOTYCZĄCYCH ZAMÓWIEŃ: ZMIANY W SZCZEGÓŁACH DOSTAWY, PRODUKTY, ANULOWANIE ZAMÓWIENIA, PROBLEMY Z PŁATNOŚCIAMI – PROSIMY O KONTAKT ZA POMOCĄ FORMULARZA LUB E-MAILA.",
+    "form": "Formularz kontaktowy",
+    "details": "Dane kontaktowe",
+    "data": "Dane firmy",
+    "name": "Imię",
+    "email": "Email",
+    "message": "Wiadomość",
+    "submit": "wyślij",
+    "succes1": "Wiadomość została pomyślnie wysłana.",
+    "succes2": "Odpowiemy tak szybko jak to możliwe."
+  },
+    "checkout": {
+    "address": "adres",
+    "order": "TWOJE ZAMÓWIENIE",
+    "payment": "PŁATNOŚĆ",
+    "name": "Imię",
+    "surname": "Nazwisko",
+    "email": "Email",
+    "address2": "Adres",
+    "city": "Miasto",
+    "code": "Kod pocztowy",
+    "total": "Suma"
+  }
+}

@@ -1,0 +1,56 @@
+{
+    "menu_products": "Produkte",
+    "menu_contact": "Kontakt",
+    "frontpageheader1": "KOLLEKTION VON HAREMSHOSEN",
+    "frontpagetext1": "Gestalten Sie Ihren Strand-Look neu mit unserer exklusiven Kollektion von Haremshosen.",
+    "frontpageheader2": "SARONG-HANDTÜCHER",
+    "frontpagetext2": "Umarme Strand-Eleganz mit unserem weichen, schnell trocknenden Sarong-Handtuch. Ideal zum Sonnenbaden, Schwimmen oder als stilvolle Überdeckung, sein lebhaftes Design und der leichte Stoff sind perfekt für jedes Strandabenteuer. Kompakt und farbenfroh, ist es ein Muss für Ihre Sommerausflüge!",
+    "footer1": "Allgemeine Geschäftsbedingungen",
+    "footer2": "Datenschutzrichtlinie",
+    "footer3": "Versandrichtlinien",
+    "footer4": "Kontakt",
+    "add_to_cart": "In den Warenkorb",
+    "remove": "entfernen",
+    "cookies":{
+      "title":"Helfen Sie uns, unsere Website mit Cookies zu verbessern",
+      "text":"Wir verwenden Cookies, um Ihr Surferlebnis zu verbessern, den Website-Verkehr zu analysieren, Inhalte zu personalisieren und gezielte Werbung zu schalten. Indem Sie auf „Akzeptieren“ klicken, stimmen Sie der Verwendung von Cookies und ähnlichen Technologien gemäß unserer Datenschutzrichtlinie zu ",
+      "accept":"akzeptieren",
+      "reject":"ablehnen"
+    },
+    "shopping_cart": {
+      "cart": "Warenkorb",
+      "empty": "Warenkorb ist leer",
+      "total": "Gesamt",
+      "checkout": "Zur Kasse",
+      "modal": {
+        "text": "Neues Produkt wurde zum Warenkorb hinzugefügt.",
+        "go": "zum Warenkorb gehen",
+        "close": "schließen"
+      }
+    },
+    "contact": {
+      "title": "Kontakt",
+      "text": "BEI ANFRAGEN ZU BESTELLUNGEN: ÄNDERUNGEN BEI LIEFERDETAILS, PRODUKTEN, STORNIERUNGEN VON BESTELLUNGEN, ZAHLUNGSPROBLEMEN – BITTE KONTAKTIEREN SIE UNS ÜBER DAS FORMULAR ODER PER E-MAIL.",
+      "form": "Kontaktformular",
+      "details": "Kontaktdaten",
+      "data": "Firmendaten",
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "submit": "absenden",
+      "succes1": "Die Nachricht wurde erfolgreich gesendet.",
+      "succes2": "Wir werden Ihnen so schnell wie möglich antworten."
+    },
+    "checkout": {
+      "address": "Adresse",
+      "order": "IHRE BESTELLUNG",
+      "payment": "ZAHLUNG",
+      "name": "Name",
+      "surname": "Nachname",
+      "email": "E-Mail",
+      "address2": "Adresse",
+      "city": "Stadt",
+      "code": "Postleitzahl",
+      "total": "Gesamt"
+    }
+  }

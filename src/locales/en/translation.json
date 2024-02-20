@@ -1,0 +1,57 @@
+{
+    "menu_products": "products",
+    "menu_contact": "contact",
+    "frontpageheader1": "HAREM PANTS COLLECTION",
+    "frontpagetext1": "Reimagine your seaside style with our premium collection of harem pants.",
+    "frontpageheader2": "SARONG TOWELS",
+    "frontpagetext2": "Embrace beach elegance with our soft, quick-dry Sarong Towel. Ideal for sunbathing, swimming, or as a stylish cover-up, its vibrant design and lightweight fabric are perfect for any seaside adventure. Compact and colorful, it's a must-have for your summer outings!",
+    "footer1": "Terms & Conditions",
+    "footer2": "Privacy Policy",
+    "footer3": "Shipping Policy",
+    "footer4": "Contact",
+    "add_to_cart": "add to cart",
+    "remove": "remove",
+    "cookies":{
+      "title":"Help us improve our website with cookies",
+      "text":"We use cookies to enhance your browsing experience, analyze site traffic, personalize content, and serve targeted advertisements. By clicking 'Accept,' you consent to our use of cookies and similar technologies in accordance with our",
+      "accept":"accept",
+      "reject":"reject"
+    },
+    "shopping_cart":{
+      "cart":"Cart",
+      "empty":"Cart is empty",
+      "total":"Total",
+      "checkout":"Checkout",
+      "modal":{
+        "text":"New product was added to cart.",
+        "go":"go to cart",
+        "close":"close"
+      }
+    },
+    "contact":{
+      "title":"Contact",
+      "text":"FOR INQUIRIES RELATED TO ORDERS: CHANGES IN DELIVERY DETAILS, PRODUCTS, ORDER CANCELLATIONS, PAYMENT ISSUES – PLEASE CONTACT US THROUGH THE FORM OR BY EMAIL.",
+      "form":"Contact form",
+      "details":"Contact details",
+      "data":"Company's data",
+      "name":"Name",
+      "email":"Email",
+      "message":"Message",
+      "submit":"submit",
+      "succes1":"The message was sent successfully.",
+      "succes2":"We will reply to you as soon as posible."
+    },
+    "checkout":{
+      "address":"address",
+      "order":"YOUR ORDER",
+      "payment":"PAYMENT",
+      "name":"Name",
+      "surname":"Surname",
+      "email":"Email",
+      "address2":"Address",
+      "city":"City",
+      "code":"Postal Code",
+      "total":"Total"
+    }
+    
+  }

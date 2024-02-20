@@ -1,15 +1,18 @@
 import React, { useState, FormEvent, useEffect } from 'react';
 import ReactGA4 from 'react-ga4';
 import { useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+
 
 
 export default function Contact() {
+    const { t } = useTranslation();
     const location = useLocation();
     useEffect(() => {
         if (window.location.hostname !== "localhost") {
-          ReactGA4.send({ hitType: "pageview", page: location.pathname });
+            ReactGA4.send({ hitType: "pageview", page: location.pathname });
         }
-      }, [location]);
+    }, [location]);
 
     const ContactDataBase: string | undefined = process.env.REACT_APP_API_URL2;
     const [messageSent, setMessageSent] = useState<boolean>(false);
@@ -41,8 +44,8 @@ export default function Contact() {
             <div className='baner'>
                 <div className='column'>
                     <div className='text'>
-                        <div className='head'>Contact</div>
-                        For inquiries related to orders: changes in delivery details, products, order cancellations, payment issues – please contact us through the form or by email.
+                        <div className='head'>{t('contact.title')}</div>
+                        {t('contact.text')}
                         <div className='star1'><img src='/img/star1.png' /> </div>
                         <div className='star2'><img src='/img/star2.png' /></div>
                     </div>
@@ -52,69 +55,68 @@ export default function Contact() {
             <div className='container'>
                 {messageSent ? (
                     <div>
-                        The message was sent successfully.
+                        {t('contact.succes1')}
                         <br></br>
-                        We will reply to you as soon as posible.
+                        {t('contact.succes2')}
                     </div>
                 ) : (
                     <div className="contact-form-container">
-                        <div className='title'>Contact form</div>
+                        <div className='title'>{t('contact.form')}</div>
                         <form onSubmit={handleSubmit} className="contact-form">
                             <div className="form-group">
-                                <label htmlFor="name">Name:</label>
+                                <label htmlFor="name">{t('contact.name')}:</label>
                                 <input
                                     type="text"
                                     value={name}
                                     onChange={(e) => setName(e.target.value)}
-                                    placeholder="Name"
+                                    // placeholder="Name"
                                     // id="name"
                                     // name="name"
                                     className="form-control"
                                 />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="email">Email:</label>
+                                <label htmlFor="email">{t('contact.email')}:</label>
                                 <input
                                     type="email"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
-                                    placeholder="Email"
+                                    // placeholder="Email"
                                     // id="email"
                                     // name="email"
                                     className="form-control"
                                 />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="message">Message:</label>
+                                <label htmlFor="message">{t('contact.title')}:</label>
                                 <textarea
                                     value={message}
                                     onChange={(e) => setMessage(e.target.value)}
-                                    placeholder="Message"
+                                    // placeholder="Message"
                                     id="message"
                                     name="message"
                                     className="form-control"
                                 />
                             </div>
                             <div className='button'>
-                                <button type="submit" className="submit-button">Submit</button>
+                                <button type="submit" className="submit-button">{t('contact.submit')}</button>
                             </div>
                         </form>
                     </div>
-                )}
+                )
+                }
                 <div className='dane-kontaktowe'>
                     <div className='block'>
-                        <div className='title'>Contact details</div>
+                        <div className='title'>{t('contact.details')}</div>
                         <div className='email'><img src='/img/email-outline.png' /><div>michal6452@gmail.com</div> </div>
                         <div className='email'><img src='/img/telephone.png' /><div>795 090 614</div> </div>
                     </div>
                     <div className='block'>
-                        <div className='title'>Company's data</div>
+                        <div className='title'>{t('contact.data')}</div>
                         <div>ul. Petuniowa 20<br /> 53-238 Wroclaw<br /> NIP: 844871239856</div>
                     </div>
-
                 </div>
             </div>
-
         </div >
     );
 }

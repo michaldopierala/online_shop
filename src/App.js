@@ -16,6 +16,8 @@ import Contact from './page/Contact.tsx';
 import TermsConditions from './page/TermsConditions';
 import Privacy from './page/Privacy';
 import Shipping from './page/Shipping';
+import CookiesPolicy from './page/CookiesPolicy';
+import CookieBanner from './components/CookieBanner';
 
 import ReactGA4 from 'react-ga4';
 if (window.location.hostname !== "localhost") {
@@ -25,16 +27,12 @@ if (window.location.hostname !== "localhost") {
 
 function App() {
 
-  //facebook event tracking
-  useEffect(() => {
-    window.fbq('track', 'ViewContent')
-  }, []);
-
   return (
     <div className="App">
       <CartContext>
         <BrowserRouter>
-          <ScrollToTop />
+          <CookieBanner/>
+          <ScrollToTop/>
           <Routes>
             <Route path="/" element={<Main />}  >
               <Route path="/" element={<Home />} />
@@ -45,12 +43,12 @@ function App() {
               <Route path="/terms" element={<TermsConditions />} />
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/shipping" element={<Shipping />} />
+              <Route path="/cookies" element={<CookiesPolicy/>} />
             </Route>
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/test" element={<Test />} />
           </Routes>
           <Footer />
-
         </BrowserRouter>
       </CartContext>
     </div>

@@ -1,11 +1,14 @@
 import React,{ useEffect } from 'react'
-import products from '../data/products.json'
+import { useProducts } from '../hooks/useProducts'; 
 import StoreItem from '../components/StoreItem'
 import { useLocation } from 'react-router-dom';
 import ReactGA4 from 'react-ga4';
 
 
+
 export default function Products() {
+  const products = useProducts(); // Use the custom hook
+
     const location = useLocation();
     useEffect(() => {
         if (window.location.hostname !== "localhost") {

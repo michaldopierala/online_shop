@@ -1,8 +1,11 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+
 
 
 export default function Footer() {
+    const { t } = useTranslation();
     return (
         <div className='FooterComponent'>
             {/* <div className='block'> */}
@@ -11,12 +14,10 @@ export default function Footer() {
                 <img className='name' src='/img/logo1.png' alt='image of palm' />
             </div>
             <div className='info'>
-                <div><Link className="link" to="terms">terms & conditions</Link></div>
-                <div><Link className="link" to="privacy">Privacy Policy</Link></div>
-                <div><Link className="link" to="shipping">Shipping Policy</Link></div>
-                {/* <Link className="link" to="terms">terms & conditions</Link> */}
-                {/* <div>About Us</div> */}
-                <div> <Link className="link" to="contact">contact</Link></div>
+                <div><Link className="link" to="terms">{t('footer1')}</Link></div>
+                <div><Link className="link" to="privacy">{t('footer2')}</Link></div>
+                <div><Link className="link" to="shipping">{t('footer3')}</Link></div>
+                <div> <Link className="link" to="contact">{t('footer4')}</Link></div>
             </div>
             {/* </div> */}
             <div className='copyrights'>

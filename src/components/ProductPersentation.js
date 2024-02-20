@@ -1,14 +1,16 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 export default function ProductPersentation() {
+    const { t } = useTranslation();
     return (
         <div className='ProductPersentation'>
                 <div className='image'>
                     <img src='/img/toa-heftib.jpg' />
                 </div>
                 <div className='description'>
-                <div className='title'>Sarong Towels</div>
-                Embrace beach elegance with our soft, quick-dry Sarong Towel. Ideal for sunbathing, swimming, or as a stylish cover-up, its vibrant design and lightweight fabric are perfect for any seaside adventure. Compact and colorful, it's a must-have for your summer outings!
+                <div className='title'>{t('frontpageheader2')}</div>
+                {t('frontpagetext2')}
                 </div>
         </div>
     )

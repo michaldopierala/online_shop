@@ -1,8 +1,11 @@
 import React, { useContext, useEffect, useRef } from 'react'
 import { ShoppingCartContext } from '../context/CartContext';
+import { useTranslation } from 'react-i18next';
+
 
 
 export default function Modal() {
+    const { t } = useTranslation();
     const modalRef = useRef();
     const { closeModal, closeCart } = useContext(ShoppingCartContext);
 
@@ -25,9 +28,9 @@ export default function Modal() {
     return (
         <div className="Modal">
             <div className="modalContainer" ref={modalRef} >
-                <div className='text'>New product was added to cart. </div>
-                <button onClick={closeCart} >Go to cart</button>
-                <button onClick={closeModal}>Close</button>
+                <div className='text'>{t('shopping_cart.modal.text')}  </div>
+                <button onClick={closeCart} >{t('shopping_cart.modal.go')} </button>
+                <button onClick={closeModal}>{t('shopping_cart.modal.close')} </button>
             </div>
         </div>
     )

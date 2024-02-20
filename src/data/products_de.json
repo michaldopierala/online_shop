@@ -1,0 +1,147 @@
+[
+    {
+        "id": 4,
+        "name": "Boho Breeze",
+        "price": 22,
+        "imgUrl": [
+            "/img/products/4/4x5img1.jpg",
+            "/img/products/4/4x5img2.jpg",
+            "/img/products/4/4x5img3.jpg",
+            "/img/products/4/4x5img4.jpg"
+        ],
+        "description": "<p>Genießen Sie Komfort und Stil mit unserer Essential Haremshose. Diese Hose besteht aus weichem, atmungsaktivem Stoff, einem elastischen Bund für mehr Komfort und einer schicken, lockeren Passform und eignet sich perfekt für Yoga oder Freizeitkleidung. Sie sind in verschiedenen Farben erhältlich und ein Muss für entspannte Alltagsmode.</p><h3> Hauptmerkmale:</h3> <p><b> Material: </b>Hochwertiger, leichter Stoff Das bietet Atmungsaktivität und Flexibilität.</p> <p><b>Passform:</b> Bequeme, lockere Passform mit schmal zulaufendem Knöchel, passend für alle Körpertypen.</p><p><b>Design:</b> Erhältlich in einer Reihe lebendiger Farben und Muster, inspiriert vom Bohème-Stil.<p>   <p><b> Bund:</b> Elastischer Bund mit Kordelzug für eine verstellbare, sichere Passform.</p> <p><b> Vielseitigkeit:</b> Perfekt für Yoga, Tanz, Reisen oder einfach nur zum Faulenzen zu Hause.</p><p><b>Pflegehinweise:</b> Pflegeleicht, maschinenwaschbar.</p > <p><b>Größen:</b> Einheitsgröße für alle Körpertypen</p> <p>Unsere Bohemian Bliss Haremshosen sind nicht nur ein modisches Statement, sondern ein Beweis für Komfort und Vielseitigkeit. Egal, ob Sie Yoga praktizieren, auf ein Festival gehen oder einfach nur zu Hause entspannen, diese Hose ist Ihre erste Wahl für einen lässigen und dennoch schicken Look. </p>" ,
+        "quantity":3
+    },
+    {
+        "id": 5,
+        "name": "Mystic Mirage",
+        "price": 22,
+        "imgUrl": [
+            "/img/products/5/4x5img1.jpg",
+            "/img/products/5/4x5img2.jpg",
+            "/img/products/5/4x5img3.jpg",
+            "/img/products/5/4x5img4.jpg"
+        ],
+        "description": "<p>Genießen Sie Komfort und Stil mit unserer Essential Haremshose. Diese Hose besteht aus weichem, atmungsaktivem Stoff, einem elastischen Bund für mehr Komfort und einer schicken, lockeren Passform und eignet sich perfekt für Yoga oder Freizeitkleidung. Sie sind in verschiedenen Farben erhältlich und ein Muss für entspannte Alltagsmode.</p><h3> Hauptmerkmale:</h3> <p><b> Material: </b>Hochwertiger, leichter Stoff Das bietet Atmungsaktivität und Flexibilität.</p> <p><b>Passform:</b> Bequeme, lockere Passform mit schmal zulaufendem Knöchel, passend für alle Körpertypen.</p><p><b>Design:</b> Erhältlich in einer Reihe lebendiger Farben und Muster, inspiriert vom Bohème-Stil.<p>   <p><b> Bund:</b> Elastischer Bund mit Kordelzug für eine verstellbare, sichere Passform.</p> <p><b> Vielseitigkeit:</b> Perfekt für Yoga, Tanz, Reisen oder einfach nur zum Faulenzen zu Hause.</p><p><b>Pflegehinweise:</b> Pflegeleicht, maschinenwaschbar.</p > <p><b>Größen:</b> Einheitsgröße für alle Körpertypen</p> <p>Unsere Bohemian Bliss Haremshosen sind nicht nur ein modisches Statement, sondern ein Beweis für Komfort und Vielseitigkeit. Egal, ob Sie Yoga praktizieren, auf ein Festival gehen oder einfach nur zu Hause entspannen, diese Hose ist Ihre erste Wahl für einen lässigen und dennoch schicken Look. </p>" ,
+        "quantity":3
+    }
+    ,
+    {
+        "id": 6,
+        "name": "Elephant Harmony",
+        "price": 22,
+        "imgUrl": [
+            "/img/products/6/4x5img1.jpg",
+            "/img/products/6/4x5img2.jpg",
+            "/img/products/6/4x5img3.jpg",
+            "/img/products/6/4x5img4.jpg"
+        ],
+        "description": "<p>Genießen Sie Komfort und Stil mit unserer Essential Haremshose. Diese Hose besteht aus weichem, atmungsaktivem Stoff, einem elastischen Bund für mehr Komfort und einer schicken, lockeren Passform und eignet sich perfekt für Yoga oder Freizeitkleidung. Sie sind in verschiedenen Farben erhältlich und ein Muss für entspannte Alltagsmode.</p><h3> Hauptmerkmale:</h3> <p><b> Material: </b>Hochwertiger, leichter Stoff Das bietet Atmungsaktivität und Flexibilität.</p> <p><b>Passform:</b> Bequeme, lockere Passform mit schmal zulaufendem Knöchel, passend für alle Körpertypen.</p><p><b>Design:</b> Erhältlich in einer Reihe lebendiger Farben und Muster, inspiriert vom Bohème-Stil.<p>   <p><b> Bund:</b> Elastischer Bund mit Kordelzug für eine verstellbare, sichere Passform.</p> <p><b> Vielseitigkeit:</b> Perfekt für Yoga, Tanz, Reisen oder einfach nur zum Faulenzen zu Hause.</p><p><b>Pflegehinweise:</b> Pflegeleicht, maschinenwaschbar.</p > <p><b>Größen:</b> Einheitsgröße für alle Körpertypen</p> <p>Unsere Bohemian Bliss Haremshosen sind nicht nur ein modisches Statement, sondern ein Beweis für Komfort und Vielseitigkeit. Egal, ob Sie Yoga praktizieren, auf ein Festival gehen oder einfach nur zu Hause entspannen, diese Hose ist Ihre erste Wahl für einen lässigen und dennoch schicken Look. </p>" ,
+        "quantity":3
+    }
+    ,
+    {
+        "id": 7,
+        "name": "Zen Garden",
+        "price": 22,
+        "imgUrl": [
+            "/img/products/7/4x5img1.jpg",
+            "/img/products/7/4x5img2.jpg",
+            "/img/products/7/4x5img3.jpg",
+            "/img/products/7/4x5img4.jpg"
+        ],
+        "description": "<p>Genießen Sie Komfort und Stil mit unserer Essential Haremshose. Diese Hose besteht aus weichem, atmungsaktivem Stoff, einem elastischen Bund für mehr Komfort und einer schicken, lockeren Passform und eignet sich perfekt für Yoga oder Freizeitkleidung. Sie sind in verschiedenen Farben erhältlich und ein Muss für entspannte Alltagsmode.</p><h3> Hauptmerkmale:</h3> <p><b> Material: </b>Hochwertiger, leichter Stoff Das bietet Atmungsaktivität und Flexibilität.</p> <p><b>Passform:</b> Bequeme, lockere Passform mit schmal zulaufendem Knöchel, passend für alle Körpertypen.</p><p><b>Design:</b> Erhältlich in einer Reihe lebendiger Farben und Muster, inspiriert vom Bohème-Stil.<p>   <p><b> Bund:</b> Elastischer Bund mit Kordelzug für eine verstellbare, sichere Passform.</p> <p><b> Vielseitigkeit:</b> Perfekt für Yoga, Tanz, Reisen oder einfach nur zum Faulenzen zu Hause.</p><p><b>Pflegehinweise:</b> Pflegeleicht, maschinenwaschbar.</p > <p><b>Größen:</b> Einheitsgröße für alle Körpertypen</p> <p>Unsere Bohemian Bliss Haremshosen sind nicht nur ein modisches Statement, sondern ein Beweis für Komfort und Vielseitigkeit. Egal, ob Sie Yoga praktizieren, auf ein Festival gehen oder einfach nur zu Hause entspannen, diese Hose ist Ihre erste Wahl für einen lässigen und dennoch schicken Look. </p>" ,
+        "quantity":3
+    }  ,
+    {
+        "id": 8,
+        "name": "Sultan's Secret",
+        "price": 22,
+        "imgUrl": [
+            "/img/products/8/4x5img1.jpg",
+            "/img/products/8/4x5img2.jpg",
+            "/img/products/8/4x5img3.jpg",
+            "/img/products/8/4x5img4.jpg"
+        ],
+        "description": "<p>Genießen Sie Komfort und Stil mit unserer Essential Haremshose. Diese Hose besteht aus weichem, atmungsaktivem Stoff, einem elastischen Bund für mehr Komfort und einer schicken, lockeren Passform und eignet sich perfekt für Yoga oder Freizeitkleidung. Sie sind in verschiedenen Farben erhältlich und ein Muss für entspannte Alltagsmode.</p><h3> Hauptmerkmale:</h3> <p><b> Material: </b>Hochwertiger, leichter Stoff Das bietet Atmungsaktivität und Flexibilität.</p> <p><b>Passform:</b> Bequeme, lockere Passform mit schmal zulaufendem Knöchel, passend für alle Körpertypen.</p><p><b>Design:</b> Erhältlich in einer Reihe lebendiger Farben und Muster, inspiriert vom Bohème-Stil.<p>   <p><b> Bund:</b> Elastischer Bund mit Kordelzug für eine verstellbare, sichere Passform.</p> <p><b> Vielseitigkeit:</b> Perfekt für Yoga, Tanz, Reisen oder einfach nur zum Faulenzen zu Hause.</p><p><b>Pflegehinweise:</b> Pflegeleicht, maschinenwaschbar.</p > <p><b>Größen:</b> Einheitsgröße für alle Körpertypen</p> <p>Unsere Bohemian Bliss Haremshosen sind nicht nur ein modisches Statement, sondern ein Beweis für Komfort und Vielseitigkeit. Egal, ob Sie Yoga praktizieren, auf ein Festival gehen oder einfach nur zu Hause entspannen, diese Hose ist Ihre erste Wahl für einen lässigen und dennoch schicken Look. </p>" ,
+        "quantity":3
+    },
+    {
+        "id": 9,
+        "name": "Safari Sunse",
+        "price": 22,
+        "imgUrl": [
+            "/img/products/9/4x5img1.jpg",
+            "/img/products/9/4x5img2.jpg",
+            "/img/products/9/4x5img3.jpg",
+            "/img/products/9/4x5img4.jpg"
+        ],
+        "description": "<p>Genießen Sie Komfort und Stil mit unserer Essential Haremshose. Diese Hose besteht aus weichem, atmungsaktivem Stoff, einem elastischen Bund für mehr Komfort und einer schicken, lockeren Passform und eignet sich perfekt für Yoga oder Freizeitkleidung. Sie sind in verschiedenen Farben erhältlich und ein Muss für entspannte Alltagsmode.</p><h3> Hauptmerkmale:</h3> <p><b> Material: </b>Hochwertiger, leichter Stoff Das bietet Atmungsaktivität und Flexibilität.</p> <p><b>Passform:</b> Bequeme, lockere Passform mit schmal zulaufendem Knöchel, passend für alle Körpertypen.</p><p><b>Design:</b> Erhältlich in einer Reihe lebendiger Farben und Muster, inspiriert vom Bohème-Stil.<p>   <p><b> Bund:</b> Elastischer Bund mit Kordelzug für eine verstellbare, sichere Passform.</p> <p><b> Vielseitigkeit:</b> Perfekt für Yoga, Tanz, Reisen oder einfach nur zum Faulenzen zu Hause.</p><p><b>Pflegehinweise:</b> Pflegeleicht, maschinenwaschbar.</p > <p><b>Größen:</b> Einheitsgröße für alle Körpertypen</p> <p>Unsere Bohemian Bliss Haremshosen sind nicht nur ein modisches Statement, sondern ein Beweis für Komfort und Vielseitigkeit. Egal, ob Sie Yoga praktizieren, auf ein Festival gehen oder einfach nur zu Hause entspannen, diese Hose ist Ihre erste Wahl für einen lässigen und dennoch schicken Look. </p>" ,
+        "quantity":3
+    },
+    {
+        "id": 10,
+        "name": "Urban Oasis",
+        "price": 22,
+        "imgUrl": [
+            "/img/products/10/4x5img1.jpg",
+            "/img/products/10/4x5img2.jpg",
+            "/img/products/10/4x5img3.jpg",
+            "/img/products/10/4x5img4.jpg"
+        ],
+        "description": "<p>Genießen Sie Komfort und Stil mit unserer Essential Haremshose. Diese Hose besteht aus weichem, atmungsaktivem Stoff, einem elastischen Bund für mehr Komfort und einer schicken, lockeren Passform und eignet sich perfekt für Yoga oder Freizeitkleidung. Sie sind in verschiedenen Farben erhältlich und ein Muss für entspannte Alltagsmode.</p><h3> Hauptmerkmale:</h3> <p><b> Material: </b>Hochwertiger, leichter Stoff Das bietet Atmungsaktivität und Flexibilität.</p> <p><b>Passform:</b> Bequeme, lockere Passform mit schmal zulaufendem Knöchel, passend für alle Körpertypen.</p><p><b>Design:</b> Erhältlich in einer Reihe lebendiger Farben und Muster, inspiriert vom Bohème-Stil.<p>   <p><b> Bund:</b> Elastischer Bund mit Kordelzug für eine verstellbare, sichere Passform.</p> <p><b> Vielseitigkeit:</b> Perfekt für Yoga, Tanz, Reisen oder einfach nur zum Faulenzen zu Hause.</p><p><b>Pflegehinweise:</b> Pflegeleicht, maschinenwaschbar.</p > <p><b>Größen:</b> Einheitsgröße für alle Körpertypen</p> <p>Unsere Bohemian Bliss Haremshosen sind nicht nur ein modisches Statement, sondern ein Beweis für Komfort und Vielseitigkeit. Egal, ob Sie Yoga praktizieren, auf ein Festival gehen oder einfach nur zu Hause entspannen, diese Hose ist Ihre erste Wahl für einen lässigen und dennoch schicken Look. </p>" ,
+        "quantity":3
+    },
+    {
+        "id": 11,
+        "name": "Boho Breeze",
+        "price": 22,
+        "imgUrl": [
+            "/img/products/11/4x5img1.jpg",
+            "/img/products/11/4x5img2.jpg",
+            "/img/products/11/4x5img3.jpg",
+            "/img/products/11/4x5img4.jpg"
+        ],
+        "description": "<p>Genießen Sie Komfort und Stil mit unserer Essential Haremshose. Diese Hose besteht aus weichem, atmungsaktivem Stoff, einem elastischen Bund für mehr Komfort und einer schicken, lockeren Passform und eignet sich perfekt für Yoga oder Freizeitkleidung. Sie sind in verschiedenen Farben erhältlich und ein Muss für entspannte Alltagsmode.</p><h3> Hauptmerkmale:</h3> <p><b> Material: </b>Hochwertiger, leichter Stoff Das bietet Atmungsaktivität und Flexibilität.</p> <p><b>Passform:</b> Bequeme, lockere Passform mit schmal zulaufendem Knöchel, passend für alle Körpertypen.</p><p><b>Design:</b> Erhältlich in einer Reihe lebendiger Farben und Muster, inspiriert vom Bohème-Stil.<p>   <p><b> Bund:</b> Elastischer Bund mit Kordelzug für eine verstellbare, sichere Passform.</p> <p><b> Vielseitigkeit:</b> Perfekt für Yoga, Tanz, Reisen oder einfach nur zum Faulenzen zu Hause.</p><p><b>Pflegehinweise:</b> Pflegeleicht, maschinenwaschbar.</p > <p><b>Größen:</b> Einheitsgröße für alle Körpertypen</p> <p>Unsere Bohemian Bliss Haremshosen sind nicht nur ein modisches Statement, sondern ein Beweis für Komfort und Vielseitigkeit. Egal, ob Sie Yoga praktizieren, auf ein Festival gehen oder einfach nur zu Hause entspannen, diese Hose ist Ihre erste Wahl für einen lässigen und dennoch schicken Look. </p>" ,
+        "quantity":3
+    },
+    {
+        "id": 12,
+        "name": "Twilight Tropics",
+        "price": 22,
+        "imgUrl": [
+            "/img/products/12/4x5img1.jpg",
+            "/img/products/12/4x5img2.jpg",
+            "/img/products/12/4x5img3.jpg",
+            "/img/products/12/4x5img4.jpg"
+        ],
+        "description": "<p>Genießen Sie Komfort und Stil mit unserer Essential Haremshose. Diese Hose besteht aus weichem, atmungsaktivem Stoff, einem elastischen Bund für mehr Komfort und einer schicken, lockeren Passform und eignet sich perfekt für Yoga oder Freizeitkleidung. Sie sind in verschiedenen Farben erhältlich und ein Muss für entspannte Alltagsmode.</p><h3> Hauptmerkmale:</h3> <p><b> Material: </b>Hochwertiger, leichter Stoff Das bietet Atmungsaktivität und Flexibilität.</p> <p><b>Passform:</b> Bequeme, lockere Passform mit schmal zulaufendem Knöchel, passend für alle Körpertypen.</p><p><b>Design:</b> Erhältlich in einer Reihe lebendiger Farben und Muster, inspiriert vom Bohème-Stil.<p>   <p><b> Bund:</b> Elastischer Bund mit Kordelzug für eine verstellbare, sichere Passform.</p> <p><b> Vielseitigkeit:</b> Perfekt für Yoga, Tanz, Reisen oder einfach nur zum Faulenzen zu Hause.</p><p><b>Pflegehinweise:</b> Pflegeleicht, maschinenwaschbar.</p > <p><b>Größen:</b> Einheitsgröße für alle Körpertypen</p> <p>Unsere Bohemian Bliss Haremshosen sind nicht nur ein modisches Statement, sondern ein Beweis für Komfort und Vielseitigkeit. Egal, ob Sie Yoga praktizieren, auf ein Festival gehen oder einfach nur zu Hause entspannen, diese Hose ist Ihre erste Wahl für einen lässigen und dennoch schicken Look. </p>" ,
+        "quantity":3
+    },
+    {
+        "id": 13,
+        "name": "Watch",
+        "price": 22,
+        "imgUrl": [
+            "/img/products/13/4x5img1.jpg",
+            "/img/products/13/4x5img2.jpg",
+            "/img/products/13/4x5img3.jpg",
+            "/img/products/13/4x5img4.jpg"
+        ],
+        "description": "<p>Genießen Sie Komfort und Stil mit unserer Essential Haremshose. Diese Hose besteht aus weichem, atmungsaktivem Stoff, einem elastischen Bund für mehr Komfort und einer schicken, lockeren Passform und eignet sich perfekt für Yoga oder Freizeitkleidung. Sie sind in verschiedenen Farben erhältlich und ein Muss für entspannte Alltagsmode.</p><h3> Hauptmerkmale:</h3> <p><b> Material: </b>Hochwertiger, leichter Stoff Das bietet Atmungsaktivität und Flexibilität.</p> <p><b>Passform:</b> Bequeme, lockere Passform mit schmal zulaufendem Knöchel, passend für alle Körpertypen.</p><p><b>Design:</b> Erhältlich in einer Reihe lebendiger Farben und Muster, inspiriert vom Bohème-Stil.<p>   <p><b> Bund:</b> Elastischer Bund mit Kordelzug für eine verstellbare, sichere Passform.</p> <p><b> Vielseitigkeit:</b> Perfekt für Yoga, Tanz, Reisen oder einfach nur zum Faulenzen zu Hause.</p><p><b>Pflegehinweise:</b> Pflegeleicht, maschinenwaschbar.</p > <p><b>Größen:</b> Einheitsgröße für alle Körpertypen</p> <p>Unsere Bohemian Bliss Haremshosen sind nicht nur ein modisches Statement, sondern ein Beweis für Komfort und Vielseitigkeit. Egal, ob Sie Yoga praktizieren, auf ein Festival gehen oder einfach nur zu Hause entspannen, diese Hose ist Ihre erste Wahl für einen lässigen und dennoch schicken Look. </p>" ,
+        "quantity":3
+    },
+    {
+        "id": 14,
+        "name": "Watch",
+        "price": 22,
+        "imgUrl": [
+            "/img/products/14/4x5img1.jpg",
+            "/img/products/14/4x5img2.jpg",
+            "/img/products/14/4x5img3.jpg",
+            "/img/products/14/4x5img4.jpg"
+        ],
+        "description": "<p>Genießen Sie Komfort und Stil mit unserer Essential Haremshose. Diese Hose besteht aus weichem, atmungsaktivem Stoff, einem elastischen Bund für mehr Komfort und einer schicken, lockeren Passform und eignet sich perfekt für Yoga oder Freizeitkleidung. Sie sind in verschiedenen Farben erhältlich und ein Muss für entspannte Alltagsmode.</p><h3> Hauptmerkmale:</h3> <p><b> Material: </b>Hochwertiger, leichter Stoff Das bietet Atmungsaktivität und Flexibilität.</p> <p><b>Passform:</b> Bequeme, lockere Passform mit schmal zulaufendem Knöchel, passend für alle Körpertypen.</p><p><b>Design:</b> Erhältlich in einer Reihe lebendiger Farben und Muster, inspiriert vom Bohème-Stil.<p>   <p><b> Bund:</b> Elastischer Bund mit Kordelzug für eine verstellbare, sichere Passform.</p> <p><b> Vielseitigkeit:</b> Perfekt für Yoga, Tanz, Reisen oder einfach nur zum Faulenzen zu Hause.</p><p><b>Pflegehinweise:</b> Pflegeleicht, maschinenwaschbar.</p > <p><b>Größen:</b> Einheitsgröße für alle Körpertypen</p> <p>Unsere Bohemian Bliss Haremshosen sind nicht nur ein modisches Statement, sondern ein Beweis für Komfort und Vielseitigkeit. Egal, ob Sie Yoga praktizieren, auf ein Festival gehen oder einfach nur zu Hause entspannen, diese Hose ist Ihre erste Wahl für einen lässigen und dennoch schicken Look. </p>" ,
+        "quantity":3
+    }
+]
