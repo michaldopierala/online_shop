@@ -1,9 +1,15 @@
 import React, { useState } from 'react'
-import products from '../../data/products.json'
+// import products from '../../data/products.json'
+// import { useProducts } from '../../hooks/useProducts'; 
+// import { useCurrency } from '../../hooks/useCurrency'; 
 import ProductMobileSummary from './ProductMobileSummary';
+import { useCurrency } from '../../hooks/useCurrency';
+
 
 
 export default function ShowSummary({ cartItems, total, CartQuantity }) {
+  const {value, symbol, display} = useCurrency(1); //  1 is inputed because we only want to get currency symbol
+
   const orderDetails = {
     id: '123456',
     totalPrice: 100
@@ -26,7 +32,7 @@ export default function ShowSummary({ cartItems, total, CartQuantity }) {
           {isExpanded ? <img className='arrow' src='/img/icons/up.png' alt='up' /> : <img className='arrow' src='/img/icons/down.png' alt='down' />}
         </div>
         <div className='right'>
-          Total: ${total}
+          Total: {symbol} {total}
         </div>
       </div>
       {isExpanded && (

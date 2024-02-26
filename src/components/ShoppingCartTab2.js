@@ -12,8 +12,6 @@ export default function ShoppingCartTab() {
     const { t } = useTranslation();
     const products = useProducts(); // Use the custom hook
     const { closeCart, cartOpen, cartItems, CartQuantity } = useContext(ShoppingCartContext)
-    const {value, symbol, display} = useCurrency(products);
-
 
 
     return (
@@ -29,7 +27,7 @@ export default function ShoppingCartTab() {
                 }
                 <div className='totalContainer'>
                     {CartQuantity > 0
-                        ? <div className='total'>{t('shopping_cart.total')} : {symbol} {cartItems.reduce((total, cartItem) => {
+                        ? <div className='total'>{t('shopping_cart.total')} : $ {cartItems.reduce((total, cartItem) => {
                             const item = products.find(i => i.id === cartItem.id)
                             return total + (item?.price || 0) * cartItem.quantity
                         }, 0)}

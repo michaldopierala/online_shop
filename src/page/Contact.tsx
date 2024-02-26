@@ -4,7 +4,6 @@ import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 
-
 export default function Contact() {
     const { t } = useTranslation();
     const location = useLocation();

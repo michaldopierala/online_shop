@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import Address from '../components/checkout/Address'
 import { ShoppingCartContext } from '../context/CartContext';
 import ProductCheckout from '../components/checkout/ProductCheckout'
-import products from '../data/products.json'
+// import products from '../data/products.json'
+import { useProducts } from '../hooks/useProducts'; 
+import { useCurrency } from '../hooks/useCurrency'; 
 import Payment from '../stripe/Payment';
 import ShowSummary from '../components/checkout/ShowSummary';
 import { useLocation } from 'react-router-dom';
@@ -16,6 +18,9 @@ import { useTranslation } from 'react-i18next';
 export default function Checkout() {
     const { t } = useTranslation();
     const location = useLocation();
+    const products = useProducts(); 
+    const {value, symbol, display} = useCurrency(1); //  1 is inputed because we only want to get currency symbol
+
     useEffect(() => {
         if (window.location.hostname !== "localhost") {
             ReactGA4.send({ hitType: "pageview", page: location.pathname });
@@ -75,7 +80,7 @@ export default function Checkout() {
                             ? cartItems.map((item, index) => <ProductCheckout key={index} {...item} />)
                             : <div className='cartEmpty'> Cart is empty </div>
                         }
-                        <div className='total'> {t('checkout.total')}: ${total}  </div>
+                        <div className='total'> {t('checkout.total')}: {symbol} {total}</div>
                     </div>
                 </div>
             </div>

@@ -2,7 +2,7 @@
     {
         "id": 4,
         "name": "Boho Breeze",
-        "price": 22,
+        "price": 75,
         "imgUrl": [
             "/img/products/4/4x5img1.jpg",
             "/img/products/4/4x5img2.jpg",
@@ -15,7 +15,7 @@
     {
         "id": 5,
         "name": "Mystic Mirage",
-        "price": 22,
+        "price": 75,
         "imgUrl": [
             "/img/products/5/4x5img1.jpg",
             "/img/products/5/4x5img2.jpg",
@@ -29,7 +29,7 @@
     {
         "id": 6,
         "name": "Elephant Harmony",
-        "price": 22,
+        "price": 75,
         "imgUrl": [
             "/img/products/6/4x5img1.jpg",
             "/img/products/6/4x5img2.jpg",
@@ -43,7 +43,7 @@
     {
         "id": 7,
         "name": "Zen Garden",
-        "price": 22,
+        "price": 75,
         "imgUrl": [
             "/img/products/7/4x5img1.jpg",
             "/img/products/7/4x5img2.jpg",
@@ -56,7 +56,7 @@
     {
         "id": 8,
         "name": "Sultan's Secret",
-        "price": 22,
+        "price": 75,
         "imgUrl": [
             "/img/products/8/4x5img1.jpg",
             "/img/products/8/4x5img2.jpg",
@@ -69,7 +69,7 @@
     {
         "id": 9,
         "name": "Safari Sunse",
-        "price": 22,
+        "price": 75,
         "imgUrl": [
             "/img/products/9/4x5img1.jpg",
             "/img/products/9/4x5img2.jpg",
@@ -82,7 +82,7 @@
     {
         "id": 10,
         "name": "Urban Oasis",
-        "price": 22,
+        "price": 75,
         "imgUrl": [
             "/img/products/10/4x5img1.jpg",
             "/img/products/10/4x5img2.jpg",
@@ -95,7 +95,7 @@
     {
         "id": 11,
         "name": "Boho Breeze",
-        "price": 22,
+        "price": 75,
         "imgUrl": [
             "/img/products/11/4x5img1.jpg",
             "/img/products/11/4x5img2.jpg",
@@ -108,7 +108,7 @@
     {
         "id": 12,
         "name": "Twilight Tropics",
-        "price": 22,
+        "price": 75,
         "imgUrl": [
             "/img/products/12/4x5img1.jpg",
             "/img/products/12/4x5img2.jpg",
@@ -121,7 +121,7 @@
     {
         "id": 13,
         "name": "Watch",
-        "price": 22,
+        "price": 75,
         "imgUrl": [
             "/img/products/13/4x5img1.jpg",
             "/img/products/13/4x5img2.jpg",
@@ -134,7 +134,7 @@
     {
         "id": 14,
         "name": "Watch",
-        "price": 22,
+        "price": 75,
         "imgUrl": [
             "/img/products/14/4x5img1.jpg",
             "/img/products/14/4x5img2.jpg",

@@ -8,12 +8,14 @@ import TouchSlider from '../components/TouchSlider';
 import { useLocation } from 'react-router-dom';
 import ReactGA4 from 'react-ga4';
 import { useTranslation } from 'react-i18next';
+import { useCurrency } from '../hooks/useCurrency'; 
 
 
 
 export default function ProductPage() {
   const { t } = useTranslation();
   const location = useLocation();
+
   useEffect(() => {
     if (window.location.hostname !== "localhost") {
       ReactGA4.send({ hitType: "pageview", page: location.pathname });
@@ -25,6 +27,8 @@ export default function ProductPage() {
   const { id } = useParams()
   const productInCart = cartItems.find(item => id == item.id)
   const product = products.find(item => id == item.id)
+  const {value, symbol, display} = useCurrency(product.price);
+
 
 
   return (
@@ -39,7 +43,7 @@ export default function ProductPage() {
             {product.name}
           </div>
           <div className='price'>
-            $  {product.price}
+            {display}
           </div>
           <div className='changeQuantity'>
             {productInCart == null

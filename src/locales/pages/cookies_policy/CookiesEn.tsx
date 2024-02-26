@@ -1,7 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-
-export default function CookiesEn() {
+const CookiesEn: React.FC = () => {
   return (
     <div className='CookiesPolicy'>
       <div className='title'>COOKIE POLICY</div>
@@ -208,5 +207,7 @@ export default function CookiesEn() {
         This cookie policy was created using Termly's Cookie Consent Manager.
       </div>
     </div>
-  )
-}
+  );
+};
+
+export default CookiesEn;
