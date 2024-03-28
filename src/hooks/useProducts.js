@@ -25,6 +25,4 @@ export const useProducts = () => {
   }
 
   return products;
-  // Potential place for future logic, e.g., fetching data from an API.
-  // return products;
 };

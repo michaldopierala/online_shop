@@ -1,5 +1,5 @@
 import React, { useState, FormEvent, useEffect } from 'react';
-import ReactGA4 from 'react-ga4';
+import ReactGA from 'react-ga4';
 import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -9,9 +9,9 @@ export default function Contact() {
     const location = useLocation();
     useEffect(() => {
         if (window.location.hostname !== "localhost") {
-            ReactGA4.send({ hitType: "pageview", page: location.pathname });
+          ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
         }
-    }, [location]);
+      }, [location]);
 
     const ContactDataBase: string | undefined = process.env.REACT_APP_API_URL2;
     const [messageSent, setMessageSent] = useState<boolean>(false);

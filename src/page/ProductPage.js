@@ -6,21 +6,23 @@ import { useProducts } from '../hooks/useProducts';
 import { ShoppingCartContext } from '../context/CartContext';
 import TouchSlider from '../components/TouchSlider';
 import { useLocation } from 'react-router-dom';
-import ReactGA4 from 'react-ga4';
+import ReactGA from 'react-ga4';
 import { useTranslation } from 'react-i18next';
 import { useCurrency } from '../hooks/useCurrency'; 
 
 
-
 export default function ProductPage() {
   const { t } = useTranslation();
+  
   const location = useLocation();
-
   useEffect(() => {
-    if (window.location.hostname !== "localhost") {
-      ReactGA4.send({ hitType: "pageview", page: location.pathname });
-    }
-  }, [location.pathname]); // Dependency on pathname only
+      if (window.location.hostname !== "localhost") {
+        ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
+      }
+    }, [location]);
+
+
+
   
   const products = useProducts(); // Use the custom hook
   const { cartItems, increaseCartQuantity, decreaseCartQuantity, remove } = useContext(ShoppingCartContext)

@@ -1,12 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-
-export default function CookiesEn() {
+const CookiesEn: React.FC = () => {
   return (
     <div className='Privacy'>
-      <div class='title'>DATENSCHUTZRICHTLINIE</div>
-      <div class='lastUpdate'>Zuletzt aktualisiert am 14. Februar 2024</div>
-      <div class='text'>
+      <div className='title'>DATENSCHUTZRICHTLINIE</div>
+      <div className='lastUpdate'>Zuletzt aktualisiert am 14. Februar 2024</div>
+      <div className='text'>
         Diese Datenschutzmitteilung für (Unternehmen: "Michal Dopierala") beschreibt, wie und warum wir möglicherweise Ihre Informationen sammeln, speichern, verwenden und/oder teilen ("verarbeiten"), wenn Sie unsere Dienste ("Dienste") nutzen, wie zum Beispiel, wenn Sie:
         <br></br>
         <ul>
@@ -15,10 +14,10 @@ export default function CookiesEn() {
         </ul>
         <b>Fragen oder Bedenken?</b> Das Lesen dieser Datenschutzmitteilung wird Ihnen helfen, Ihre Datenschutzrechte und -optionen zu verstehen. Wenn Sie mit unseren Richtlinien und Praktiken nicht einverstanden sind, verwenden Sie bitte unsere Dienste nicht. Wenn Sie dennoch Fragen oder Bedenken haben, kontaktieren Sie uns bitte unter michal6452@gmail.com.
       </div>
-      <div class='heading'>
+      <div className='heading'>
         ZUSAMMENFASSUNG DER HAUPTPUNKTE
       </div>
-      <div class='text'>
+      <div className='text'>
         <b>Diese Zusammenfassung bietet die Hauptpunkte unserer Datenschutzmitteilung, aber Sie können mehr Details zu jedem dieser Themen finden, indem Sie dem Link nach jedem Hauptpunkt folgen oder unseren Inhaltsverzeichnis unten nutzen, um den Abschnitt zu finden, den Sie suchen.</b>
         <br></br>     <br></br>
         <b>Welche personenbezogenen Daten verarbeiten wir?</b> Wenn Sie unsere Dienste besuchen, nutzen oder navigieren, können wir personenbezogene Daten verarbeiten, abhängig davon, wie Sie mit uns und den Diensten interagieren, welche Entscheidungen Sie treffen und welche Produkte und Funktionen Sie nutzen.
@@ -35,10 +34,10 @@ export default function CookiesEn() {
         <br></br>  <br></br>
         <b>Wie können Sie Ihre Rechte ausüben?</b> Der einfachste Weg, Ihre Rechte auszuüben, ist die Einreichung eines Antrags auf Zugang zu den Daten oder indem Sie uns kontaktieren. Wir werden jede Anfrage in Übereinstimmung mit den geltenden Datenschutzgesetzen prüfen und darauf reagieren.
       </div>
-      <div class='heading'>
+      <div className='heading'>
         INHALTSVERZEICHNIS
       </div>
-      <div class='text'>
+      <div className='text'>
         <div>1. WELCHE INFORMATIONEN SAMMELN WIR?</div>
         <div>2. WIE VERARBEITEN WIR IHRE INFORMATIONEN?</div>
         <div>3. AUF WELCHEN RECHTLICHEN GRUNDLAGEN STÜTZEN WIR DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN?</div>
@@ -223,3 +222,4 @@ export default function CookiesEn() {
     </div>
   )
 }
+export default CookiesEn;

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
+import ReactGA4 from 'react-ga4';
 import English from '../locales/pages/privacy_policy/PrivacyEn';
 import German from '../locales/pages/privacy_policy/PrivacyDe';
 import Polish from '../locales/pages/privacy_policy/PrivacyPl';

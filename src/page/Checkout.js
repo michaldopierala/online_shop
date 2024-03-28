@@ -9,7 +9,7 @@ import { useCurrency } from '../hooks/useCurrency';
 import Payment from '../stripe/Payment';
 import ShowSummary from '../components/checkout/ShowSummary';
 import { useLocation } from 'react-router-dom';
-import ReactGA4 from 'react-ga4';
+import ReactGA from 'react-ga4';
 import { useTranslation } from 'react-i18next';
 
 
@@ -23,9 +23,9 @@ export default function Checkout() {
 
     useEffect(() => {
         if (window.location.hostname !== "localhost") {
-            ReactGA4.send({ hitType: "pageview", page: location.pathname });
+          ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
         }
-    }, [location.pathname]); // Dependency on pathname only
+      }, [location]);
 
     const { setCartOpen, CartQuantity, cartItems } = useContext(ShoppingCartContext)
     const [address, setAddress] = useState([]);

@@ -21,14 +21,14 @@ export default function Navbar() {
          */}
         <Link className="btn" to="contact">{t('menu_contact')}</Link>
         {/* <div className='logo'>SunsetBay</div> */}
-        <Link to={`/`} className='logo'>  <img src='/img/sunsetbay.png'/> </Link>
+        <Link to={`/`} className='logo'>  <img src='/img/sunsetbay.png' /> </Link>
         <button className='shoppingCartIcon' onClick={closeCart}>
           <div className='cartCount'> <span>{CartQuantity}</span>  </div>
           <img src='/img/icons/cart.png' alt='shopping cart' />
         </button>
       </nav>
       <div className={`sideTab ${cartOpen ? '' : 'sideTabHidden'}`}>
-          <ShoppingCartTab />
+        <ShoppingCartTab />
       </div>
       <div>
         {newProduct && <Modal />}

@@ -1,7 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-
-export default function CookiesEn() {
+const CookiesEn: React.FC = () => {
   return (
     <div className='Privacy'>
       <div className='title'>PRIVACY POLICY</div>
@@ -220,3 +219,4 @@ export default function CookiesEn() {
     </div>
   )
 }
+export default CookiesEn;

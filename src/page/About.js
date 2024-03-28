@@ -1,16 +1,14 @@
 import React, { useState, useEffect, } from 'react';
 import { useLocation } from 'react-router-dom';
-import ReactGA4 from 'react-ga4';
-if (window.location.hostname !== "localhost") {
-    ReactGA4.initialize("G-S1TP745FSQ");
-}
+import ReactGA from 'react-ga4';
 
 const About = () => {
     const location = useLocation();
-
     useEffect(() => {
-        ReactGA4.send({ hitType: "pageview", page: location.pathname });
-    }, [location]);
+        if (window.location.hostname !== "localhost") {
+          ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
+        }
+      }, [location]);
 
     const apiUrl = process.env.REACT_APP_API_URL;
     const ContactDataBase = process.env.REACT_APP_API_URL2;

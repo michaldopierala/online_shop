@@ -4,10 +4,11 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 // Import your local translation files
 // import translationEN from './locales/en/translation.json';
-import translationES from './locales/es/translation.json'
 import translationEN from './locales/en/translation.json'
 import translationDE from './locales/de/translation.json'
 import translationPL from './locales/pl/translation.json'
+
+
 
 
 // Resources object containing your translations
@@ -15,15 +16,12 @@ const resources = {
   en: {
     translation: translationEN,
   },
-  es: {
-    translation: translationES, // Example for Spanish
-  },
   de: {
     translation: translationDE, // Example for Spanish
   },
   pl: {
     translation: translationPL, // Example for Spanish
-  },
+  }
 };
 
 i18n

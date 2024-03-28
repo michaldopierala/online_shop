@@ -19,10 +19,13 @@ import Shipping from './page/Shipping';
 import CookiesPolicy from './page/CookiesPolicy';
 import CookieBanner from './components/CookieBanner';
 
-import ReactGA4 from 'react-ga4';
+
+import ReactGA from 'react-ga4';
 if (window.location.hostname !== "localhost") {
-  ReactGA4.initialize("G-S1TP745FSQ");
+  ReactGA.initialize('G-D9GKEVELBX');
 }
+// google code for old analitics: G-S1TP745FSQ
+// google code for new analitics: G-D9GKEVELBX
 
 
 function App() {
@@ -45,8 +48,8 @@ function App() {
               <Route path="/shipping" element={<Shipping />} />
               <Route path="/cookies" element={<CookiesPolicy/>} />
             </Route>
-            <Route path="/checkout" element={<Checkout />} />
-            <Route path="/test" element={<Test />} />
+            <Route path="/checkout" element={<Checkout/>} />
+            <Route path="/test" element={<Test/>} />
           </Routes>
           <Footer />
         </BrowserRouter>

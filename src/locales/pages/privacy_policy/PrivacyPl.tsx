@@ -1,12 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-
-export default function CookiesEn() {
+const CookiesEn: React.FC = () => {
   return (
     <div className='Privacy'>
-      <div class='title'>POLITYKA PRYWATNOŚCI</div>
-      <div class='lastUpdate'>Ostatnia aktualizacja 14 lutego 2024</div>
-      <div class='text'>
+      <div className='title'>POLITYKA PRYWATNOŚCI</div>
+      <div className='lastUpdate'>Ostatnia aktualizacja 14 lutego 2024</div>
+      <div className='text'>
         Niniejsze powiadomienie o prywatności dla (Firma: "Michał Dopierała") opisuje jak i dlaczego możemy zbierać, przechowywać, używać i/lub udostępniać ("przetwarzać") Twoje informacje, kiedy korzystasz z naszych usług ("Usługi"), takich jak gdy:
         <br></br>
         <ul>
@@ -15,10 +14,10 @@ export default function CookiesEn() {
         </ul>
         <b>Masz pytania lub wątpliwości?</b> Przeczytanie tego powiadomienia o prywatności pomoże Ci zrozumieć Twoje prawa i możliwości dotyczące prywatności. Jeśli nie zgadzasz się z naszymi zasadami i praktykami, prosimy o niekorzystanie z naszych Usług. Jeśli masz jeszcze jakieś pytania lub wątpliwości, prosimy o kontakt z nami na adres michal6452@gmail.com.
       </div>
-      <div class='heading'>
+      <div className='heading'>
         STRESZCZENIE KLUCZOWYCH PUNKTÓW
       </div>
-      <div class='text'>
+      <div className='text'>
         <b>To streszczenie zawiera kluczowe punkty z naszego powiadomienia o prywatności, ale możesz dowiedzieć się więcej szczegółów na temat każdego z tych tematów, klikając w link znajdujący się po każdym kluczowym punkcie lub używając naszego spisu treści poniżej, aby znaleźć szukaną sekcję.</b>
         <br></br>     <br></br>
         <b>Jakie dane osobowe przetwarzamy?</b> Kiedy odwiedzasz, korzystasz lub nawigujesz po naszych Usługach, możemy przetwarzać dane osobowe w zależności od sposobu, w jaki z nami interagujesz oraz od Usług, wyborów, które dokonujesz, oraz produktów i funkcji, z których korzystasz.
@@ -35,10 +34,10 @@ export default function CookiesEn() {
         <br></br>  <br></br>
         <b>Jak możesz wykonywać swoje prawa?</b> Najłatwiejszym sposobem na wykonanie swoich praw jest złożenie wniosku o dostęp do danych osobowych lub kontakt z nami. Będziemy rozpatrywać i realizować każde żądanie zgodnie z obowiązującymi przepisami o ochronie danych.
       </div>
-      <div class='heading'>
+      <div className='heading'>
         SPIS TREŚCI
       </div>
-      <div class='text'>
+      <div className='text'>
         <div>1. JAKIE INFORMACJE ZBIERAMY?</div>
         <div>2. JAK PRZETWARZAMY TWOJE INFORMACJE?</div>
         <div>3. NA JAKICH PODSTAWACH PRAWNYCH OPIERAMY PRZETWARZANIE TWOICH DANYCH OSOBOWYCH?</div>
@@ -224,3 +223,4 @@ export default function CookiesEn() {
     </div>
   )
 }
+export default CookiesEn;

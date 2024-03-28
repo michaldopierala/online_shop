@@ -1,27 +1,16 @@
 import React, { useState } from 'react';
 
 const ImageSlider = (props) => {
-    // const images = [
-    //     '/img/img1.jpg',
-    //     '/img/img2.jpg',
-    //     '/img/img3.jpg',
-    //     '/img/img3.jpg',
-    //     '/img/img4.jpg'
-    //     // Add more image URLs as needed
-    // ];
-    const images = props.img
 
+    const images = props.img
     const [current, setCurrent] = useState(0);
     const length = images.length;
-
     const nextSlide = () => {
         setCurrent(current === length - 1 ? 0 : current + 1);
     };
-
     const prevSlide = () => {
         setCurrent(current === 0 ? length - 1 : current - 1);
     };
-
     const goToSlide = index => {
         setCurrent(index);
     };
@@ -64,10 +53,7 @@ const ImageSlider = (props) => {
                 <button className="right-arrow" onClick={nextSlide}>
                     <i class="fas fa-chevron-right"></i>
                 </button>
-
             </div>
-
-
         </section>
     );
 };
